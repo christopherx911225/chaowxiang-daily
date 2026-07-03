@@ -85,25 +85,31 @@
     <div class="container">
         <div class="brand">潮 向</div>
         <div class="subtitle">建材家居行业日报</div>
-        <ul class="report-list">
-            <li class="report-item">
-                <a href="潮向_2026-07-03.html">
-                    <span class="date">2026-07-03</span>
-                    <span>今日日报</span>
-                    <span class="arrow">→</span>
-                </a>
-            </li>
-            <li class="report-item">
-                <a href="潮向_2026-07-02.html">
-                    <span class="date">2026-07-02</span>
-                    <span>日报</span>
-                    <span class="arrow">→</span>
-                </a>
-            </li>
+        <ul class="report-list" id="report-list">
+            <!-- Reports will be dynamically listed here -->
         </ul>
         <div class="footer">
             <p>本日报由 AI 自动生成，仅供参考，不构成投资建议。</p>
         </div>
     </div>
+    <script>
+        // Known reports - update this list when new reports are added
+        const reports = [
+            { date: '2026-07-03', label: '今日日报' },
+            { date: '2026-07-02', label: '日报' },
+        ];
+        
+        const listEl = document.getElementById('report-list');
+        reports.forEach(r => {
+            const li = document.createElement('li');
+            li.className = 'report-item';
+            li.innerHTML = `<a href="daily/${r.date}.html">
+                <span class="date">${r.date}</span>
+                <span>${r.label}</span>
+                <span class="arrow">→</span>
+            </a>`;
+            listEl.appendChild(li);
+        });
+    </script>
 </body>
 </html>
