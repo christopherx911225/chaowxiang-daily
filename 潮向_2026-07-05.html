@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>潮向 | 建材家居行业日报 | 2026-07-05</title>
+    <style>
+        /* ===== Reset & Base ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, "Helvetica Neue", "PingFang SC", "Microsoft YaHei", sans-serif;
+            background: #0c1929;
+            color: #e2e8f0;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        /* ===== Container ===== */
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 24px 16px;
+        }
+
+        /* ===== Header - 蓝金主视觉 ===== */
+        .report-header {
+            position: relative;
+            background: linear-gradient(160deg, #0f2444 0%, #1a365d 40%, #1e3a5f 100%);
+            border-radius: 20px;
+            padding: 40px 36px 32px;
+            margin-bottom: 28px;
+            overflow: hidden;
+            border: 1px solid rgba(212, 175, 55, 0.15);
+        }
+        .report-header::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(212,175,55,0.08) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        .report-header::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, rgba(212,175,55,0.4), transparent);
+        }
+        .brand-mark {
+            display: inline-block;
+            font-size: 42px;
+            font-weight: 800;
+            letter-spacing: 6px;
+            background: linear-gradient(135deg, #d4af37 0%, #f0d060 50%, #d4af37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 6px;
+        }
+        .brand-subtitle {
+            font-size: 15px;
+            color: rgba(226, 232, 240, 0.7);
+            letter-spacing: 4px;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+        .header-headline {
+            font-size: 20px;
+            font-weight: 600;
+            color: #e2e8f0;
+            margin-bottom: 16px;
+            padding: 14px 18px;
+            background: rgba(212, 175, 55, 0.08);
+            border-radius: 12px;
+            border-left: 3px solid #d4af37;
+            line-height: 1.5;
+        }
+        .header-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            font-size: 13px;
+        }
+        .header-meta span {
+            background: rgba(255,255,255,0.06);
+            color: rgba(226, 232, 240, 0.65);
+            padding: 5px 14px;
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.06);
+        }
+
+        /* ===== Summary Card ===== */
+        .summary-card {
+            background: #111d30;
+            border-radius: 16px;
+            padding: 28px 32px;
+            margin-bottom: 24px;
+            border: 1px solid rgba(212, 175, 55, 0.08);
+        }
+        .summary-card h2 {
+            font-size: 17px;
+            color: #d4af37;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        .overall-summary {
+            font-size: 15px;
+            color: #94a3b8;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+        .key-changes {
+            list-style: none;
+            padding: 0;
+        }
+        .key-changes li {
+            padding: 8px 0 8px 22px;
+            position: relative;
+            font-size: 14px;
+            color: #cbd5e1;
+        }
+        .key-changes li::before {
+            content: "▸";
+            position: absolute;
+            left: 4px;
+            color: #d4af37;
+            font-weight: 700;
+        }
+        .impact-assessment {
+            margin-top: 16px;
+            padding: 14px 18px;
+            background: rgba(212, 175, 55, 0.05);
+            border-radius: 10px;
+            font-size: 14px;
+            color: #94a3b8;
+            border: 1px solid rgba(212, 175, 55, 0.08);
+        }
+        .impact-assessment strong {
+            color: #d4af37;
+        }
+
+        /* ===== Risk & Watch ===== */
+        .risk-watch {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+        @media (max-width: 640px) {
+            .risk-watch {
+                grid-template-columns: 1fr;
+            }
+        }
+        .risk-card, .watch-card {
+            background: #111d30;
+            border-radius: 16px;
+            padding: 22px 26px;
+            border: 1px solid rgba(212, 175, 55, 0.08);
+        }
+        .risk-card {
+            border-top: 2px solid #ef4444;
+        }
+        .watch-card {
+            border-top: 2px solid #d4af37;
+        }
+        .risk-card h3, .watch-card h3 {
+            font-size: 15px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-weight: 600;
+        }
+        .risk-card h3 { color: #f87171; }
+        .watch-card h3 { color: #d4af37; }
+        .risk-card ul, .watch-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        .risk-card li, .watch-card li {
+            padding: 6px 0 6px 20px;
+            position: relative;
+            font-size: 13px;
+            color: #94a3b8;
+        }
+        .risk-card li::before {
+            content: "⚠";
+            position: absolute;
+            left: 0;
+            font-size: 11px;
+        }
+        .watch-card li::before {
+            content: "▸";
+            position: absolute;
+            left: 2px;
+            color: #d4af37;
+            font-weight: 700;
+        }
+
+        /* ===== Sections ===== */
+        .report-section {
+            background: #111d30;
+            border-radius: 16px;
+            padding: 28px 32px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(212, 175, 55, 0.06);
+        }
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            padding-bottom: 14px;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.12);
+        }
+        .section-icon {
+            font-size: 20px;
+            color: #d4af37;
+        }
+        .section-title {
+            font-size: 18px;
+            color: #e2e8f0;
+            font-weight: 700;
+            flex: 1;
+            letter-spacing: 1px;
+        }
+        .section-count {
+            font-size: 11px;
+            color: #d4af37;
+            background: rgba(212, 175, 55, 0.1);
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-weight: 600;
+        }
+        .section-content {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        /* ===== Event Card ===== */
+        .event-card {
+            background: #0f1f33;
+            border-radius: 12px;
+            padding: 20px 24px;
+            border: 1px solid rgba(255,255,255,0.04);
+            transition: all 0.2s ease;
+        }
+        .event-card:hover {
+            border-color: rgba(212, 175, 55, 0.15);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+        .event-header {
+            margin-bottom: 10px;
+        }
+        .event-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #f1f5f9;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+        .event-badges {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 8px;
+        }
+        .badge {
+            font-size: 11px;
+            padding: 3px 10px;
+            border-radius: 10px;
+            white-space: nowrap;
+            letter-spacing: 0.5px;
+        }
+        .badge-importance {
+            font-weight: 600;
+        }
+        .badge-lifecycle {
+            background: transparent;
+            border: 1px solid;
+            font-size: 10px;
+            padding: 2px 8px;
+        }
+        .badge-signal {
+            background: rgba(212, 175, 55, 0.1);
+            color: #d4af37;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        .event-summary {
+            font-size: 14px;
+            color: #94a3b8;
+            margin: 10px 0;
+            line-height: 1.7;
+        }
+        .why-it-matters {
+            font-size: 13px;
+            color: #60a5fa;
+            margin: 8px 0;
+            padding: 10px 14px;
+            background: rgba(96, 165, 250, 0.06);
+            border-radius: 8px;
+            border-left: 2px solid rgba(96, 165, 250, 0.3);
+            line-height: 1.6;
+        }
+        .impact-text {
+            font-size: 13px;
+            color: #fbbf24;
+            margin: 8px 0;
+            padding: 10px 14px;
+            background: rgba(251, 191, 36, 0.05);
+            border-radius: 8px;
+            border-left: 2px solid rgba(251, 191, 36, 0.2);
+            line-height: 1.6;
+        }
+        .event-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            font-size: 12px;
+            color: #64748b;
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid rgba(255,255,255,0.04);
+            align-items: center;
+        }
+        .meta-date {
+            color: #64748b;
+        }
+        .meta-category {
+            color: #60a5fa;
+            font-weight: 500;
+        }
+        .meta-sources {
+            margin-left: auto;
+        }
+        .source-link {
+            color: #d4af37;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.15s;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+            padding-bottom: 1px;
+        }
+        .source-link:hover {
+            color: #f0d060;
+            border-bottom-color: #f0d060;
+        }
+        .no-source {
+            color: #475569;
+            font-style: italic;
+        }
+
+        /* ===== Footer ===== */
+        .report-footer {
+            text-align: center;
+            font-size: 12px;
+            color: #475569;
+            padding: 28px 0;
+            margin-top: 10px;
+        }
+        .report-footer a {
+            color: #64748b;
+            text-decoration: none;
+        }
+        .footer-divider {
+            width: 40px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(212,175,55,0.3), transparent);
+            margin: 16px auto;
+        }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 640px) {
+            .container {
+                padding: 12px 10px;
+            }
+            .report-header {
+                padding: 28px 22px 24px;
+                border-radius: 14px;
+            }
+            .brand-mark {
+                font-size: 32px;
+                letter-spacing: 4px;
+            }
+            .brand-subtitle {
+                font-size: 13px;
+                letter-spacing: 2px;
+            }
+            .header-headline {
+                font-size: 17px;
+                padding: 12px 14px;
+            }
+            .summary-card, .report-section {
+                padding: 20px 18px;
+                border-radius: 14px;
+            }
+            .event-card {
+                padding: 16px 18px;
+            }
+            .event-title {
+                font-size: 15px;
+            }
+            .event-meta {
+                flex-direction: column;
+                gap: 6px;
+                align-items: flex-start;
+            }
+            .meta-sources {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="report-header">
+            <div class="brand-mark">潮 向</div>
+            <div class="brand-subtitle">建材家居行业日报</div>
+            <div class="header-headline">政策双限加速洗牌、出海从量转质，涂料行业高端化与国际化共振</div>
+            <div class="header-meta">
+                <span>2026-07-05 星期日</span>
+                <span>10 条事件</span>
+                <span>本次识别 9 个状态库新增事件。</span>
+            </div>
+        </header>
+
+        <!-- Summary -->
+        <div class="summary-card">
+            <h2>&#9670; 今日概览</h2>
+            <p class="overall-summary">今日涂料及建材领域核心变化集中在政策收紧与出海提速两个维度。在政策端，政府采购绿色建材从鼓励全面升级为101城市强制要求，叠加建筑涂料国标落地VOC史上最严限值，双重合规门槛将直接淘汰技术不达标企业，有认证资质企业获得政府采购壁垒保护，行业价格竞争向品质认证竞争转型。在出海端，龙牌涂料6.5亿美元安哥拉大单刷新记录，2025年涂料出口强劲增长对冲国内量跌，行业高端化转型初见成效，中国涂料出海正从低价竞争转向价值竞争。在格局端，巴斯夫拆分涂料独立运营标志全球涂料专业化加速，凯伦股份控股防火涂料公司显示防水巨头多元化扩张进入深水区，竞争主体从专业化向综合化演变。整体来看，政策与市场共振推动行业加速洗牌，高端化、认证化、出海化成为企业穿越周期的关键路径。</p>
+            <h2>&#9670; 关键变化</h2>
+            <ul class="key-changes">
+                <li>政府采购绿色建材升级为101城市强制采购，认证资质成为政府投资类项目事实准入门槛，未认证企业被排除在外，政策红利向合规企业集中。</li><li>建筑涂料国标落地VOC最严限值，技术不达标企业面临直接淘汰，有技术储备企业获得差异化优势，小型涂料企业合规成本激增，行业洗牌加速。</li><li>龙牌涂料斩获6.5亿美元安哥拉卡约新港大单，刷新涂料出海订单规模，中国涂料企业承接国际重大工程的能力获国家级项目背书验证。</li><li>巴斯夫完成涂料业务拆分独立运营，全球化工巨头资本逻辑从集团协同转向专业化整合，涂料行业专业化赛道获得资本重新定价。</li><li>2025年涂料行业量减利增验证高端化转型初见成效，出口强劲增长对冲内销萎缩，出海从可选项变为必选项。</li>
+            </ul>
+            <div class="impact-assessment">
+                <strong>影响判断：</strong>对行业整体偏中性
+            </div>
+        </div>
+
+        <!-- Risk & Watch -->
+        <div class="risk-watch">
+            <div class="risk-card">
+                <h3>&#9888; 风险与不确定性</h3>
+                <ul>
+                    <li>VOC国标过渡期内合规成本激增，中小涂料企业现金流压力加大，存在集中倒闭或被并购风险。</li><li>绿色建材认证企业数量快速增加后，政府采购竞争加剧可能导致认证溢价收窄，先发优势窗口期缩短。</li><li>出海大单集中于少数头部企业，多数中小涂料企业出海能力不足，内卷压力向海外延伸。</li><li>防水巨头跨界防火涂料加速，特种涂料赛道竞争白热化，原有特种涂料企业市场空间受挤压。</li><li>国内地产需求持续萎靡，政策刺激效果边际递减，2026年行业盈利预测面临下修压力。</li>
+                </ul>
+            </div>
+            <div class="watch-card">
+                <h3>&#128065; 后续关注</h3>
+                <ul>
+                    <li>VOC国标具体执行时间表和地方监管部门执法力度，是否有过渡期安排或补贴政策。</li><li>绿色建材认证企业数量变化趋势，以及政府采购中认证企业订单集中度。</li><li>龙牌涂料等出海标杆企业海外项目履约情况，是否能形成可持续订单模式。</li><li>凯伦股份防火涂料合资公司运营进展，以及东方雨虹等其他防水巨头跟进动作。</li><li>巴斯夫拆分后涂料业务的战略定位及中国市场策略调整，外资品牌竞争策略变化。</li><li>2026年上半年涂料出口增速持续性，重点关注'一带一路'沿线市场订单变化。</li><li>德爱威中石化框架协议订单落地情况，验证大型央企采购对头部品牌的业绩支撑力度。</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Event Sections -->
+        
+        <section class="report-section">
+            <div class="section-header">
+                <span class="section-icon">&#9733;</span>
+                <h2 class="section-title">今日头条</h2>
+                <span class="section-count">2条</span>
+            </div>
+            <div class="section-content">
+                
+        <div class="event-card">
+            <div class="event-header">
+                <h3 class="event-title">政府采购绿色建材政策深化：山西征集+全国101城市强制采购+认证补贴体系</h3>
+                <div class="event-badges">
+                    <span class="badge badge-importance" style="background:linear-gradient(135deg,#d4af37,#b8941f);color:#1a1a2e;font-weight:600;">战略级</span>
+                    <span class="badge badge-lifecycle" style="color:#d4af37;border-color:#d4af37;">新增</span>
+                    <span class="badge badge-signal">政策变化</span>
+                </div>
+            </div>
+            <p class="event-summary">山西省住建厅发布绿色建材产品征集通知，截止日期2025年7月31日，补贴标准覆盖一至三星级认证企业（最高5万元）。同步叠加全国101个城市政府采购绿色建材政策实施范围扩大，医院、学校、办公楼、体育馆、保障性住房、旧城改造等政府采购工程...</p>
+            <div class="why-it-matters">&#128161; 绿色建材从鼓励性政策全面升级为强制性采购要求，政府投资类项目已形成事实准入壁垒，具备认证资质的企业将获得稳定订单来源，未认证企业面临边缘化风险。</div>
+            <div class="impact-text">&#127919; 加速行业市场分层：认证企业获得政策红利和政府采购优先权，未认证企业被排除在政府投资项目之外，推动行业从价格竞争向品质认证竞争转型。</div>
+            <div class="event-meta">
+                <span class="meta-date">2026-07-03</span>
+                <span class="meta-category">政策法规</span>
+                <span class="meta-sources"><a href="http://m.toutiao.com/group/7658134942815224347" target="_blank" rel="noopener noreferrer" class="source-link">山西省住建厅发布绿色建材产品征集通知</a></span>
+            </div>
+        </div>
+        <div class="event-card">
+            <div class="event-header">
+                <h3 class="event-title">新版建筑涂料国标落地VOC最严限值，合规门槛大幅提升</h3>
+                <div class="event-badges">
+                    <span class="badge badge-importance" style="background:linear-gradient(135deg,#d4af37,#b8941f);color:#1a1a2e;font-weight:600;">战略级</span>
+                    <span class="badge badge-lifecycle" style="color:#d4af37;border-color:#d4af37;">新增</span>
+                    <span class="badge badge-signal">政策变化</span>
+                </div>
+            </div>
+            <p class="event-summary">新版建筑涂料国家标准全面落地，VOC、SVOC等有害物质限值迎来史上最严收紧。该标准对涂料企业形成合规考验和生存发展挑战，推动行业技术升级加速。</p>
+            <div class="why-it-matters">&#128161; 强制性国标收紧意味着技术不达标企业将被直接淘汰，有技术储备的企业将获得差异化竞争优势，行业集中度有望提升。</div>
+            <div class="impact-text">&#127919; 推动建筑涂料行业技术升级，低VOC、无VOC产品成为竞争门槛，有技术储备企业（尤其外资品牌）获得差异化优势，小型涂料企业面临合规成本压力和生存危机，加速行业洗牌。</div>
+            <div class="event-meta">
+                <span class="meta-date">2026-07-04</span>
+                <span class="meta-category">政策法规</span>
+                <span class="meta-sources"><a href="http://m.toutiao.com/group/7658334201754501632" target="_blank" rel="noopener noreferrer" class="source-link">新版建筑涂料国标全面落地VOC最严限值</a></span>
+            </div>
+        </div>
+            </div>
+        </section>
+        <section class="report-section">
+            <div class="section-header">
+                <span class="section-icon">&#9670;</span>
+                <h2 class="section-title">竞品与市场</h2>
+                <span class="section-count">1条</span>
+            </div>
+            <div class="section-content">
+                
+        <div class="event-card">
+            <div class="event-header">
+                <h3 class="event-title">防水企业跨界涂料成趋势：从防水巨头到特种涂料综合供应商</h3>
+                <div class="event-badges">
+                    <span class="badge badge-importance" style="background:#1a365d;color:#d4af37;">值得关注</span>
+                    <span class="badge badge-lifecycle" style="color:#d4af37;border-color:#d4af37;">新增</span>
+                    <span class="badge badge-signal">战略调整</span>
+                </div>
+            </div>
+            <p class="event-summary">凯伦股份布局防火涂料并非孤立事件。近年来，防水行业头部企业纷纷将触角伸向涂料赛道，跨界竞争成为防水行业的新趋势。防火涂料、海洋防污、工业防腐等特种涂料方向技术壁垒和利润空间均高于普通建筑涂料，成为防水巨头们寻找第二增长极的切入点。</p>
+            <div class="why-it-matters">&#128161; 防水行业头部企业凭借渠道协同和资金实力跨界进入涂料行业，将对传统涂料企业形成直接竞争压力，行业竞争格局从专业化向综合化演变。</div>
+            <div class="impact-text">&#127919; 涂料行业竞争主体多元化，传统涂料企业面临来自防水巨头和化工资本的双重竞争压力；特种涂料赛道（防火、海洋防腐、工业涂料）将成为新的利润增长点。</div>
+            <div class="event-meta">
+                <span class="meta-date">2026-07-04</span>
+                <span class="meta-category">竞品情报</span>
+                <span class="meta-sources"><a href="http://m.toutiao.com/group/7658342858520347170" target="_blank" rel="noopener noreferrer" class="source-link">防水行业头部企业跨界涂料成为趋势</a></span>
+            </div>
+        </div>
+            </div>
+        </section>
+        <section class="report-section">
+            <div class="section-header">
+                <span class="section-icon">&#9889;</span>
+                <h2 class="section-title">趋势与信号</h2>
+                <span class="section-count">1条</span>
+            </div>
+            <div class="section-content">
+                
+        <div class="event-card">
+            <div class="event-header">
+                <h3 class="event-title">中国涂料出海从低价竞争转向价值竞争，'一带一路'市场成为主战场</h3>
+                <div class="event-badges">
+                    <span class="badge badge-importance" style="background:#1a365d;color:#d4af37;">值得关注</span>
+                    <span class="badge badge-lifecycle" style="color:#d4af37;border-color:#d4af37;">新增</span>
+                    <span class="badge badge-signal">渠道变革</span>
+                </div>
+            </div>
+            <p class="event-summary">在国内市场增长乏力、产能过剩、价格'内卷'的严峻压力下，出海已从'可选项'变为关乎企业生存发展的'必选项'。在'一带一路'倡议深入推进的背景下，中国涂料出海正从低价竞争转向以品质与服务为导向的价值竞争。中东及非洲油漆涂料市场预计从20...</p>
+            <div class="why-it-matters">&#128161; 出海从可选项变为必选项意味着所有涂料企业都必须面对国际化竞争，单纯价格优势已不足以支撑出海成功，品质认证和服务能力成为出海核心竞争力。</div>
+            <div class="impact-text">&#127919; 推动国内涂料企业加速海外市场布局和本地化运营能力建设，具备EPD、LEED等国际认证的企业将获得出海先发优势，未认证企业被排除在海外主流市场之外。</div>
+            <div class="event-meta">
+                <span class="meta-date">2026-07-03</span>
+                <span class="meta-category">消费者趋势</span>
+                <span class="meta-sources"><a href="http://m.toutiao.com/group/7658232026864992820" target="_blank" rel="noopener noreferrer" class="source-link">中国涂料企业出海从低价竞争转向价值竞争</a></span>
+            </div>
+        </div>
+            </div>
+        </section>
+        <section class="report-section">
+            <div class="section-header">
+                <span class="section-icon">&#9878;</span>
+                <h2 class="section-title">政策与数据</h2>
+                <span class="section-count">2条</span>
+            </div>
+            <div class="section-content">
+                
+        <div class="event-card">
+            <div class="event-header">
+                <h3 class="event-title">2025年中国涂料行业量减利增，出口强劲增长对冲国内需求萎缩</h3>
+                <div class="event-badges">
+                    <span class="badge badge-importance" style="background:linear-gradient(135deg,#d4af37,#b8941f);color:#1a1a2e;font-weight:600;">战略级</span>
+                    <span class="badge badge-lifecycle" style="color:#d4af37;border-color:#d4af37;">新增</span>
+                    
+                </div>
+            </div>
+            <p class="event-summary">2025年中国涂料行业总产量3460.2万吨、主营业务收入3881.5亿元，同比分别下降7.1%和3.9%；但利润总额292.5亿元，同比增长11.5%，呈'量减利增'特征。建筑涂料受房地产深度调整影响最大，2025年住宅新开工面积下...</p>
+            <div class="why-it-matters">&#128161; 国内市场量跌但利润反增，说明行业高端化转型初见成效；出口强劲增长对冲内销下滑，出海成为企业穿越周期的关键策略，'一带一路'沿线市场增速显著。</div>
+            <div class="impact-text">&#127919; 推动国内涂料企业加速出海布局，出口导向型企业将获得估值溢价；低附加值产品线面临淘汰压力，行业高端化、功能化、差异化趋势加速。</div>
+            <div class="event-meta">
+                <span class="meta-date">2026-07-03</span>
+                <span class="meta-category">市场数据</span>
+                <span class="meta-sources"><a href="http://m.toutiao.com/group/7658232026864992820" target="_blank" rel="noopener noreferrer" class="source-link">2025年中国涂料行业产量营收双降</a></span>
+            </div>
+        </div>
+        <div class="event-card">
+            <div class="event-header">
+                <h3 class="event-title">海南自贸港驱动三亚装修市场崛起，区域消费升级明显</h3>
+                <div class="event-badges">
+                    <span class="badge badge-importance" style="background:transparent;border:1px solid #94a3b8;color:#94a3b8;">参考</span>
+                    <span class="badge badge-lifecycle" style="color:#d4af37;border-color:#d4af37;">新增</span>
+                    <span class="badge badge-signal">消费升级</span>
+                </div>
+            </div>
+            <p class="event-summary">2024年海南自贸港封关时间表明确后，三亚作为海南自贸港核心城市，吸引了大量岛外企业和人才涌入，装修需求在过去三年保持年均15%以上增速，全屋定制品牌从2020年的不到30个增长到50多个。业主消费日趋专业，会问板材环保等级、封边工艺...</p>
+            <div class="why-it-matters">&#128161; 海南自贸港政策红利催生区域装修市场增量机会，但该信息属于区域市场数据，不具备全国性战略参考价值。</div>
+            <div class="impact-text">&#127919; 海南区域市场消费升级加速，本地化、差异化品牌获得生存空间，全国头部品牌加速布局海南市场，竞争加剧。</div>
+            <div class="event-meta">
+                <span class="meta-date">2026-07-03</span>
+                <span class="meta-category">市场数据</span>
+                <span class="meta-sources"><a href="http://m.toutiao.com/group/7658161772151243290" target="_blank" rel="noopener noreferrer" class="source-link">三亚装修需求增速</a></span>
+            </div>
+        </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="report-footer">
+            <div class="footer-divider"></div>
+            <p>本日报由 AI 自动生成，仅供参考，不构成投资建议。</p>
+            <p>数据来源：中国建筑材料流通协会、中国建筑材料联合会、新华网、财经媒体等</p>
+        </footer>
+    </div>
+</body>
+</html>
