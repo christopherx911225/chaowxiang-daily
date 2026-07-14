@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>潮向 | 建材家居行业日报 | 2026-07-15</title>
+    <style>
+        /* ===== Reset & Base ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, "Helvetica Neue", "PingFang SC", "Microsoft YaHei", sans-serif;
+            background: #0c1929;
+            color: #e2e8f0;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        /* ===== Container ===== */
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 24px 16px;
+        }
+
+        /* ===== Header - 蓝金主视觉 ===== */
+        .report-header {
+            position: relative;
+            background: linear-gradient(160deg, #0f2444 0%, #1a365d 40%, #1e3a5f 100%);
+            border-radius: 20px;
+            padding: 40px 36px 32px;
+            margin-bottom: 28px;
+            overflow: hidden;
+            border: 1px solid rgba(212, 175, 55, 0.15);
+        }
+        .report-header::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(212,175,55,0.08) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        .report-header::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, rgba(212,175,55,0.4), transparent);
+        }
+        .brand-mark {
+            display: inline-block;
+            font-size: 42px;
+            font-weight: 800;
+            letter-spacing: 6px;
+            background: linear-gradient(135deg, #d4af37 0%, #f0d060 50%, #d4af37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 6px;
+        }
+        .brand-subtitle {
+            font-size: 15px;
+            color: rgba(226, 232, 240, 0.7);
+            letter-spacing: 4px;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+        .header-headline {
+            font-size: 20px;
+            font-weight: 600;
+            color: #e2e8f0;
+            margin-bottom: 16px;
+            padding: 14px 18px;
+            background: rgba(212, 175, 55, 0.08);
+            border-radius: 12px;
+            border-left: 3px solid #d4af37;
+            line-height: 1.5;
+        }
+        .header-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            font-size: 13px;
+        }
+        .header-meta span {
+            background: rgba(255,255,255,0.06);
+            color: rgba(226, 232, 240, 0.65);
+            padding: 5px 14px;
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.06);
+        }
+
+        /* ===== Summary Card ===== */
+        .summary-card {
+            background: #111d30;
+            border-radius: 16px;
+            padding: 28px 32px;
+            margin-bottom: 24px;
+            border: 1px solid rgba(212, 175, 55, 0.08);
+        }
+        .summary-card h2 {
+            font-size: 17px;
+            color: #d4af37;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        .overall-summary {
+            font-size: 15px;
+            color: #94a3b8;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+        .key-changes {
+            list-style: none;
+            padding: 0;
+        }
+        .key-changes li {
+            padding: 8px 0 8px 22px;
+            position: relative;
+            font-size: 14px;
+            color: #cbd5e1;
+        }
+        .key-changes li::before {
+            content: "▸";
+            position: absolute;
+            left: 4px;
+            color: #d4af37;
+            font-weight: 700;
+        }
+        .impact-assessment {
+            margin-top: 16px;
+            padding: 14px 18px;
+            background: rgba(212, 175, 55, 0.05);
+            border-radius: 10px;
+            font-size: 14px;
+            color: #94a3b8;
+            border: 1px solid rgba(212, 175, 55, 0.08);
+        }
+        .impact-assessment strong {
+            color: #d4af37;
+        }
+
+        /* ===== Risk & Watch ===== */
+        .risk-watch {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+        @media (max-width: 640px) {
+            .risk-watch {
+                grid-template-columns: 1fr;
+            }
+        }
+        .risk-card, .watch-card {
+            background: #111d30;
+            border-radius: 16px;
+            padding: 22px 26px;
+            border: 1px solid rgba(212, 175, 55, 0.08);
+        }
+        .risk-card {
+            border-top: 2px solid #ef4444;
+        }
+        .watch-card {
+            border-top: 2px solid #d4af37;
+        }
+        .risk-card h3, .watch-card h3 {
+            font-size: 15px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-weight: 600;
+        }
+        .risk-card h3 { color: #f87171; }
+        .watch-card h3 { color: #d4af37; }
+        .risk-card ul, .watch-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        .risk-card li, .watch-card li {
+            padding: 6px 0 6px 20px;
+            position: relative;
+            font-size: 13px;
+            color: #94a3b8;
+        }
+        .risk-card li::before {
+            content: "⚠";
+            position: absolute;
+            left: 0;
+            font-size: 11px;
+        }
+        .watch-card li::before {
+            content: "▸";
+            position: absolute;
+            left: 2px;
+            color: #d4af37;
+            font-weight: 700;
+        }
+
+        /* ===== Sections ===== */
+        .report-section {
+            background: #111d30;
+            border-radius: 16px;
+            padding: 28px 32px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(212, 175, 55, 0.06);
+        }
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            padding-bottom: 14px;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.12);
+        }
+        .section-icon {
+            font-size: 20px;
+            color: #d4af37;
+        }
+        .section-title {
+            font-size: 18px;
+            color: #e2e8f0;
+            font-weight: 700;
+            flex: 1;
+            letter-spacing: 1px;
+        }
+        .section-count {
+            font-size: 11px;
+            color: #d4af37;
+            background: rgba(212, 175, 55, 0.1);
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-weight: 600;
+        }
+        .section-content {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        /* ===== Event Card ===== */
+        .event-card {
+            background: #0f1f33;
+            border-radius: 12px;
+            padding: 20px 24px;
+            border: 1px solid rgba(255,255,255,0.04);
+            transition: all 0.2s ease;
+        }
+        .event-card:hover {
+            border-color: rgba(212, 175, 55, 0.15);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+        .event-header {
+            margin-bottom: 10px;
+        }
+        .event-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #f1f5f9;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+        .event-badges {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 8px;
+        }
+        .badge {
+            font-size: 11px;
+            padding: 3px 10px;
+            border-radius: 10px;
+            white-space: nowrap;
+            letter-spacing: 0.5px;
+        }
+        .badge-importance {
+            font-weight: 600;
+        }
+        .badge-lifecycle {
+            background: transparent;
+            border: 1px solid;
+            font-size: 10px;
+            padding: 2px 8px;
+        }
+        .badge-signal {
+            background: rgba(212, 175, 55, 0.1);
+            color: #d4af37;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        .event-summary {
+            font-size: 14px;
+            color: #94a3b8;
+            margin: 10px 0;
+            line-height: 1.7;
+        }
+        .why-it-matters {
+            font-size: 13px;
+            color: #60a5fa;
+            margin: 8px 0;
+            padding: 10px 14px;
+            background: rgba(96, 165, 250, 0.06);
+            border-radius: 8px;
+            border-left: 2px solid rgba(96, 165, 250, 0.3);
+            line-height: 1.6;
+        }
+        .impact-text {
+            font-size: 13px;
+            color: #fbbf24;
+            margin: 8px 0;
+            padding: 10px 14px;
+            background: rgba(251, 191, 36, 0.05);
+            border-radius: 8px;
+            border-left: 2px solid rgba(251, 191, 36, 0.2);
+            line-height: 1.6;
+        }
+        .event-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            font-size: 12px;
+            color: #64748b;
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid rgba(255,255,255,0.04);
+            align-items: center;
+        }
+        .meta-date {
+            color: #64748b;
+        }
+        .meta-category {
+            color: #60a5fa;
+            font-weight: 500;
+        }
+        .meta-sources {
+            margin-left: auto;
+        }
+        .source-link {
+            color: #d4af37;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.15s;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+            padding-bottom: 1px;
+        }
+        .source-link:hover {
+            color: #f0d060;
+            border-bottom-color: #f0d060;
+        }
+        .no-source {
+            color: #475569;
+            font-style: italic;
+        }
+
+        /* ===== Footer ===== */
+        .report-footer {
+            text-align: center;
+            font-size: 12px;
+            color: #475569;
+            padding: 28px 0;
+            margin-top: 10px;
+        }
+        .report-footer a {
+            color: #64748b;
+            text-decoration: none;
+        }
+        .footer-divider {
+            width: 40px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(212,175,55,0.3), transparent);
+            margin: 16px auto;
+        }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 640px) {
+            .container {
+                padding: 12px 10px;
+            }
+            .report-header {
+                padding: 28px 22px 24px;
+                border-radius: 14px;
+            }
+            .brand-mark {
+                font-size: 32px;
+                letter-spacing: 4px;
+            }
+            .brand-subtitle {
+                font-size: 13px;
+                letter-spacing: 2px;
+            }
+            .header-headline {
+                font-size: 17px;
+                padding: 12px 14px;
+            }
+            .summary-card, .report-section {
+                padding: 20px 18px;
+                border-radius: 14px;
+            }
+            .event-card {
+                padding: 16px 18px;
+            }
+            .event-title {
+                font-size: 15px;
+            }
+            .event-meta {
+                flex-direction: column;
+                gap: 6px;
+                align-items: flex-start;
+            }
+            .meta-sources {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="report-header">
+            <div class="brand-mark">潮 向</div>
+            <div class="brand-subtitle">建材家居行业日报</div>
+            <div class="header-headline">十五五规划定调存量翻新，头部收缩聚焦出海与绿色转型</div>
+            <div class="header-meta">
+                <span>2026-07-15 星期三</span>
+                <span>19 条事件</span>
+                <span>本次识别 13 个状态库新增事件。</span>
+                <a href="https://christopherx911225.github.io/chaowxiang-daily/" style="color: #c9a961; text-decoration: underline;">查看历史日报 →</a>
+            </div>
+        </header>
+
+        <!-- Summary -->
+        <div class="summary-card">
+            <h2>&#9670; 今日概览</h2>
+            <p class="overall-summary">本期行业呈现“国内筑底、海外破局、政策托底”特征。国务院“十五五”规划与绿色建材百城采购释放万亿存量翻新红利；国内大盘虽处筑底期，但二手房局改与城市更新成核心增量。面对内需承压，头部企业集体战略收缩保卫现金流，同时加速向品牌与产能出海升级。海外竞品破产重组与建博会买家激增，为中国企业全球化并购提供窗口，行业加速向绿色、智能及适老化赛道洗牌。</p>
+            <h2>&#9670; 关键变化</h2>
+            <ul class="key-changes">
+                <li>国务院批复“十五五”规划及绿色建材百城采购落地：顶层设计与采购扩容双管齐下，直接释放万亿级存量翻新需求，确立绿色智能建材长期政策红利。</li><li>头部企业集体战略收缩与海外竞品破产重组并存：国内头部剥离非核心资产聚焦现金流，海外竞品出局，为中国企业出海并购优质资产及承接全球份额提供窗口期。</li><li>广州建博会海外买家激增及出口数据持续正增长：印证中国家居供应链全球竞争力提升，出海业务已成为对冲国内需求疲软、支撑头部企业业绩的核心引擎。</li><li>城市更新与二手房局改成为国内市场核心增量：大盘整体筑底，但15至20万亿城市更新容量及二手房回暖，倒逼企业向适老化、快装及社区前置化营销转型。</li>
+            </ul>
+            <div class="impact-assessment">
+                <strong>影响判断：</strong>对行业整体偏正面
+            </div>
+        </div>
+
+        <!-- Risk & Watch -->
+        <div class="risk-watch">
+            <div class="risk-card">
+                <h3>&#9888; 风险与不确定性</h3>
+                <ul>
+                    <li>海外宏观经济衰退导致外需萎缩及出海企业回款风险。</li><li>国内房产大盘复苏不及预期导致家装建材整体需求持续承压。</li><li>建筑涂料新国标及绿色认证门槛抬高导致中小企合规成本剧增及出清风险。</li>
+                </ul>
+            </div>
+            <div class="watch-card">
+                <h3>&#128065; 后续关注</h3>
+                <ul>
+                    <li>跟踪“十五五”公积金改革及“好房子”强制标准在各地的具体落地细则与补贴力度。</li><li>跟踪头部家居企业海外并购动作及新兴市场本土化建厂与开店进度。</li><li>跟踪绿色建材政府采购101城订单实际转化率及工程款支付保障新规执行情况。</li><li>跟踪重点城市二手房成交及建材家居卖场景气指数月度环比变化趋势。</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Event Sections -->
+        
+        <section class="report-section">
+            <div class="section-header">
+                <span class="section-icon">&#9733;</span>
+                <h2 class="section-title">今日头条</h2>
+                <span class="section-count">2条</span>
+            </div>
+            <div class="section-content">
+                
+        <div class="event-card">
+            <div class="event-header">
+                <h3 class="event-title">2026年家居行业头部企业集体战略收缩与业务调整</h3>
+                <div class="event-badges">
+                    <span class="badge badge-importance" style="background:linear-gradient(135deg,#d4af37,#b8941f);color:#1a1a2e;font-weight:600;">战略级</span>
+                    <span class="badge badge-lifecycle" style="color:#d4af37;border-color:#d4af37;">新增</span>
+                    <span class="badge badge-signal">战略调整</span>
+                </div>
+            </div>
+            <p class="event-summary">2026年家居行业出现集体收缩潮，包括匠心家居注销四家子公司，敏华控股退出井木装饰，居然智家剥离小贷业务，中源家居出售厂房，火星人终止扩产项目，麒盛科技叫停私募投资。欧派与万和电气推进组织优化与DTC转型。</p>
+            <div class="why-it-matters">&#128161; 头部企业集体剥离非核心资产、终止扩产并推进组织扁平化，反映出行业从规模扩张转向现金流保卫战与核心主业聚焦的深层逻辑。</div>
+            <div class="impact-text">&#127919; 行业资本开支降温，非核心业务边缘化加速；企业资源向DTC模式及高毛利核心品类集中，渠道与组织效率成为核心竞争力。</div>
+            <div class="event-meta">
+                <span class="meta-date">2026-07-15</span>
+                <span class="meta-category">行业重大事件</span>
+                <span class="meta-sources"><a href="http://m.toutiao.com/group/7662430878768890395" target="_blank" rel="noopener noreferrer" class="source-link">M</a></span>
+            </div>
+        </div>
+        <div class="event-card">
+            <div class="event-header">
+                <h3 class="event-title">海外多家家居企业破产或启动司法重组</h3>
+                <div class="event-badges">
+                    <span class="badge badge-importance" style="background:linear-gradient(135deg,#d4af37,#b8941f);color:#1a1a2e;font-weight:600;">战略级</span>
+                    <span class="badge badge-lifecycle" style="color:#d4af37;border-color:#d4af37;">新增</span>
+                    <span class="badge badge-signal">风险预警</span>
+                </div>
+            </div>
+            <p class="event-summary">海外家居企业进入深度出清阶段，澳洲Adairs净亏损4300万澳元退出新西兰，丹麦Bolighuset Werenberg破产，英国Airsprung破产裁员，欧洲himolla启动司法重组，日本骊住关闭工厂并产线合并。</p>
+            <div class="why-it-matters">&#128161; 海外竞品的大面积破产与重组，标志着全球家居市场进入残酷的存量博弈期，同时也为中国企业出海并购优质资产或承接市场份额提供窗口期。</div>
+            <div class="impact-text">&#127919; 海外本土供应链出现断层，具备全球化交付能力的中国头部家居企业有望填补市场空白，但需警惕海外宏观经济衰退带来的需求萎缩风险。</div>
+            <div class="event-meta">
+                <span class="meta-date">2026-07-15</span>
+                <span class="meta-category">竞品情报</span>
+                <span class="meta-sources"><a href="http://m.toutiao.com/group/7662430878768890395" target="_blank" rel="noopener noreferrer" class="source-link">海外多家家居企业破产或启动司法重组</a></span>
+            </div>
+        </div>
+            </div>
+        </section>
+        <section class="report-section">
+            <div class="section-header">
+                <span class="section-icon">&#9829;</span>
+                <h2 class="section-title">行业脉搏</h2>
+                <span class="section-count">3条</span>
+            </div>
+            <div class="section-content">
+                
+        <div class="event-card">
+            <div class="event-header">
+                <h3 class="event-title">红星美凯龙启动“818大促”及国补、万盘计划成效披露</h3>
+                <div class="event-badges">
+                    <span class="badge badge-importance" style="background:#1a365d;color:#d4af37;">值得关注</span>
+                    <span class="badge badge-lifecycle" style="color:#d4af37;border-color:#d4af37;">新增</span>
+                    <span class="badge badge-signal">渠道变革</span>
+                </div>
+            </div>
+            <p class="event-summary">红星美凯龙启动“818大促”聚焦电器与新零售家具，推进“三家一体”融合。披露去年国补实现销售99.1亿元（电器占38.7%），2024年“万盘计划”试点累计精准获客10366组，录得销售额1.2亿元。</p>
+            <div class="why-it-matters">&#128161; 红星美凯龙通过国补政策红利及“万盘计划”深入社区获客，验证了家居家电融合及前置化社区营销的有效性。</div>
+            <div class="impact-text">&#127919; 加速家居卖场向“家电+家居+家装”融合业态转型，前置化获客模式将改变传统卖场依赖自然流量的被动局面。</div>
+            <div class="event-meta">
+                <span class="meta-date">2026-07-14</span>
+                <span class="meta-category">品牌动态</span>
+                <span class="meta-sources"><a href="http://m.toutiao.com/group/7662255727242723903" target="_blank" rel="noopener noreferrer" class="source-link">M</a></span>
+            </div>
+        </div>
+        <div class="event-card">
+            <div class="event-header">
+                <h3 class="event-title">多家建材家居企业积极拓展海外市场</h3>
+                <div class="event-badges">
+                    <span class="badge badge-importance" style="background:#1a365d;color:#d4af37;">值得关注</span>
+                    <span class="badge badge-lifecycle" style="color:#64748b;border-color:#64748b;">延续</span>
+                    <span class="badge badge-signal">市场扩张</span>
+                </div>
+            </div>
+            <p class="event-summary">志邦家居在尼日利亚开设旗舰店提供整家方案；Polygon、书香门地、兔宝宝、悍高、弘亚数控等企业密集参加意大利、俄罗斯、美国、德国等多场海外展会，弘亚数控表示海外订单保持稳定增长。</p>
+            <div class="why-it-matters">&#128161; 企业出海从单一产品出口向“整家方案输出+本土化开店+密集参展”的多维模式演进，全球化布局加速。</div>
+            <div class="impact-text">&#127919; 提升中国品牌在海外市场的渗透率与溢价能力，但也对企业的跨国供应链管理、本土化运营及合规能力提出更高要求。</div>
+            <div class="event-meta">
+                <span class="meta-date">2026-07-13</span>
+                <span class="meta-category">品牌动态</span>
+                <span class="meta-sources"><a href="http://m.toutiao.com/group/7661822765393084971" target="_blank" rel="noopener noreferrer" class="source-link">多家建材家居企业积极拓展海外市场</a></span>
+            </div>
+        </div>
+        <div class="event-card">
+            <div class="event-header">
+                <h3 class="event-title">杭州某建材企业投入3000万改造生产线获海外订单</h3>
+                <div class="event-badges">
+                    <span class="badge badge-importance" style="background:transparent;border:1px solid #94a3b8;color:#94a3b8;">参考</span>
+                    <span class="badge badge-lifecycle" style="color:#64748b;border-color:#64748b;">延续</span>
+                    <span class="badge badge-signal">市场扩张</span>
+                </div>
+            </div>
+            <p class="event-summary">浙江杭州某建材企业投入3000万元改造节能门窗生产线，传热系数降至0.15W/(m・K)以下，订单量较政策实施前增加40%，并与东南亚客户签订5000套订单。</p>
+            <div class="why-it-matters">&#128161; 企业通过技改提升产品能效标准，成功将技术优势转化为海外订单，验证了“绿色技改+出海”路径的可行性。</div>
+            <div class="impact-text">&#127919; 为中小建材企业提供转型样本，表明满足国际高能效标准的产品在海外新兴市场具备强劲竞争力。</div>
+            <div class="event-meta">
+                <span class="meta-date">2026-07-13</span>
+                <span class="meta-category">品牌动态</span>
+                <span class="meta-sources"><a href="https://m.zjtcn.cn/jianshi/jskx4674740.html" target="_blank" rel="noopener noreferrer" class="source-link">M</a></span>
+            </div>
+        </div>
+            </div>
+        </section>
+        <section class="report-section">
+            <div class="section-header">
+                <span class="section-icon">&#9670;</span>
+                <h2 class="section-title">竞品与市场</h2>
+                <span class="section-count">1条</span>
+            </div>
+            <div class="section-content">
+                
+        <div class="event-card">
+            <div class="event-header">
+                <h3 class="event-title">Gemini收购华盛顿州ICS及美国涂料市场数据与政策</h3>
+                <div class="event-badges">
+                    <span class="badge badge-importance" style="background:#1a365d;color:#d4af37;">值得关注</span>
+                    <span class="badge badge-lifecycle" style="color:#d4af37;border-color:#d4af37;">新增</span>
+                    <span class="badge badge-signal">并购整合</span>
+                </div>
+            </div>
+            <p class="event-summary">木器涂料制造商Gemini Industries以数千万美元收购华盛顿州ICS，加速布局工业分销与OEM市场。同时，美国工业木器涂料市场规模达42亿美元，水性涂料占比升至39%，CR5达68%，华盛顿州颁布《清洁建筑标准》要求低VOC。</p>
+            <div class="why-it-matters">&#128161; 美国涂料市场集中度持续提升且环保标准趋严，头部企业通过并购扩大份额，水性化及低VOC成为不可逆趋势。</div>
+            <div class="impact-text">&#127919; 中国涂料出海企业需加速水性化技术储备以应对海外环保壁垒，同时关注海外中小企业的并购整合机会。</div>
+            <div class="event-meta">
+                <span class="meta-date">2026-07-15</span>
+                <span class="meta-category">竞品情报</span>
+                <span class="meta-sources"><a href="http://m.toutiao.com/group/7662519684537614882" target="_blank" rel="noopener noreferrer" class="source-link">Gemini收购华盛顿州ICS</a></span>
+            </div>
+        </div>
+            </div>
+        </section>
+        <section class="report-section">
+            <div class="section-header">
+                <span class="section-icon">&#9889;</span>
+                <h2 class="section-title">趋势与信号</h2>
+                <span class="section-count">3条</span>
+            </div>
+            <div class="section-content">
+                
+        <div class="event-card">
+            <div class="event-header">
+                <h3 class="event-title">宜家利用AI客服推动服务模式创新与人员转型</h3>
+                <div class="event-badges">
+                    <span class="badge badge-importance" style="background:#1a365d;color:#d4af37;">值得关注</span>
+                    <span class="badge badge-lifecycle" style="color:#d4af37;border-color:#d4af37;">新增</span>
+                    <span class="badge badge-signal">技术突破</span>
+                </div>
+            </div>
+            <p class="event-summary">宜家使用AI客服Billie承接近一半咨询，将8500名客服转为远程室内设计顾问，其付费设计服务首年贡献约13亿欧元收入，为行业收缩期的转型提供参考。</p>
+            <div class="why-it-matters">&#128161; 宜家通过AI替代基础客服，将人力转化为高附加值的设计顾问，成功跑通“AI降本+服务增值”的商业模式，为家居零售转型提供标杆。</div>
+            <div class="impact-text">&#127919; 倒逼国内家居零售企业加速AI应用，从单纯卖产品向“产品+设计服务”转型，提升客单价与用户粘性。</div>
+            <div class="event-meta">
+                <span class="meta-date">2026-07-15</span>
+                <span class="meta-category">技术创新</span>
+                <span class="meta-sources"><a href="http://m.toutiao.com/group/7662430878768890395" target="_blank" rel="noopener noreferrer" class="source-link">M</a></span>
+            </div>
+        </div>
+        <div class="event-card">
+            <div class="event-header">
+                <h3 class="event-title">全球家居消费结构性变迁及建博会新兴品类走热</h3>
+                <div class="event-badges">
+                    <span class="badge badge-importance" style="background:#1a365d;color:#d4af37;">值得关注</span>
+                    <span class="badge badge-lifecycle" style="color:#d4af37;border-color:#d4af37;">新增</span>
+                    <span class="badge badge-signal">消费升级</span>
+                </div>
+            </div>
+            <p class="event-summary">第28届中国建博会上，开放厨房、移动房屋、户外泳池等新兴品类走热。折射出全球家居消费结构性变迁：欧美户外人居空间需求激增，中东集成房屋升温，适老化改造在发达国家成为刚需。</p>
+            <div class="why-it-matters">&#128161; 全球家居消费从单一室内居住向户外、移动、适老等多元场景延伸，新兴品类成为高毛利增长极。</div>
+            <div class="impact-text">&#127919; 企业需打破传统室内家居边界，布局户外、模块化、适老化等细分赛道，并针对不同区域市场进行差异化产品定义。</div>
+            <div class="event-meta">
+                <span class="meta-date">2026-07-14</span>
+                <span class="meta-category">消费者趋势</span>
+                <span class="meta-sources"><a href="http://www.xinhuanet.com/jiaju/20260714/bb00beb98bba4ac88177e8288b1ab7a2/c.html" target="_blank" rel="noopener noreferrer" class="source-link">全球家居消费结构性变迁及新兴品类走热</a></span>
+            </div>
+        </div>
+        <div class="event-card">
+            <div class="event-header">
+                <h3 class="event-title">华宝新能XBC美学曲面光伏瓦亮相建博会</h3>
+                <div class="event-badges">
+                    <span class="badge badge-importance" style="background:transparent;border:1px solid #94a3b8;color:#94a3b8;">参考</span>
+                    <span class="badge badge-lifecycle" style="color:#d4af37;border-color:#d4af37;">新增</span>
+                    <span class="badge badge-signal">技术突破</span>
+                </div>
+            </div>
+            <p class="event-summary">在第28届中国建博会（广州）材艺智造场域，华宝新能携XBC美学曲面光伏瓦首次亮相，将传统瓦片美学与光伏发电功能合二为一。</p>
+            <div class="why-it-matters">&#128161; 光伏建材一体化（BIPV）技术向美学与曲面方向突破，解决了传统光伏组件与建筑外观融合的痛点。</div>
+            <div class="impact-text">&#127919; 推动绿色建筑从“附加光伏”向“原生光伏”演进，为高端别墅及公共建筑提供零碳美学解决方案。</div>
+            <div class="event-meta">
+                <span class="meta-date">2026-07-14</span>
+                <span class="meta-category">技术创新</span>
+                <span class="meta-sources"><a href="http://www.xinhuanet.com/jiaju/20260714/bb00beb98bba4ac88177e8288b1ab7a2/c.html" target="_blank" rel="noopener noreferrer" class="source-link">华宝新能XBC美学曲面光伏瓦亮相建博会</a></span>
+            </div>
+        </div>
+            </div>
+        </section>
+        <section class="report-section">
+            <div class="section-header">
+                <span class="section-icon">&#9878;</span>
+                <h2 class="section-title">政策与数据</h2>
+                <span class="section-count">9条</span>
+            </div>
+            <div class="section-content">
+                
+        <div class="event-card">
+            <div class="event-header">
+                <h3 class="event-title">2026年上半年重点城市房产成交及建材家居卖场景气数据</h3>
+                <div class="event-badges">
+                    <span class="badge badge-importance" style="background:linear-gradient(135deg,#d4af37,#b8941f);color:#1a1a2e;font-weight:600;">战略级</span>
+                    <span class="badge badge-lifecycle" style="color:#d4af37;border-color:#d4af37;">新增</span>
+                    
+                </div>
+            </div>
+            <p class="event-summary">2026年上半年20个重点城市二手房成交76.1万套同比增5.6%，上海、北京新房及二手房均保持增长。5月全国建材家居景气指数（BHI）达129.68环比上涨，卖场单月销售额环比涨15.07%，但1-5月累计销售额同比仍跌4.01%。</p>
+            <div class="why-it-matters">&#128161; 二手房成交回暖带动局部家装需求释放，BHI环比回升显示短期景气度修复，但累计销售额同比下滑表明行业整体仍处于筑底阶段。</div>
+            <div class="impact-text">&#127919; 企业需紧抓二手房局改、翻新需求，同时警惕大盘复苏不及预期的风险，保持现金流稳健。</div>
+            <div class="event-meta">
+                <span class="meta-date">2026-07-14</span>
+                <span class="meta-category">市场数据</span>
+                <span class="meta-sources"><a href="http://m.toutiao.com/group/7662255727242723903" target="_blank" rel="noopener noreferrer" class="source-link">M</a></span>
+            </div>
+        </div>
+        <div class="event-card">
+            <div class="event-header">
+                <h3 class="event-title">第28届广州建博会海外买家激增及展会数据</h3>
+                <div class="event-badges">
+                    <span class="badge badge-importance" style="background:linear-gradient(135deg,#d4af37,#b8941f);color:#1a1a2e;font-weight:600;">战略级</span>
+                    <span class="badge badge-lifecycle" style="color:#d4af37;border-color:#d4af37;">新增</span>
+                    <span class="badge badge-signal">市场扩张</span>
+                </div>
+            </div>
+            <p class="event-summary">第28届中国建博会（广州）吸引近2000家参展企业及144370名专业观众，其中海外观众11473人同比增长33.4%。开幕首日海外采购商同比大增43%，中东、俄语区、东盟等新兴市场买家团规模显著扩容。</p>
+            <div class="why-it-matters">&#128161; 海外买家激增印证中国家居建材供应链在全球的竞争力提升，新兴市场成为出海核心增长引擎。</div>
+            <div class="impact-text">&#127919; 倒逼企业提升国际化服务能力与产品标准适配性，加速从“产品出海”向“品牌出海”及“产能出海”升级。</div>
+            <div class="event-meta">
+                <span class="meta-date">2026-07-14</span>
+                <span class="meta-category">市场数据</span>
+                <span class="meta-sources"><a href="http://m.toutiao.com/group/7661822765393084971" target="_blank" rel="noopener noreferrer" class="source-link">第28届广州建博会海外观众数量及增长</a> · <a href="http://www.xinhuanet.com/jiaju/20260714/bb00beb98bba4ac88177e8288b1ab7a2/c.html" target="_blank" rel="noopener noreferrer" class="source-link">第28届中国建博会（广州）参展及观众数据</a></span>
+            </div>
+        </div>
+        <div class="event-card">
+            <div class="event-header">
+                <h3 class="event-title">国务院批复《扩大消费“十五五”规划》明确房屋品质提升与公积金改革</h3>
+                <div class="event-badges">
+                    <span class="badge badge-importance" style="background:linear-gradient(135deg,#d4af37,#b8941f);color:#1a1a2e;font-weight:600;">战略级</span>
+                    <span class="badge badge-lifecycle" style="color:#d4af37;border-color:#d4af37;">新增</span>
+                    <span class="badge badge-signal">政策变化</span>
+                </div>
+            </div>
+            <p class="event-summary">国务院印发《扩大消费“十五五”规划》，将住房纳入大宗耐用消费品体系。提出实施房屋品质提升工程（含14项强制要求），支持家居家电智能化升级，并明确深化公积金改革，使用范围有望覆盖家装及适老化改造。</p>
+            <div class="why-it-matters">&#128161; 顶层规划将住房与家居家电深度绑定，公积金扩容及“好房子”强制标准将直接释放数万亿级别的存量翻新与品质升级需求。</div>
+            <div class="impact-text">&#127919; 绿色建材、智能家居、适老化产品迎来长期政策红利期，房企及装企需全面向高品质、智能化转型以适配新标准。</div>
+            <div class="event-meta">
+                <span class="meta-date">2026-07-14</span>
+                <span class="meta-category">政策法规</span>
+                <span class="meta-sources"><a href="http://m.toutiao.com/group/7662223371697996297" target="_blank" rel="noopener noreferrer" class="source-link">M</a> · <a href="http://m.toutiao.com/group/7662373591698145838" target="_blank" rel="noopener noreferrer" class="source-link">M</a> · <a href="http://m.toutiao.com/group/7662397116391768612" target="_blank" rel="noopener noreferrer" class="source-link">M</a></span>
+            </div>
+        </div>
+        <div class="event-card">
+            <div class="event-header">
+                <h3 class="event-title">2026年上半年陶瓷行业法拍资产呈现两极分化</h3>
+                <div class="event-badges">
+                    <span class="badge badge-importance" style="background:#1a365d;color:#d4af37;">值得关注</span>
+                    <span class="badge badge-lifecycle" style="color:#d4af37;border-color:#d4af37;">新增</span>
+                    
+                </div>
+            </div>
+            <p class="event-summary">2026年上半年约11家陶企资产挂牌法拍，流拍、暂缓成主流，但广东新顺景陶瓷整厂资产以溢价3600万元最终3.002亿元成交，显示市场摒弃闲置低效资产，追捧优质产能。</p>
+            <div class="why-it-matters">&#128161; 法拍市场的两极分化表明，资本对陶瓷行业的投资逻辑已从“抄底规模”转向“收购优质产能”，落后产能彻底丧失流动性价值。</div>
+            <div class="impact-text">&#127919; 加速行业洗牌，拥有核心产区优势产能的企业估值溢价凸显，缺乏技术壁垒的中小陶企将被加速出清。</div>
+            <div class="event-meta">
+                <span class="meta-date">2026-07-15</span>
+                <span class="meta-category">市场数据</span>
+                <span class="meta-sources"><a href="http://m.toutiao.com/group/7662430878768890395" target="_blank" rel="noopener noreferrer" class="source-link">M</a></span>
+            </div>
+        </div>
+        <div class="event-card">
+            <div class="event-header">
+                <h3 class="event-title">机构测算“十五五”期间城市更新市场总容量达15万亿至20万亿元</h3>
+                <div class="event-badges">
+                    <span class="badge badge-importance" style="background:#1a365d;color:#d4af37;">值得关注</span>
+                    <span class="badge badge-lifecycle" style="color:#d4af37;border-color:#d4af37;">新增</span>
+                    
+                </div>
+            </div>
+            <p class="event-summary">根据《城市更新“十五五”规划》，到2030年全国计划新开工改造城镇老旧小区约11.5万个。机构测算“十五五”期间城市更新市场总容量将达15万亿至20万亿元，家装翻新、电梯加装、适老化产品等迎来巨大空间。</p>
+            <div class="why-it-matters">&#128161; 城市更新成为房地产及家居建材行业最大的增量市场，15-20万亿的容量足以支撑行业未来五年的基本盘。</div>
+            <div class="impact-text">&#127919; 企业需针对老旧小区改造场景开发适配产品（如适老化、快装、微改造），并构建面向C端及社区运营的渠道能力。</div>
+            <div class="event-meta">
+                <span class="meta-date">2026-07-14</span>
+                <span class="meta-category">市场数据</span>
+                <span class="meta-sources"><a href="http://m.toutiao.com/group/7662223371697996297" target="_blank" rel="noopener noreferrer" class="source-link">M</a></span>
+            </div>
+        </div>
+        <div class="event-card">
+            <div class="event-header">
+                <h3 class="event-title">住建部印发首批新型建材经验清单及规划全国统一认证采信机制</h3>
+                <div class="event-badges">
+                    <span class="badge badge-importance" style="background:linear-gradient(135deg,#d4af37,#b8941f);color:#1a1a2e;font-weight:600;">战略级</span>
+                    <span class="badge badge-lifecycle" style="color:#64748b;border-color:#64748b;">延续</span>
+                    <span class="badge badge-signal">政策变化</span>
+                </div>
+            </div>
+            <p class="event-summary">住建部印发《新型建材推广应用可复制经验做法清单（第一批）》，总结各地财政补贴、容积率奖励、审批核查等举措。同时计划联合多部门推动建立全国统一的绿色建材产品认证与采信机制，并打造集成应用示范项目。</p>
+            <div class="why-it-matters">&#128161; 清单为全国建材推广提供标准化路径，统一认证采信机制将打破地方保护，降低企业跨区域合规成本，加速绿色建材在重大工程中的渗透。</div>
+            <div class="impact-text">&#127919; 具备绿色认证及产能优势的建材企业将获得更大市场份额，未达标企业面临被挤出政府采购及重大工程供应链的风险。</div>
+            <div class="event-meta">
+                <span class="meta-date">2026-07-14</span>
+                <span class="meta-category">政策法规</span>
+                <span class="meta-sources"><a href="https://m.zjtcn.cn/jianshi/jskx4677260.html" target="_blank" rel="noopener noreferrer" class="source-link">M</a></span>
+            </div>
+        </div>
+        <div class="event-card">
+            <div class="event-header">
+                <h3 class="event-title">GB 30981.1-2025建筑涂料新国标实施及多地开展专项抽检</h3>
+                <div class="event-badges">
+                    <span class="badge badge-importance" style="background:linear-gradient(135deg,#d4af37,#b8941f);color:#1a1a2e;font-weight:600;">战略级</span>
+                    <span class="badge badge-lifecycle" style="color:#64748b;border-color:#64748b;">延续</span>
+                    <span class="badge badge-signal">政策变化</span>
+                </div>
+            </div>
+            <p class="event-summary">GB 30981.1-2025建筑涂料新国标于6月1日实施，首增SVOC限量并大幅收紧VOC限值。黑龙江、浙江等多地市场监管部门围绕新标开展专项抽检与巡查，督促清理不合规库存。</p>
+            <div class="why-it-matters">&#128161; 新国标将管控范围扩展至辅料并增加SVOC指标，大幅抬高合规门槛，推动行业从单一产品检测向系统材料管控转变，加速落后产能出清。</div>
+            <div class="impact-text">&#127919; 低价竞争空间被压缩，具备全链路合规能力及环保技术储备的涂料企业将受益，中小作坊及不合规供应商面临淘汰。</div>
+            <div class="event-meta">
+                <span class="meta-date">2026-07-13</span>
+                <span class="meta-category">政策法规</span>
+                <span class="meta-sources"><a href="http://m.toutiao.com/group/7661946011719402026" target="_blank" rel="noopener noreferrer" class="source-link">M</a></span>
+            </div>
+        </div>
+        <div class="event-card">
+            <div class="event-header">
+                <h3 class="event-title">绿色建材政府采购扩容至101城及工程款支付保障新规</h3>
+                <div class="event-badges">
+                    <span class="badge badge-importance" style="background:linear-gradient(135deg,#d4af37,#b8941f);color:#1a1a2e;font-weight:600;">战略级</span>
+                    <span class="badge badge-lifecycle" style="color:#64748b;border-color:#64748b;">延续</span>
+                    <span class="badge badge-signal">政策变化</span>
+                </div>
+            </div>
+            <p class="event-summary">绿色建材政府采购政策扩容至101城，首批48个试点城市使用率达58%。新规明确工程进度款支付比例不低于80%，上海浦东部分项目招标新增绿色建材专项评分，中建集团绿色建材供应商同比增63%。</p>
+            <div class="why-it-matters">&#128161; 101城扩容叠加80%进度款支付保障，极大改善了绿色建材企业的现金流预期与市场空间，专项评分机制将绿色标准实质性嵌入招投标核心环节。</div>
+            <div class="impact-text">&#127919; 绿色建材供应商迎来量价齐升机遇，同时工程端回款风险降低；未进入绿色采购名录的企业将失去大量公建市场订单。</div>
+            <div class="event-meta">
+                <span class="meta-date">2026-07-13</span>
+                <span class="meta-category">政策法规</span>
+                <span class="meta-sources"><a href="https://m.zjtcn.cn/jianshi/jskx4674740.html" target="_blank" rel="noopener noreferrer" class="source-link">绿色建材政府采购政策扩容至101城</a></span>
+            </div>
+        </div>
+        <div class="event-card">
+            <div class="event-header">
+                <h3 class="event-title">2026年前5月家具及家纺出口数据与头部企业业绩表现</h3>
+                <div class="event-badges">
+                    <span class="badge badge-importance" style="background:linear-gradient(135deg,#d4af37,#b8941f);color:#1a1a2e;font-weight:600;">战略级</span>
+                    <span class="badge badge-lifecycle" style="color:#64748b;border-color:#64748b;">延续</span>
+                    <span class="badge badge-signal">市场扩张</span>
+                </div>
+            </div>
+            <p class="event-summary">2026年1-5月我国家具累计出口295.4亿美元同比增1.9%，福建出口134.6亿元增9%，家纺出口134.3亿美元增2.8%。头部企业如致欧、恒林、永艺、松霖科技一季度或上半年营收及利润均实现双位数增长。</p>
+            <div class="why-it-matters">&#128161; 出口数据连续正增长及头部企业业绩亮眼，表明中国家居制造在全球市场仍具强韧性，出海业务成为对冲国内需求疲软的关键支柱。</div>
+            <div class="impact-text">&#127919; 具备全球化产能布局及跨境电商运营能力的企业将持续享受出海红利，加速行业集中度提升。</div>
+            <div class="event-meta">
+                <span class="meta-date">2026-07-13</span>
+                <span class="meta-category">市场数据</span>
+                <span class="meta-sources"><a href="http://m.toutiao.com/group/7661822765393084971" target="_blank" rel="noopener noreferrer" class="source-link">2026年前5月我国家具行业出口数据</a></span>
+            </div>
+        </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="report-footer">
+            <div class="footer-divider"></div>
+            <p>本日报由 AI 自动生成，仅供参考，不构成投资建议。</p>
+            <p>数据来源：中国建筑材料流通协会、中国建筑材料联合会、新华网、财经媒体等</p>
+        </footer>
+    </div>
+</body>
+</html>
