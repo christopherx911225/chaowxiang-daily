@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>潮向 | 建材家居行业日报 | 2026-07-30</title>
+    <style>
+        /* ===== Reset & Base ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, "Helvetica Neue", "PingFang SC", "Microsoft YaHei", sans-serif;
+            background: #0c1929;
+            color: #e2e8f0;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        /* ===== Container ===== */
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 24px 16px;
+        }
+
+        /* ===== Header - 蓝金主视觉 ===== */
+        .report-header {
+            position: relative;
+            background: linear-gradient(160deg, #0f2444 0%, #1a365d 40%, #1e3a5f 100%);
+            border-radius: 20px;
+            padding: 40px 36px 32px;
+            margin-bottom: 28px;
+            overflow: hidden;
+            border: 1px solid rgba(212, 175, 55, 0.15);
+        }
+        .report-header::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(212,175,55,0.08) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        .report-header::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, rgba(212,175,55,0.4), transparent);
+        }
+        .brand-mark {
+            display: inline-block;
+            font-size: 42px;
+            font-weight: 800;
+            letter-spacing: 6px;
+            background: linear-gradient(135deg, #d4af37 0%, #f0d060 50%, #d4af37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 6px;
+        }
+        .brand-subtitle {
+            font-size: 15px;
+            color: rgba(226, 232, 240, 0.7);
+            letter-spacing: 4px;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+        .header-headline {
+            font-size: 20px;
+            font-weight: 600;
+            color: #e2e8f0;
+            margin-bottom: 16px;
+            padding: 14px 18px;
+            background: rgba(212, 175, 55, 0.08);
+            border-radius: 12px;
+            border-left: 3px solid #d4af37;
+            line-height: 1.5;
+        }
+        .header-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            font-size: 13px;
+        }
+        .header-meta span {
+            background: rgba(255,255,255,0.06);
+            color: rgba(226, 232, 240, 0.65);
+            padding: 5px 14px;
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.06);
+        }
+
+        /* ===== Summary Card ===== */
+        .summary-card {
+            background: #111d30;
+            border-radius: 16px;
+            padding: 28px 32px;
+            margin-bottom: 24px;
+            border: 1px solid rgba(212, 175, 55, 0.08);
+        }
+        .summary-card h2 {
+            font-size: 17px;
+            color: #d4af37;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        .overall-summary {
+            font-size: 15px;
+            color: #94a3b8;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+        .key-changes {
+            list-style: none;
+            padding: 0;
+        }
+        .key-changes li {
+            padding: 8px 0 8px 22px;
+            position: relative;
+            font-size: 14px;
+            color: #cbd5e1;
+        }
+        .key-changes li::before {
+            content: "▸";
+            position: absolute;
+            left: 4px;
+            color: #d4af37;
+            font-weight: 700;
+        }
+        .impact-assessment {
+            margin-top: 16px;
+            padding: 14px 18px;
+            background: rgba(212, 175, 55, 0.05);
+            border-radius: 10px;
+            font-size: 14px;
+            color: #94a3b8;
+            border: 1px solid rgba(212, 175, 55, 0.08);
+        }
+        .impact-assessment strong {
+            color: #d4af37;
+        }
+
+        /* ===== Risk & Watch ===== */
+        .risk-watch {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+        @media (max-width: 640px) {
+            .risk-watch {
+                grid-template-columns: 1fr;
+            }
+        }
+        .risk-card, .watch-card {
+            background: #111d30;
+            border-radius: 16px;
+            padding: 22px 26px;
+            border: 1px solid rgba(212, 175, 55, 0.08);
+        }
+        .risk-card {
+            border-top: 2px solid #ef4444;
+        }
+        .watch-card {
+            border-top: 2px solid #d4af37;
+        }
+        .risk-card h3, .watch-card h3 {
+            font-size: 15px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-weight: 600;
+        }
+        .risk-card h3 { color: #f87171; }
+        .watch-card h3 { color: #d4af37; }
+        .risk-card ul, .watch-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        .risk-card li, .watch-card li {
+            padding: 6px 0 6px 20px;
+            position: relative;
+            font-size: 13px;
+            color: #94a3b8;
+        }
+        .risk-card li::before {
+            content: "⚠";
+            position: absolute;
+            left: 0;
+            font-size: 11px;
+        }
+        .watch-card li::before {
+            content: "▸";
+            position: absolute;
+            left: 2px;
+            color: #d4af37;
+            font-weight: 700;
+        }
+
+        /* ===== Sections ===== */
+        .report-section {
+            background: #111d30;
+            border-radius: 16px;
+            padding: 28px 32px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(212, 175, 55, 0.06);
+        }
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            padding-bottom: 14px;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.12);
+        }
+        .section-icon {
+            font-size: 20px;
+            color: #d4af37;
+        }
+        .section-title {
+            font-size: 18px;
+            color: #e2e8f0;
+            font-weight: 700;
+            flex: 1;
+            letter-spacing: 1px;
+        }
+        .section-count {
+            font-size: 11px;
+            color: #d4af37;
+            background: rgba(212, 175, 55, 0.1);
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-weight: 600;
+        }
+        .section-content {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        /* ===== Event Card ===== */
+        .event-card {
+            background: #0f1f33;
+            border-radius: 12px;
+            padding: 20px 24px;
+            border: 1px solid rgba(255,255,255,0.04);
+            transition: all 0.2s ease;
+        }
+        .event-card:hover {
+            border-color: rgba(212, 175, 55, 0.15);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+        .event-header {
+            margin-bottom: 10px;
+        }
+        .event-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #f1f5f9;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+        .event-badges {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 8px;
+        }
+        .badge {
+            font-size: 11px;
+            padding: 3px 10px;
+            border-radius: 10px;
+            white-space: nowrap;
+            letter-spacing: 0.5px;
+        }
+        .badge-importance {
+            font-weight: 600;
+        }
+        .badge-lifecycle {
+            background: transparent;
+            border: 1px solid;
+            font-size: 10px;
+            padding: 2px 8px;
+        }
+        .badge-signal {
+            background: rgba(212, 175, 55, 0.1);
+            color: #d4af37;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        .event-summary {
+            font-size: 14px;
+            color: #94a3b8;
+            margin: 10px 0;
+            line-height: 1.7;
+        }
+        .why-it-matters {
+            font-size: 13px;
+            color: #60a5fa;
+            margin: 8px 0;
+            padding: 10px 14px;
+            background: rgba(96, 165, 250, 0.06);
+            border-radius: 8px;
+            border-left: 2px solid rgba(96, 165, 250, 0.3);
+            line-height: 1.6;
+        }
+        .impact-text {
+            font-size: 13px;
+            color: #fbbf24;
+            margin: 8px 0;
+            padding: 10px 14px;
+            background: rgba(251, 191, 36, 0.05);
+            border-radius: 8px;
+            border-left: 2px solid rgba(251, 191, 36, 0.2);
+            line-height: 1.6;
+        }
+        .event-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            font-size: 12px;
+            color: #64748b;
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid rgba(255,255,255,0.04);
+            align-items: center;
+        }
+        .meta-date {
+            color: #64748b;
+        }
+        .meta-category {
+            color: #60a5fa;
+            font-weight: 500;
+        }
+        .meta-sources {
+            margin-left: auto;
+        }
+        .source-link {
+            color: #d4af37;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.15s;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+            padding-bottom: 1px;
+        }
+        .source-link:hover {
+            color: #f0d060;
+            border-bottom-color: #f0d060;
+        }
+        .no-source {
+            color: #475569;
+            font-style: italic;
+        }
+
+        /* ===== Footer ===== */
+        .report-footer {
+            text-align: center;
+            font-size: 12px;
+            color: #475569;
+            padding: 28px 0;
+            margin-top: 10px;
+        }
+        .report-footer a {
+            color: #64748b;
+            text-decoration: none;
+        }
+        .footer-divider {
+            width: 40px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(212,175,55,0.3), transparent);
+            margin: 16px auto;
+        }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 640px) {
+            .container {
+                padding: 12px 10px;
+            }
+            .report-header {
+                padding: 28px 22px 24px;
+                border-radius: 14px;
+            }
+            .brand-mark {
+                font-size: 32px;
+                letter-spacing: 4px;
+            }
+            .brand-subtitle {
+                font-size: 13px;
+                letter-spacing: 2px;
+            }
+            .header-headline {
+                font-size: 17px;
+                padding: 12px 14px;
+            }
+            .summary-card, .report-section {
+                padding: 20px 18px;
+                border-radius: 14px;
+            }
+            .event-card {
+                padding: 16px 18px;
+            }
+            .event-title {
+                font-size: 15px;
+            }
+            .event-meta {
+                flex-direction: column;
+                gap: 6px;
+                align-items: flex-start;
+            }
+            .meta-sources {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="report-header">
+            <div class="brand-mark">潮 向</div>
+            <div class="brand-subtitle">建材家居行业日报</div>
+            <div class="header-headline">建材家居利润腰斩，环保新规与成本上涨加速行业洗牌</div>
+            <div class="header-meta">
+                <span>2026-07-30 星期四</span>
+                <span>11 条事件</span>
+                <span>本次识别 8 个状态库新增事件。</span>
+                <a href="https://christopherx911225.github.io/chaowxiang-daily/" style="color: #c9a961; text-decoration: underline;">查看历史日报 →</a>
+            </div>
+        </header>
+
+        <!-- Summary -->
+        <div class="summary-card">
+            <h2>&#9670; 今日概览</h2>
+            <p class="overall-summary">2026上半年家居建材制造业利润大幅下滑，行业深陷存量博弈。政策端，人造板新国标实施与绿色建材政采深化大幅抬高环保与合规门槛；成本端，全球化工品涨价与土地使用税优惠取消双重挤压利润空间；需求端，智能家居与适老化以旧换新补贴扩围带来结构性增量，但华北建材库存激增及房企资金承压拖累整体需求。行业正加速落后产能出清，向绿色化、智能化方向转型。</p>
+            <h2>&#9670; 关键变化</h2>
+            <ul class="key-changes">
+                <li>上半年家居建材制造业利润大幅下滑：反映需求疲软与价格战双重挤压，标志行业彻底告别规模扩张，进入存量洗牌期。</li><li>人造板新国标实施及绿色建材政采深化：全面抬高环保与合规门槛，将加速缺乏环保储备及绿色认证的中小企业出清。</li><li>智能家居与适老化以旧换新补贴扩围并设门槛：政策走向提质，真智能与高能效产品将承接红利，伪智能及高能耗产品被淘汰。</li><li>全球化工品涨价及取消建材土地使用税优惠：原料与用地成本双重上升，直接压缩传统建材企业利润，考验供应链议价能力。</li>
+            </ul>
+            <div class="impact-assessment">
+                <strong>影响判断：</strong>偏风险
+            </div>
+        </div>
+
+        <!-- Risk & Watch -->
+        <div class="risk-watch">
+            <div class="risk-card">
+                <h3>&#9888; 风险与不确定性</h3>
+                <ul>
+                    <li>华北建材库存同比激增超50%且房企资金链承压，需警惕旺季价格反弹不及预期及库存积压引发的现金流风险。</li><li>全球化工品涨价叠加土地使用税优惠取消，需跟踪中小涂企及传统重资产建材企业利润恶化及破产出清风险。</li>
+                </ul>
+            </div>
+            <div class="watch-card">
+                <h3>&#128065; 后续关注</h3>
+                <ul>
+                    <li>跟踪8月中旬传统旺季预期下华北建材价格修复的实际兑现情况及库存去化速度。</li><li>跟踪智能家居及适老化以旧换新补贴落地后，头部品牌1级能效及真智能产品的销量转化数据。</li><li>跟踪人造板新国标实施后，头部企业ENF级产品市占率变化及落后产能实际退出进度。</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Event Sections -->
+        
+        <section class="report-section">
+            <div class="section-header">
+                <span class="section-icon">&#9733;</span>
+                <h2 class="section-title">今日头条</h2>
+                <span class="section-count">2条</span>
+            </div>
+            <div class="section-content">
+                
+        <div class="event-card">
+            <div class="event-header">
+                <h3 class="event-title">人造板新国标GB 18580-2025正式实施及环保标准全面升级</h3>
+                <div class="event-badges">
+                    <span class="badge badge-importance" style="background:linear-gradient(135deg,#d4af37,#b8941f);color:#1a1a2e;font-weight:600;">战略级</span>
+                    <span class="badge badge-lifecycle" style="color:#d4af37;border-color:#d4af37;">新增</span>
+                    <span class="badge badge-signal">政策变化</span>
+                </div>
+            </div>
+            <p class="event-summary">2026年6月1日起，新版强制性国标GB 18580-2025实施，区分人造板(E1级)与制品(E0级)甲醛限量，严于欧盟及国际标准；推荐性国标提出更严苛的ENF级。同时，行业头部企业如中国建材凯立森甲醛释放量接近自然背景值，定制家具...</p>
+            <div class="why-it-matters">&#128161; 新国标实施将加速落后产能出清，提升行业环保门槛。企业需关注E0级及ENF级标准，调整产品结构和生产工艺（如升级封边技术），以符合新规并抢占高端环保市场。</div>
+            <div class="impact-text">&#127919; 人造板及定制家居行业将面临更严格的环保合规压力，具备E0/ENF级产品储备及先进封边工艺（如激光封边）的头部企业将获得竞争优势，中小企若无法达标将被淘汰。</div>
+            <div class="event-meta">
+                <span class="meta-date">2026-07-28</span>
+                <span class="meta-category">政策法规</span>
+                <span class="meta-sources"><a href="http://m.toutiao.com/group/7667441816425234998" target="_blank" rel="noopener noreferrer" class="source-link">人民日报</a></span>
+            </div>
+        </div>
+        <div class="event-card">
+            <div class="event-header">
+                <h3 class="event-title">2026上半年家居建材制造业利润大幅下滑及行业分化加剧</h3>
+                <div class="event-badges">
+                    <span class="badge badge-importance" style="background:linear-gradient(135deg,#d4af37,#b8941f);color:#1a1a2e;font-weight:600;">战略级</span>
+                    <span class="badge badge-lifecycle" style="color:#d4af37;border-color:#d4af37;">新增</span>
+                    <span class="badge badge-signal">风险预警</span>
+                </div>
+            </div>
+            <p class="event-summary">国家统计局数据显示，2026年上半年家具制造业营收2576.1亿元（降8.6%），利润45.7亿元（降52.7%）；非金属矿物制品业利润降47.8%，木材加工业降33.7%。同期全国规上工业企业利润整体增长18.7%，家居地产上下游产...</p>
+            <div class="why-it-matters">&#128161; 宏观数据证实家居建材行业仍处于深度调整期，利润腰斩反映出需求疲软与价格战的双重挤压。企业需放弃对地产链复苏的短期幻想，转向存量市场的精细化运营与降本增效。</div>
+            <div class="impact-text">&#127919; 行业洗牌加速，缺乏核心竞争力、依赖规模扩张的企业将面临生存危机；现金流充裕、具备差异化产品或渠道优势的企业有望在底部整合中扩大份额。</div>
+            <div class="event-meta">
+                <span class="meta-date">2026-07-30</span>
+                <span class="meta-category">市场数据</span>
+                <span class="meta-sources"><a href="http://m.toutiao.com/group/7668092715331715647" target="_blank" rel="noopener noreferrer" class="source-link">今日头条/国家统计局</a></span>
+            </div>
+        </div>
+            </div>
+        </section>
+        <section class="report-section">
+            <div class="section-header">
+                <span class="section-icon">&#9829;</span>
+                <h2 class="section-title">行业脉搏</h2>
+                <span class="section-count">1条</span>
+            </div>
+            <div class="section-content">
+                
+        <div class="event-card">
+            <div class="event-header">
+                <h3 class="event-title">玛格极发布“非凡”高定战略及建成国内首个实木家具智能工厂</h3>
+                <div class="event-badges">
+                    <span class="badge badge-importance" style="background:#1a365d;color:#d4af37;">值得关注</span>
+                    <span class="badge badge-lifecycle" style="color:#d4af37;border-color:#d4af37;">新增</span>
+                    <span class="badge badge-signal">战略调整</span>
+                </div>
+            </div>
+            <p class="event-summary">玛格极在广州建博会发布“非凡”高定战略，从五大维度完成品牌价值升维。同时，其落地建成国内首个实木家具智能工厂，两项核心技术获评国际先进水平，并参与4项国家级实木标准编制。高端实木定制正成为大宅装修主流。</p>
+            <div class="why-it-matters">&#128161; 高端实木定制与智能制造的结合代表了定制家居行业向高附加值、高品质转型的方向。企业需关注大宅市场的品质化需求，通过智能化生产提升实木定制的交付效率与稳定性。</div>
+            <div class="impact-text">&#127919; 玛格极通过高定战略与智能工厂构建差异化竞争壁垒，有望在高端大宅市场抢占份额；行业将加速向品质化、技术化、精细化方向演进。</div>
+            <div class="event-meta">
+                <span class="meta-date">2026-07-29</span>
+                <span class="meta-category">品牌动态</span>
+                <span class="meta-sources"><a href="https://m.bjnews.com.cn/detail/1785328840129213.html" target="_blank" rel="noopener noreferrer" class="source-link">新京报</a></span>
+            </div>
+        </div>
+            </div>
+        </section>
+        <section class="report-section">
+            <div class="section-header">
+                <span class="section-icon">&#9889;</span>
+                <h2 class="section-title">趋势与信号</h2>
+                <span class="section-count">1条</span>
+            </div>
+            <div class="section-content">
+                
+        <div class="event-card">
+            <div class="event-header">
+                <h3 class="event-title">适老化家居消费从被动转主动刚需及多地密集出台补贴政策</h3>
+                <div class="event-badges">
+                    <span class="badge badge-importance" style="background:#1a365d;color:#d4af37;">值得关注</span>
+                    <span class="badge badge-lifecycle" style="color:#d4af37;border-color:#d4af37;">新增</span>
+                    <span class="badge badge-signal">消费升级</span>
+                </div>
+            </div>
+            <p class="event-summary">我国60岁及以上人口占比达23.4%，适老化家居消费正从被动医疗需求向主动居家刚需转变，产品设计去“医院风”。天津、江西、贵州等多地落地适老化家居补贴政策，力度在15%-30%之间。市场基础款接受度高，但高价产品溢价尚未完全转化为消费...</p>
+            <div class="why-it-matters">&#128161; 老龄化社会催生了庞大的适老化家居刚需市场，政策补贴正在加速市场教育。企业需把握产品“日用化、去医疗化”的设计趋势，并合理定价以承接政策红利。</div>
+            <div class="impact-text">&#127919; 适老化家居赛道将迎来政策驱动的短期爆发与长期稳健增长。具备适老化设计研发能力、能推出高性价比基础款及高附加值多功能款的企业将占据市场主导。</div>
+            <div class="event-meta">
+                <span class="meta-date">2026-07-29</span>
+                <span class="meta-category">消费者趋势</span>
+                <span class="meta-sources"><a href="http://m.toutiao.com/group/7667856108379259392" target="_blank" rel="noopener noreferrer" class="source-link">今日头条/消费日报</a></span>
+            </div>
+        </div>
+            </div>
+        </section>
+        <section class="report-section">
+            <div class="section-header">
+                <span class="section-icon">&#9878;</span>
+                <h2 class="section-title">政策与数据</h2>
+                <span class="section-count">7条</span>
+            </div>
+            <div class="section-content">
+                
+        <div class="event-card">
+            <div class="event-header">
+                <h3 class="event-title">多地扩围智能家居以旧换新补贴及设置智能化与能效门槛</h3>
+                <div class="event-badges">
+                    <span class="badge badge-importance" style="background:linear-gradient(135deg,#d4af37,#b8941f);color:#1a1a2e;font-weight:600;">战略级</span>
+                    <span class="badge badge-lifecycle" style="color:#d4af37;border-color:#d4af37;">新增</span>
+                    <span class="badge badge-signal">政策变化</span>
+                </div>
+            </div>
+            <p class="event-summary">北京、福建、甘肃等地新增智能摄像头、智能马桶、智能床等品类以旧换新补贴，单件最高1500元。政策明确设置智能化及能效水效门槛，如北京、甘肃要求补贴产品须具备智能功能且为1级能效。追觅、慕思等企业反馈政策落地后门店咨询与成交显著增长，专...</p>
+            <div class="why-it-matters">&#128161; 智能家居以旧换新政策从“扩面”走向“提质”，能效和智能化门槛将淘汰落后产能。企业需加快高能效、真智能产品的研发与认证，以精准承接政策红利。</div>
+            <div class="impact-text">&#127919; 具备1级能效及核心智能技术的头部品牌将直接受益于补贴带来的销量增长；伪智能、高能耗产品将被排除在补贴目录外，加速市场出清。</div>
+            <div class="event-meta">
+                <span class="meta-date">2026-07-29</span>
+                <span class="meta-category">政策法规</span>
+                <span class="meta-sources"><a href="http://m.toutiao.com/group/7667857369895862810" target="_blank" rel="noopener noreferrer" class="source-link">财经网</a></span>
+            </div>
+        </div>
+        <div class="event-card">
+            <div class="event-header">
+                <h3 class="event-title">全球涂料及化工品密集涨价及国内成本压力向终端传导</h3>
+                <div class="event-badges">
+                    <span class="badge badge-importance" style="background:linear-gradient(135deg,#d4af37,#b8941f);color:#1a1a2e;font-weight:600;">战略级</span>
+                    <span class="badge badge-lifecycle" style="color:#d4af37;border-color:#d4af37;">新增</span>
+                    <span class="badge badge-signal">成本压力</span>
+                </div>
+            </div>
+            <p class="event-summary">受地缘冲突及原油通胀压力影响，印度亚洲涂料全系涨12%，欧洲效果颜料涨5-7%，日本涂料涨10-35%。国内钛白粉7月集中涨价（龙佰集团上调1000元/吨），溶剂等原料同步上涨。国内头部涂企暂未官宣7月调价，但多乐士等渠道端先行涨价约...</p>
+            <div class="why-it-matters">&#128161; 全球化工产业链共振涨价，叠加国内原料集中上调，涂料及建材企业面临严峻的成本考验。企业需优化供应链、适时向终端传导成本，同时警惕需求疲软下的涨价阻力。</div>
+            <div class="impact-text">&#127919; 具备规模优势及供应链议价能力的头部企业能更好消化成本压力；中小涂企利润空间将被进一步压缩，行业集中度有望提升。渠道端隐性涨价或成为三季度常态。</div>
+            <div class="event-meta">
+                <span class="meta-date">2026-07-30</span>
+                <span class="meta-category">市场数据</span>
+                <span class="meta-sources"><a href="http://m.toutiao.com/group/7668003764757971465" target="_blank" rel="noopener noreferrer" class="source-link">慧正资讯/源料观察站</a></span>
+            </div>
+        </div>
+        <div class="event-card">
+            <div class="event-header">
+                <h3 class="event-title">华北地区建材库存同比激增超50%及房企资金链持续承压</h3>
+                <div class="event-badges">
+                    <span class="badge badge-importance" style="background:#1a365d;color:#d4af37;">值得关注</span>
+                    <span class="badge badge-lifecycle" style="color:#d4af37;border-color:#d4af37;">新增</span>
+                    <span class="badge badge-signal">风险预警</span>
+                </div>
+            </div>
+            <p class="event-summary">截至7月底，华北地区重点城市建材总库存124.14万吨，同比大增51.89%。受1-6月全国房企到位资金同比下降20.2%影响，房企采购预算收紧。尽管河北主流钢厂减产（日产4.49万吨），但库存仍处高位。机构预计8月华北建材价格将先震...</p>
+            <div class="why-it-matters">&#128161; 建材库存高企与房企资金紧张形成共振，表明建筑端需求依然疲软。企业需警惕库存积压风险，谨慎安排生产与发货计划，关注旺季预期的实际兑现情况。</div>
+            <div class="impact-text">&#127919; 华北地区建材价格短期内缺乏大幅上涨动力，企业需做好现金流管理；随着8月中旬旺季预期计价，价格或有小幅修复，但受制于资金面，反弹空间有限。</div>
+            <div class="event-meta">
+                <span class="meta-date">2026-07-29</span>
+                <span class="meta-category">市场数据</span>
+                <span class="meta-sources"><a href="http://m.toutiao.com/group/7667892458986832393" target="_blank" rel="noopener noreferrer" class="source-link">和讯网/兰格钢铁网</a></span>
+            </div>
+        </div>
+        <div class="event-card">
+            <div class="event-header">
+                <h3 class="event-title">全屋定制头部企业业绩承压及市场需求呈现显著区域分化</h3>
+                <div class="event-badges">
+                    <span class="badge badge-importance" style="background:#1a365d;color:#d4af37;">值得关注</span>
+                    <span class="badge badge-lifecycle" style="color:#d4af37;border-color:#d4af37;">新增</span>
+                    <span class="badge badge-signal">风险预警</span>
+                </div>
+            </div>
+            <p class="event-summary">2026年全屋定制行业进入结构性调整，头部上市企业营收、利润双双下滑，单纯依靠规模扩张、低价走量的模式走到尽头。市场需求呈现区域分化：一二线城市以老房翻新、精装房改造为主，追求高品质；三四线及县域市场新房与存量改造并存，核心诉求为高性价比。</p>
+            <div class="why-it-matters">&#128161; 定制家居行业规模扩张时代终结，进入存量博弈与精细化运营阶段。企业需根据区域市场特征制定差异化产品与渠道策略，避免陷入低价内卷。</div>
+            <div class="impact-text">&#127919; 头部企业需加速向高附加值、个性化定制转型；三四线市场将成为性价比品牌的主战场。行业洗牌加剧，腰部及缺乏核心竞争力的企业生存空间将被进一步挤压。</div>
+            <div class="event-meta">
+                <span class="meta-date">2026-07-28</span>
+                <span class="meta-category">市场数据</span>
+                <span class="meta-sources"><a href="https://m.sohu.com/a/1055924455_122913405" target="_blank" rel="noopener noreferrer" class="source-link">搜狐网</a></span>
+            </div>
+        </div>
+        <div class="event-card">
+            <div class="event-header">
+                <h3 class="event-title">绿色建材政采101城落地深化及新型建材推广清单实施成效显现</h3>
+                <div class="event-badges">
+                    <span class="badge badge-importance" style="background:linear-gradient(135deg,#d4af37,#b8941f);color:#1a1a2e;font-weight:600;">战略级</span>
+                    <span class="badge badge-lifecycle" style="color:#64748b;border-color:#64748b;">延续</span>
+                    <span class="badge badge-signal">政策变化</span>
+                </div>
+            </div>
+            <p class="event-summary">住建部印发首批新型建材推广应用清单，涵盖政策引导、体制机制等四大维度，拟建立全国统一认证采信机制。绿色建材政采扩容至101城，首批48城使用率达58%。各地加速落地，如上海公建招标新增20%绿色建材专项评分，中建集团绿色建材供应商同比...</p>
+            <div class="why-it-matters">&#128161; 绿色建材从“鼓励”走向“强制”与“深水区”，政采门槛实质性提高。企业需加快绿色建材认证，优化供应链以进入央企/国企采购目录，并关注进度款支付保障带来的现金流改善机会。</div>
+            <div class="impact-text">&#127919; 具备绿色建材认证及节能改造能力的企业将在政采及大型工程中占据绝对优势；未达标企业将被排除在核心供应链之外。进度款支付下限的落实有助于缓解建材企业应收账款压力。</div>
+            <div class="event-meta">
+                <span class="meta-date">2026-07-29</span>
+                <span class="meta-category">政策法规</span>
+                <span class="meta-sources"><a href="https://m.zjtcn.cn/jianshi/jskx4677260.html" target="_blank" rel="noopener noreferrer" class="source-link">造价通</a> · <a href="https://m.zjtcn.cn/jianshi/jskx4674740.html" target="_blank" rel="noopener noreferrer" class="source-link">M</a></span>
+            </div>
+        </div>
+        <div class="event-card">
+            <div class="event-header">
+                <h3 class="event-title">六部门出台建材行业稳增长方案严控产能并设定绿色转型目标</h3>
+                <div class="event-badges">
+                    <span class="badge badge-importance" style="background:linear-gradient(135deg,#d4af37,#b8941f);color:#1a1a2e;font-weight:600;">战略级</span>
+                    <span class="badge badge-lifecycle" style="color:#64748b;border-color:#64748b;">延续</span>
+                    <span class="badge badge-signal">政策变化</span>
+                </div>
+            </div>
+            <p class="event-summary">国家六部门联合出台《建材行业稳增长工作方案（2025—2026年）》，严禁水泥熟料、平板玻璃等传统建材新增产能，要求超备案规模产能限期合规置换。方案提出2026年绿色建材营收突破3000亿元，重点培育“六零”工厂，并明确原料数字化管控...</p>
+            <div class="why-it-matters">&#128161; 政策明确了建材行业“严控增量、优化存量、绿色转型”的基调。企业需放弃规模扩张幻想，转向存量博弈下的绿色化、数字化升级，特种混凝土等高附加值产品是未来增长点。</div>
+            <div class="impact-text">&#127919; 传统建材（水泥、玻璃）产能天花板被彻底封死，行业集中度将进一步提升；绿色建材和数字化改造将成为企业获取政策支持、信贷资源的核心门槛。</div>
+            <div class="event-meta">
+                <span class="meta-date">2026-07-28</span>
+                <span class="meta-category">政策法规</span>
+                <span class="meta-sources"><a href="https://cj.sina.cn/articles/view/5952915705/162d248f906703hswg" target="_blank" rel="noopener noreferrer" class="source-link">新浪财经/头豹</a></span>
+            </div>
+        </div>
+        <div class="event-card">
+            <div class="event-header">
+                <h3 class="event-title">财政部取消建材等行业部分城镇土地使用税免税优惠</h3>
+                <div class="event-badges">
+                    <span class="badge badge-importance" style="background:linear-gradient(135deg,#d4af37,#b8941f);color:#1a1a2e;font-weight:600;">战略级</span>
+                    <span class="badge badge-lifecycle" style="color:#64748b;border-color:#64748b;">延续</span>
+                    <span class="badge badge-signal">政策变化</span>
+                </div>
+            </div>
+            <p class="event-summary">财政部、税务总局发布公告，取消建材等能源资源行业企业部分主要生产经营用地免征城镇土地使用税优惠政策。政策设过渡期，2026年9月1日至2027年8月31日减半征收，2027年9月1日起全额征收。</p>
+            <div class="why-it-matters">&#128161; 税收优惠取消将直接增加建材企业的土地使用成本，压缩利润空间。企业需提前进行税务筹划，评估用地成本对整体盈利能力的影响，并考虑优化土地资产配置。</div>
+            <div class="impact-text">&#127919; 拥有大面积生产用地的传统建材企业（如水泥、陶瓷、玻璃等）成本将显著上升，加速行业优胜劣汰；促使企业提高土地利用率或向集约化生产转型。</div>
+            <div class="event-meta">
+                <span class="meta-date">2026-07-28</span>
+                <span class="meta-category">政策法规</span>
+                <span class="meta-sources"><a href="http://m.toutiao.com/group/7667510375830635048" target="_blank" rel="noopener noreferrer" class="source-link">央视新闻</a></span>
+            </div>
+        </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="report-footer">
+            <div class="footer-divider"></div>
+            <p>本日报由 AI 自动生成，仅供参考，不构成投资建议。</p>
+            <p>数据来源：中国建筑材料流通协会、中国建筑材料联合会、新华网、财经媒体等</p>
+        </footer>
+    </div>
+</body>
+</html>
