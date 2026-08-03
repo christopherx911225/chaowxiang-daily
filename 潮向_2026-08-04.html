@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>潮向 | 建材家居行业日报 | 2026-08-04</title>
+    <style>
+        /* ===== Reset & Base ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, "Helvetica Neue", "PingFang SC", "Microsoft YaHei", sans-serif;
+            background: #0c1929;
+            color: #e2e8f0;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        /* ===== Container ===== */
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 24px 16px;
+        }
+
+        /* ===== Header - 蓝金主视觉 ===== */
+        .report-header {
+            position: relative;
+            background: linear-gradient(160deg, #0f2444 0%, #1a365d 40%, #1e3a5f 100%);
+            border-radius: 20px;
+            padding: 40px 36px 32px;
+            margin-bottom: 28px;
+            overflow: hidden;
+            border: 1px solid rgba(212, 175, 55, 0.15);
+        }
+        .report-header::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(212,175,55,0.08) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        .report-header::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, rgba(212,175,55,0.4), transparent);
+        }
+        .brand-mark {
+            display: inline-block;
+            font-size: 42px;
+            font-weight: 800;
+            letter-spacing: 6px;
+            background: linear-gradient(135deg, #d4af37 0%, #f0d060 50%, #d4af37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 6px;
+        }
+        .brand-subtitle {
+            font-size: 15px;
+            color: rgba(226, 232, 240, 0.7);
+            letter-spacing: 4px;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+        .header-headline {
+            font-size: 20px;
+            font-weight: 600;
+            color: #e2e8f0;
+            margin-bottom: 16px;
+            padding: 14px 18px;
+            background: rgba(212, 175, 55, 0.08);
+            border-radius: 12px;
+            border-left: 3px solid #d4af37;
+            line-height: 1.5;
+        }
+        .header-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            font-size: 13px;
+        }
+        .header-meta span {
+            background: rgba(255,255,255,0.06);
+            color: rgba(226, 232, 240, 0.65);
+            padding: 5px 14px;
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.06);
+        }
+
+        /* ===== Summary Card ===== */
+        .summary-card {
+            background: #111d30;
+            border-radius: 16px;
+            padding: 28px 32px;
+            margin-bottom: 24px;
+            border: 1px solid rgba(212, 175, 55, 0.08);
+        }
+        .summary-card h2 {
+            font-size: 17px;
+            color: #d4af37;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        .overall-summary {
+            font-size: 15px;
+            color: #94a3b8;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+        .key-changes {
+            list-style: none;
+            padding: 0;
+        }
+        .key-changes li {
+            padding: 8px 0 8px 22px;
+            position: relative;
+            font-size: 14px;
+            color: #cbd5e1;
+        }
+        .key-changes li::before {
+            content: "▸";
+            position: absolute;
+            left: 4px;
+            color: #d4af37;
+            font-weight: 700;
+        }
+        .impact-assessment {
+            margin-top: 16px;
+            padding: 14px 18px;
+            background: rgba(212, 175, 55, 0.05);
+            border-radius: 10px;
+            font-size: 14px;
+            color: #94a3b8;
+            border: 1px solid rgba(212, 175, 55, 0.08);
+        }
+        .impact-assessment strong {
+            color: #d4af37;
+        }
+
+        /* ===== Risk & Watch ===== */
+        .risk-watch {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+        @media (max-width: 640px) {
+            .risk-watch {
+                grid-template-columns: 1fr;
+            }
+        }
+        .risk-card, .watch-card {
+            background: #111d30;
+            border-radius: 16px;
+            padding: 22px 26px;
+            border: 1px solid rgba(212, 175, 55, 0.08);
+        }
+        .risk-card {
+            border-top: 2px solid #ef4444;
+        }
+        .watch-card {
+            border-top: 2px solid #d4af37;
+        }
+        .risk-card h3, .watch-card h3 {
+            font-size: 15px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-weight: 600;
+        }
+        .risk-card h3 { color: #f87171; }
+        .watch-card h3 { color: #d4af37; }
+        .risk-card ul, .watch-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        .risk-card li, .watch-card li {
+            padding: 6px 0 6px 20px;
+            position: relative;
+            font-size: 13px;
+            color: #94a3b8;
+        }
+        .risk-card li::before {
+            content: "⚠";
+            position: absolute;
+            left: 0;
+            font-size: 11px;
+        }
+        .watch-card li::before {
+            content: "▸";
+            position: absolute;
+            left: 2px;
+            color: #d4af37;
+            font-weight: 700;
+        }
+
+        /* ===== Sections ===== */
+        .report-section {
+            background: #111d30;
+            border-radius: 16px;
+            padding: 28px 32px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(212, 175, 55, 0.06);
+        }
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            padding-bottom: 14px;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.12);
+        }
+        .section-icon {
+            font-size: 20px;
+            color: #d4af37;
+        }
+        .section-title {
+            font-size: 18px;
+            color: #e2e8f0;
+            font-weight: 700;
+            flex: 1;
+            letter-spacing: 1px;
+        }
+        .section-count {
+            font-size: 11px;
+            color: #d4af37;
+            background: rgba(212, 175, 55, 0.1);
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-weight: 600;
+        }
+        .section-content {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        /* ===== Event Card ===== */
+        .event-card {
+            background: #0f1f33;
+            border-radius: 12px;
+            padding: 20px 24px;
+            border: 1px solid rgba(255,255,255,0.04);
+            transition: all 0.2s ease;
+        }
+        .event-card:hover {
+            border-color: rgba(212, 175, 55, 0.15);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+        .event-header {
+            margin-bottom: 10px;
+        }
+        .event-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #f1f5f9;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+        .event-badges {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 8px;
+        }
+        .badge {
+            font-size: 11px;
+            padding: 3px 10px;
+            border-radius: 10px;
+            white-space: nowrap;
+            letter-spacing: 0.5px;
+        }
+        .badge-importance {
+            font-weight: 600;
+        }
+        .badge-lifecycle {
+            background: transparent;
+            border: 1px solid;
+            font-size: 10px;
+            padding: 2px 8px;
+        }
+        .badge-signal {
+            background: rgba(212, 175, 55, 0.1);
+            color: #d4af37;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        .event-summary {
+            font-size: 14px;
+            color: #94a3b8;
+            margin: 10px 0;
+            line-height: 1.7;
+        }
+        .why-it-matters {
+            font-size: 13px;
+            color: #60a5fa;
+            margin: 8px 0;
+            padding: 10px 14px;
+            background: rgba(96, 165, 250, 0.06);
+            border-radius: 8px;
+            border-left: 2px solid rgba(96, 165, 250, 0.3);
+            line-height: 1.6;
+        }
+        .impact-text {
+            font-size: 13px;
+            color: #fbbf24;
+            margin: 8px 0;
+            padding: 10px 14px;
+            background: rgba(251, 191, 36, 0.05);
+            border-radius: 8px;
+            border-left: 2px solid rgba(251, 191, 36, 0.2);
+            line-height: 1.6;
+        }
+        .event-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            font-size: 12px;
+            color: #64748b;
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid rgba(255,255,255,0.04);
+            align-items: center;
+        }
+        .meta-date {
+            color: #64748b;
+        }
+        .meta-category {
+            color: #60a5fa;
+            font-weight: 500;
+        }
+        .meta-sources {
+            margin-left: auto;
+        }
+        .source-link {
+            color: #d4af37;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.15s;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+            padding-bottom: 1px;
+        }
+        .source-link:hover {
+            color: #f0d060;
+            border-bottom-color: #f0d060;
+        }
+        .no-source {
+            color: #475569;
+            font-style: italic;
+        }
+
+        /* ===== Footer ===== */
+        .report-footer {
+            text-align: center;
+            font-size: 12px;
+            color: #475569;
+            padding: 28px 0;
+            margin-top: 10px;
+        }
+        .report-footer a {
+            color: #64748b;
+            text-decoration: none;
+        }
+        .footer-divider {
+            width: 40px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(212,175,55,0.3), transparent);
+            margin: 16px auto;
+        }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 640px) {
+            .container {
+                padding: 12px 10px;
+            }
+            .report-header {
+                padding: 28px 22px 24px;
+                border-radius: 14px;
+            }
+            .brand-mark {
+                font-size: 32px;
+                letter-spacing: 4px;
+            }
+            .brand-subtitle {
+                font-size: 13px;
+                letter-spacing: 2px;
+            }
+            .header-headline {
+                font-size: 17px;
+                padding: 12px 14px;
+            }
+            .summary-card, .report-section {
+                padding: 20px 18px;
+                border-radius: 14px;
+            }
+            .event-card {
+                padding: 16px 18px;
+            }
+            .event-title {
+                font-size: 15px;
+            }
+            .event-meta {
+                flex-direction: column;
+                gap: 6px;
+                align-items: flex-start;
+            }
+            .meta-sources {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="report-header">
+            <div class="brand-mark">潮 向</div>
+            <div class="brand-subtitle">建材家居行业日报</div>
+            <div class="header-headline">国补扩围规范与存量房焕新政策齐发力，绿色建材强制国标加速洗牌</div>
+            <div class="header-meta">
+                <span>2026-08-04 星期二</span>
+                <span>7 条事件</span>
+                <span>本次识别 5 个状态库新增事件。</span>
+                <a href="https://christopherx911225.github.io/chaowxiang-daily/" style="color: #c9a961; text-decoration: underline;">查看历史日报 →</a>
+            </div>
+        </header>
+
+        <!-- Summary -->
+        <div class="summary-card">
+            <h2>&#9670; 今日概览</h2>
+            <p class="overall-summary">政策端，超长期特别国债支持以旧换新并规范补贴目录，适老家具国标与老旧小区改造释放存量房焕新需求；多地试点全案整装标准，规范家装行业。标准端，新建住宅绿色建材应用比例强制不低于70%，绿色建材政采与认证机制深化，加速低端产能出清。市场端，环保成为消费首要因素，存量房二次装修成核心引擎。行业向绿色化、标准化、全案化转型。</p>
+            <h2>&#9670; 关键变化</h2>
+            <ul class="key-changes">
+                <li>超长期特别国债支持以旧换新并规范补贴目录，智能家居及1级能效家电将迎来销售高峰，未纳入品类需调整营销策略。</li><li>新建住宅绿色建材应用比例强制不低于70%且政采深化，将加速低端产能出清，未获认证企业面临市场禁入与失去公建项目资格风险。</li><li>多地试点全案整装服务标准并鼓励家庭整装，资金存管与固定总价模式将淘汰依赖恶意增项的中小装企，利好具备全案交付能力的头部企业。</li><li>适老家具国标实施及老旧小区改造推进，结合公积金提取扩容，释放旧房翻新与适老建材需求，存量房局改市场迎来政策与资金双重红利。</li>
+            </ul>
+            <div class="impact-assessment">
+                <strong>影响判断：</strong>对行业整体偏正面
+            </div>
+        </div>
+
+        <!-- Risk & Watch -->
+        <div class="risk-watch">
+            <div class="risk-card">
+                <h3>&#9888; 风险与不确定性</h3>
+                <ul>
+                    <li>未纳入国补目录的品类面临营销误导违规风险及销量下滑风险。</li><li>未通过绿色产品认证的建材企业面临新建住宅市场禁入及失去政府采购准入资格的风险。</li><li>依赖恶意增项及交付质量不达标的中小装企面临被全案整装标准及资金存管模式淘汰的风险。</li>
+                </ul>
+            </div>
+            <div class="watch-card">
+                <h3>&#128065; 后续关注</h3>
+                <ul>
+                    <li>跟踪智能家居及1级能效家电在国补扩围后的实际销售数据及企业补贴目录匹配情况。</li><li>跟踪新建住宅绿色建材应用比例强制国标的地方细则落地进度及企业绿色产品认证获取率。</li><li>跟踪全案整装服务标准试点地区的家装纠纷率变化及头部装企全案交付订单转化率。</li><li>跟踪适老化改造与电梯更新政策下，企业适老产品线布局及存量房局改服务营收占比。</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Event Sections -->
+        
+        <section class="report-section">
+            <div class="section-header">
+                <span class="section-icon">&#9733;</span>
+                <h2 class="section-title">今日头条</h2>
+                <span class="section-count">2条</span>
+            </div>
+            <div class="section-content">
+                
+        <div class="event-card">
+            <div class="event-header">
+                <h3 class="event-title">2026年超长期特别国债支持消费品以旧换新及智能家居/家电补贴扩围与规范</h3>
+                <div class="event-badges">
+                    <span class="badge badge-importance" style="background:linear-gradient(135deg,#d4af37,#b8941f);color:#1a1a2e;font-weight:600;">战略级</span>
+                    <span class="badge badge-lifecycle" style="color:#d4af37;border-color:#d4af37;">新增</span>
+                    <span class="badge badge-signal">政策变化</span>
+                </div>
+            </div>
+            <p class="event-summary">2026年国家下达首批625亿元超长期特别国债支持消费品以旧换新，智能家居及1级能效家电纳入补贴，多地扩围补贴品类，同时明确普通家装灯具不在全国国补目录，规范市场补贴宣传。</p>
+            <div class="why-it-matters">&#128161; 明确国补资金规模与品类边界，纠正市场关于灯具等品类的营销误导，指导企业精准匹配补贴目录，制定营销策略。</div>
+            <div class="impact-text">&#127919; 智能家居及1级能效家电将迎来销售高峰，未纳入目录的品类需转向商用设备更新或地方性特定补贴，行业洗牌加速。</div>
+            <div class="event-meta">
+                <span class="meta-date">2026-08-03</span>
+                <span class="meta-category">政策法规</span>
+                <span class="meta-sources"><a href="http://m.toutiao.com/group/7669694890690888235" target="_blank" rel="noopener noreferrer" class="source-link">今日头条自媒体</a> · <a href="http://m.toutiao.com/group/7669724000314065446" target="_blank" rel="noopener noreferrer" class="source-link">地方融媒体机构今日头条文章</a></span>
+            </div>
+        </div>
+        <div class="event-card">
+            <div class="event-header">
+                <h3 class="event-title">适老家具国标实施及老旧小区改造与电梯更新带动存量房焕新需求</h3>
+                <div class="event-badges">
+                    <span class="badge badge-importance" style="background:linear-gradient(135deg,#d4af37,#b8941f);color:#1a1a2e;font-weight:600;">战略级</span>
+                    <span class="badge badge-lifecycle" style="color:#d4af37;border-color:#d4af37;">新增</span>
+                    <span class="badge badge-signal">政策变化</span>
+                </div>
+            </div>
+            <p class="event-summary">适老家具国标正式实施，国家规划未来五年改造超11.5万个老旧小区并倾斜两千亿专项资金，老旧电梯更新成为优先项目，带动旧房翻新、适老建材及电梯运维市场需求释放。</p>
+            <div class="why-it-matters">&#128161; 适老化改造与电梯更新成为民生优先级，释放旧房翻新、防水、适老建材及全屋定制需求，企业需布局适老化产品线及存量房局改服务。</div>
+            <div class="impact-text">&#127919; 存量房局改、适老家具及电梯运维市场迎来政策与资金双重红利，公积金提取政策扩容进一步降低消费者焕新门槛。</div>
+            <div class="event-meta">
+                <span class="meta-date">2026-08-03</span>
+                <span class="meta-category">政策法规</span>
+                <span class="meta-sources"><a href="http://m.toutiao.com/group/7669694890690888235" target="_blank" rel="noopener noreferrer" class="source-link">今日头条自媒体</a> · <a href="http://m.toutiao.com/group/7669710324471333420" target="_blank" rel="noopener noreferrer" class="source-link">今日头条自媒体</a></span>
+            </div>
+        </div>
+            </div>
+        </section>
+        <section class="report-section">
+            <div class="section-header">
+                <span class="section-icon">&#9878;</span>
+                <h2 class="section-title">政策与数据</h2>
+                <span class="section-count">5条</span>
+            </div>
+            <div class="section-content">
+                
+        <div class="event-card">
+            <div class="event-header">
+                <h3 class="event-title">多地出台住房装修与整装鼓励政策及全案整装服务标准试点</h3>
+                <div class="event-badges">
+                    <span class="badge badge-importance" style="background:linear-gradient(135deg,#d4af37,#b8941f);color:#1a1a2e;font-weight:600;">战略级</span>
+                    <span class="badge badge-lifecycle" style="color:#d4af37;border-color:#d4af37;">新增</span>
+                    <span class="badge badge-signal">政策变化</span>
+                </div>
+            </div>
+            <p class="event-summary">珠海等多地出台政策鼓励家庭整装，支持公积金及消费信贷；住建部《“好房子”建设指南》鼓励全装修交付；国内首部全案整装全流程服务团标确立22家试点单位，推行固定总价与资金存管。</p>
+            <div class="why-it-matters">&#128161; 政策端从鼓励局部改造向支持家庭整装、全装修交付延伸，公积金与信贷支持降低消费门槛；全案整装标准试点规范行业“增项”乱象，利好具备全案交付能力的头部装企及建材品牌。</div>
+            <div class="impact-text">&#127919; 家装行业加速向标准化、全案化转型，资金存管与固定总价模式将淘汰依赖恶意增项的中小装企；“好房子”指南推动全装修交付，建材家居企业需加强与装企、房企的B端集采合作。</div>
+            <div class="event-meta">
+                <span class="meta-date">2026-08-03</span>
+                <span class="meta-category">政策法规</span>
+                <span class="meta-sources"><a href="https://finance.ifeng.com/c/8vIOnIoOSp1" target="_blank" rel="noopener noreferrer" class="source-link">凤凰财经/第一财经</a></span>
+            </div>
+        </div>
+        <div class="event-card">
+            <div class="event-header">
+                <h3 class="event-title">存量房时代家装市场规模、环保消费趋势及行业纠纷数据披露</h3>
+                <div class="event-badges">
+                    <span class="badge badge-importance" style="background:#1a365d;color:#d4af37;">值得关注</span>
+                    <span class="badge badge-lifecycle" style="color:#d4af37;border-color:#d4af37;">新增</span>
+                    <span class="badge badge-signal">消费升级</span>
+                </div>
+            </div>
+            <p class="event-summary">中国家装市场规模超3.2万亿，二次装修需求达1.5万亿；超80%业主优先考虑环保材料；全国住建联调委试点地区累计受理调解案件8.2万件，争议金额超430亿。</p>
+            <div class="why-it-matters">&#128161; 存量房二次装修成为核心增长引擎，环保材料成为消费者首要决策因素；行业纠纷金额巨大，反映交付质量与售后痛点，企业需强化环保产品矩阵与交付服务闭环。</div>
+            <div class="impact-text">&#127919; 环保建材市场规模持续扩大，企业需加大绿色产品研发；家装纠纷高发提示企业需完善客诉处理与交付标准化，提升品牌信誉度以在存量博弈中获取溢价。</div>
+            <div class="event-meta">
+                <span class="meta-date">2026-08-03</span>
+                <span class="meta-category">市场数据</span>
+                <span class="meta-sources"><a href="https://finance.ifeng.com/c/8vIOnIoOSp1" target="_blank" rel="noopener noreferrer" class="source-link">凤凰财经/第一财经</a> · <a href="https://m.11467.com/product/d54820793.htm" target="_blank" rel="noopener noreferrer" class="source-link">B2B平台商家推广页面</a></span>
+            </div>
+        </div>
+        <div class="event-card">
+            <div class="event-header">
+                <h3 class="event-title">新建住宅绿色建材应用比例强制国标实施及绿色产品认证规则更新</h3>
+                <div class="event-badges">
+                    <span class="badge badge-importance" style="background:#1a365d;color:#d4af37;">值得关注</span>
+                    <span class="badge badge-lifecycle" style="color:#d4af37;border-color:#d4af37;">新增</span>
+                    <span class="badge badge-signal">政策变化</span>
+                </div>
+            </div>
+            <p class="event-summary">《住宅项目规范》强制要求新建住宅绿色建材应用比例不低于70%，长沙等地明确60%底线；国家认监委发布新版绿色产品认证实施规则，涵盖照明等9个类别。</p>
+            <div class="why-it-matters">&#128161; 新建住宅绿色建材应用比例强制要求及地方细则落地，倒逼建材企业加速绿色转型与产品认证，未达标产品将面临市场禁入风险。</div>
+            <div class="impact-text">&#127919; 新建住宅绿色建材应用比例强制不低于70%，加速低端产能出清，具备绿色认证及低碳生产能力的企业将占据市场份额优势。</div>
+            <div class="event-meta">
+                <span class="meta-date">2026-08-03</span>
+                <span class="meta-category">政策法规</span>
+                <span class="meta-sources"><a href="https://m.11467.com/product/d54820793.htm" target="_blank" rel="noopener noreferrer" class="source-link">B2B平台商家推广页面</a></span>
+            </div>
+        </div>
+        <div class="event-card">
+            <div class="event-header">
+                <h3 class="event-title">住建部推广新型建材应用经验及绿色建材政府采购与认证机制深化</h3>
+                <div class="event-badges">
+                    <span class="badge badge-importance" style="background:linear-gradient(135deg,#d4af37,#b8941f);color:#1a1a2e;font-weight:600;">战略级</span>
+                    <span class="badge badge-lifecycle" style="color:#64748b;border-color:#64748b;">延续</span>
+                    <span class="badge badge-signal">政策变化</span>
+                </div>
+            </div>
+            <p class="event-summary">住建部印发首批新型建材推广应用经验清单，推动建立全国统一绿色建材产品认证机制；101城落地绿色建材政采，规划2026年使用率提升至65%；同时新政规定工程进度款支付比例不低于80%。</p>
+            <div class="why-it-matters">&#128161; 绿色建材从倡导走向强制与激励并重，政府采购比例提升及工程进度款支付新规改善企业现金流，企业需加快绿色产品认证及BIM/AI数字化对接。</div>
+            <div class="impact-text">&#127919; 101城绿色建材政采落地，未获认证企业将失去公建及大型房企项目准入资格；进度款支付不低于80%缓解建企资金压力；绿色建材供应商库扩容。</div>
+            <div class="event-meta">
+                <span class="meta-date">2026-08-03</span>
+                <span class="meta-category">政策法规</span>
+                <span class="meta-sources"><a href="https://m.zjtcn.cn/jianshi/jskx4677260.html" target="_blank" rel="noopener noreferrer" class="source-link">造价通学社</a> · <a href="https://m.zjtcn.cn/jianshi/jskx4674740.html" target="_blank" rel="noopener noreferrer" class="source-link">造价通学社</a></span>
+            </div>
+        </div>
+        <div class="event-card">
+            <div class="event-header">
+                <h3 class="event-title">福建省印发“十五五”绿色建材与智能家居产业集群高质量发展行动方案</h3>
+                <div class="event-badges">
+                    <span class="badge badge-importance" style="background:#1a365d;color:#d4af37;">值得关注</span>
+                    <span class="badge badge-lifecycle" style="color:#64748b;border-color:#64748b;">延续</span>
+                    <span class="badge badge-signal">政策变化</span>
+                </div>
+            </div>
+            <p class="event-summary">福建省工信厅出台“十五五”行动方案，力争2030年绿色建材与智能家居产业集群规模达5800亿，明确区域协同格局，并推进绿色低碳转型与“AI+建材家居”赋能。</p>
+            <div class="why-it-matters">&#128161; 明确福建省未来五年产业集群规模目标与区域协同格局，指引企业在福建地区的产能布局、并购及“AI+建材”技术研发方向。</div>
+            <div class="impact-text">&#127919; 泉州、厦门等地在建筑陶瓷、智能卫浴等领域的集群优势将进一步强化，AI赋能设计与生产将成为当地企业获取政策支持的关键。</div>
+            <div class="event-meta">
+                <span class="meta-date">2026-08-03</span>
+                <span class="meta-category">政策法规</span>
+                <span class="meta-sources"><a href="http://m.toutiao.com/group/7669620060612231680" target="_blank" rel="noopener noreferrer" class="source-link">头条号自媒体行业分析账号</a></span>
+            </div>
+        </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="report-footer">
+            <div class="footer-divider"></div>
+            <p>本日报由 AI 自动生成，仅供参考，不构成投资建议。</p>
+            <p>数据来源：中国建筑材料流通协会、中国建筑材料联合会、新华网、财经媒体等</p>
+        </footer>
+    </div>
+</body>
+</html>
