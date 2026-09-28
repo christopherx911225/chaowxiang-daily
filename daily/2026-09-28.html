@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>建材家居「潮向」日报 | 2026-09-28</title>
+    <title>潮向 | 建材家居行业日报 | 2026-09-28</title>
     <style>
         :root {
             --blue-dark: #1a2a4a;
             --blue-mid: #2c4a7c;
-            --blue-light: #4B9FE8;
             --gold: #E8B84B;
             --gold-light: #F5D98C;
             --bg: #f8f9fc;
@@ -17,214 +16,285 @@
             --text-light: #718096;
             --border: #e2e8f0;
         }
-        
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
             background: var(--bg);
             color: var(--text);
-            line-height: 1.6;
+            line-height: 1.7;
         }
-        
-        .header {
+
+        /* ── 顶部区 ── */
+        .hero {
             background: linear-gradient(135deg, var(--blue-dark) 0%, var(--blue-mid) 100%);
             color: white;
-            padding: 2rem 1.5rem;
+            padding: 3rem 1.5rem 2rem;
             text-align: center;
             position: relative;
             overflow: hidden;
         }
-        
-        .header::before {
+        .hero::before {
             content: '';
             position: absolute;
             top: -50%;
             right: -20%;
             width: 60%;
             height: 200%;
-            background: linear-gradient(45deg, transparent, rgba(232, 184, 75, 0.1), transparent);
+            background: linear-gradient(45deg, transparent, rgba(232,184,75,0.08), transparent);
             transform: rotate(30deg);
         }
-        
-        .header h1 {
-            font-size: 1.8rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
+        .hero-title {
+            font-size: 2.2rem;
+            font-weight: 300;
+            letter-spacing: 0.5rem;
+            margin-bottom: 0.3rem;
             position: relative;
         }
-        
-        .header h1 span {
+        .hero-title b {
             color: var(--gold);
+            font-weight: 700;
         }
-        
-        .header .date {
+        .hero-subtitle {
             font-size: 1rem;
-            opacity: 0.9;
+            opacity: 0.85;
+            margin-bottom: 1.2rem;
             position: relative;
         }
-        
-        .header .stats {
-            margin-top: 1rem;
+        .hero-theme {
+            font-size: 1.15rem;
+            font-weight: 500;
+            color: var(--gold-light);
+            max-width: 700px;
+            margin: 0 auto 1.5rem;
+            line-height: 1.6;
+            position: relative;
+        }
+        .hero-meta {
             display: flex;
             justify-content: center;
-            gap: 2rem;
+            align-items: center;
+            gap: 1.5rem;
+            font-size: 0.9rem;
+            opacity: 0.85;
+            position: relative;
+            flex-wrap: wrap;
+        }
+        .hero-meta .sep {
+            width: 4px; height: 4px;
+            background: var(--gold);
+            border-radius: 50%;
+        }
+        .hero-link {
+            display: inline-block;
+            margin-top: 1rem;
+            color: var(--gold);
+            text-decoration: none;
+            font-size: 0.9rem;
             position: relative;
         }
-        
-        .header .stat {
-            text-align: center;
+        .hero-link:hover { text-decoration: underline; }
+
+        /* ── 概览区 ── */
+        .overview {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
         }
-        
-        .header .stat-num {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--gold);
-        }
-        
-        .header .stat-label {
-            font-size: 0.8rem;
-            opacity: 0.8;
-        }
-        
-        .highlights {
-            background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
-            padding: 1.5rem;
-            margin: 0;
-        }
-        
-        .highlights h2 {
+        .overview h2 {
+            font-size: 1.3rem;
             color: var(--blue-dark);
-            font-size: 1.1rem;
-            margin-bottom: 0.8rem;
+            margin-bottom: 1rem;
+            padding-left: 0.8rem;
+            border-left: 4px solid var(--gold);
         }
-        
-        .highlights ul {
+        .overview p {
+            font-size: 0.95rem;
+            color: var(--text);
+            line-height: 1.9;
+            text-indent: 2em;
+        }
+
+        /* ── 关键变化 ── */
+        .key-changes {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1.5rem 1.5rem;
+        }
+        .key-changes h2 {
+            font-size: 1.3rem;
+            color: var(--blue-dark);
+            margin-bottom: 1rem;
+            padding-left: 0.8rem;
+            border-left: 4px solid var(--gold);
+        }
+        .key-changes ul {
             list-style: none;
             padding: 0;
         }
-        
-        .highlights li {
-            color: var(--blue-dark);
-            padding: 0.3rem 0;
-            padding-left: 1.2rem;
+        .key-changes li {
+            padding: 0.6rem 0 0.6rem 1.5rem;
             position: relative;
             font-size: 0.95rem;
+            line-height: 1.7;
+            border-bottom: 1px solid var(--border);
         }
-        
-        .highlights li::before {
+        .key-changes li::before {
             content: '▸';
             position: absolute;
             left: 0;
-            color: var(--blue-mid);
+            color: var(--gold);
             font-weight: bold;
         }
-        
-        .container {
-            max-width: 960px;
-            margin: 0 auto;
-            padding: 1.5rem;
-        }
-        
-        .section {
-            margin-bottom: 2rem;
-        }
-        
-        .section-title {
-            font-size: 1.3rem;
+        .key-changes .impact {
+            margin-top: 1rem;
+            font-weight: 600;
             color: var(--blue-dark);
-            border-left: 4px solid var(--gold);
-            padding-left: 0.8rem;
-            margin-bottom: 1rem;
+            font-size: 1rem;
         }
-        
-        .items-grid {
+
+        /* ── 风险与后续 ── */
+        .risk-follow {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1.5rem 1.5rem;
             display: grid;
-            gap: 1rem;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
         }
-        
-        .news-item {
+        @media (max-width: 768px) {
+            .risk-follow { grid-template-columns: 1fr; }
+        }
+        .risk-follow .box {
             background: var(--card-bg);
             border-radius: 12px;
             padding: 1.2rem;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
             border: 1px solid var(--border);
-            transition: transform 0.2s, box-shadow 0.2s;
         }
-        
-        .news-item:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+        .risk-follow .box h3 {
+            font-size: 1.05rem;
+            color: var(--blue-dark);
+            margin-bottom: 0.8rem;
         }
-        
-        .news-header {
+        .risk-follow .box ul {
+            list-style: none;
+            padding: 0;
+        }
+        .risk-follow .box li {
+            padding: 0.4rem 0 0.4rem 1.2rem;
+            position: relative;
+            font-size: 0.88rem;
+            line-height: 1.6;
+            color: var(--text);
+        }
+        .risk-follow .box li::before {
+            content: '⚠';
+            position: absolute;
+            left: 0;
+            font-size: 0.8rem;
+        }
+        .risk-follow .box.follow li::before {
+            content: '👁';
+        }
+
+        /* ── 新闻板块 ── */
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1.5rem 2rem;
+        }
+        .section-divider {
+            text-align: center;
+            font-size: 1.5rem;
+            color: var(--gold);
+            margin: 2rem 0 0.5rem;
+            letter-spacing: 0.5rem;
+        }
+        .section-title {
+            font-size: 1.3rem;
+            color: var(--blue-dark);
+            text-align: center;
+            margin-bottom: 1.2rem;
+        }
+        .section-title .count {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            font-weight: 400;
+            margin-left: 0.5rem;
+        }
+
+        .news-item {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.3rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            border: 1px solid var(--border);
+        }
+        .tags-row {
             display: flex;
-            align-items: center;
             gap: 0.5rem;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.6rem;
             flex-wrap: wrap;
         }
-        
-        .category-tag {
+        .tags-row span {
             display: inline-block;
             padding: 0.15rem 0.6rem;
             border-radius: 20px;
             color: white;
-            font-size: 0.75rem;
+            font-size: 0.72rem;
             font-weight: 500;
         }
-        
-        .badge {
-            display: inline-block;
-            padding: 0.15rem 0.5rem;
-            border-radius: 20px;
-            font-size: 0.7rem;
-            font-weight: 500;
+        .cat-tag {
+            background: var(--blue-mid) !important;
         }
-        
-        .badge.high {
-            background: #d4edda;
-            color: #155724;
-        }
-        
-        .badge.pending {
-            background: #fff3cd;
-            color: #856404;
-        }
-        
         .news-title {
-            font-size: 1.05rem;
+            font-size: 1.1rem;
             color: var(--blue-dark);
-            margin-bottom: 0.5rem;
-            line-height: 1.4;
+            margin-bottom: 0.6rem;
+            line-height: 1.5;
         }
-        
         .news-summary {
             font-size: 0.9rem;
             color: var(--text);
-            margin-bottom: 0.8rem;
+            line-height: 1.7;
+            margin-bottom: 0.6rem;
+        }
+        .insight, .biz-impact {
+            font-size: 0.88rem;
+            padding: 0.5rem 0.8rem;
+            border-radius: 6px;
+            margin-bottom: 0.4rem;
             line-height: 1.6;
         }
-        
+        .insight {
+            background: #f0f7ff;
+            border-left: 3px solid #4B9FE8;
+            color: #2c5282;
+        }
+        .biz-impact {
+            background: #fffbeb;
+            border-left: 3px solid var(--gold);
+            color: #744210;
+        }
         .news-meta {
             display: flex;
             align-items: center;
             gap: 1rem;
-            flex-wrap: wrap;
             font-size: 0.8rem;
             color: var(--text-light);
+            margin-top: 0.6rem;
+            flex-wrap: wrap;
         }
-        
-        .source-link {
-            color: var(--blue-light);
+        .news-meta a {
+            color: var(--blue-mid);
             text-decoration: none;
-            font-weight: 500;
         }
-        
-        .source-link:hover {
+        .news-meta a:hover {
             text-decoration: underline;
         }
-        
+
+        /* ── 页脚 ── */
         .footer {
             text-align: center;
             padding: 2rem 1rem;
@@ -232,95 +302,173 @@
             font-size: 0.85rem;
             border-top: 1px solid var(--border);
             margin-top: 2rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
         }
-        
-        .footer .brand {
-            color: var(--gold);
-            font-weight: 600;
-        }
-        
-        .empty-state {
-            text-align: center;
-            padding: 3rem;
-            color: var(--text-light);
-        }
-        
-        .empty-state .icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-        
-        /* 响应式 */
+
         @media (max-width: 768px) {
-            .header h1 { font-size: 1.4rem; }
-            .container { padding: 1rem; }
-            .header .stats { gap: 1rem; }
-            .news-meta { font-size: 0.75rem; }
-        }
-        
-        @media (min-width: 769px) {
-            .items-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
+            .hero-title { font-size: 1.6rem; }
+            .content, .overview, .key-changes { padding-left: 1rem; padding-right: 1rem; }
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>建材家居「<span>潮向</span>」日报</h1>
-        <div class="date">📅 2026-09-28 · 过去24-48小时行业情报精选</div>
-        <div class="stats">
-            <div class="stat">
-                <div class="stat-num">1</div>
-                <div class="stat-label">信息条目</div>
-            </div>
-            <div class="stat">
-                <div class="stat-num">0</div>
-                <div class="stat-label">高可信度</div>
-            </div>
-            <div class="stat">
-                <div class="stat-num">1</div>
-                <div class="stat-label">覆盖维度</div>
-            </div>
-        </div>
+
+<!-- 顶部区 -->
+<div class="hero">
+    <div class="hero-title">潮 <b>向</b></div>
+    <div class="hero-subtitle">建材家居行业日报</div>
+    <div class="hero-theme">供应链重塑与存量博弈加剧，绿色低碳与艺术消费升级驱动行业结构性分化</div>
+    <div class="hero-meta">
+        <span>2026-09-28 星期一</span>
+        <span class="sep"></span>
+        <span>5 条事件</span>
+        <span class="sep"></span>
+        <span>本次识别 2 个状态库新增事件</span>
     </div>
-    
-    
-    <div class="highlights">
-        <h2>📌 今日亮点</h2>
-        <ul>
-            <li>京东101HOME首店落地上海</li>
-        </ul>
+    <a class="hero-link" href="https://christopherx911225.github.io/chaowxiang-daily/" target="_blank">查看历史日报 →</a>
+</div>
+
+<!-- 今日概览 -->
+<div class="overview">
+    <h2>◆ 今日概览</h2>
+    <p>今日建材家居行业呈现“上游整合、中游结盟、下游分化”特征。上游巴斯夫拟收购赢创，预示全球涂料原材料供应链面临重塑；中游东方雨虹与宝业建工战略结盟，标志着存量时代下材料商与工程端深度绑定成为提升交付效率的关键。需求端呈现结构性分化：三棵树艺术漆登顶与Novacolor获双重环保认证，表明消费升级与绿色低碳正驱动高端环保材料快速增长；而欧派家居业绩承压，反映传统刚需市场面临挑战，迫使头部企业深化改革。整体而言，行业正加速从规模扩张向高质量、绿色化转型。</p>
+</div>
+
+<!-- 关键变化 -->
+<div class="key-changes">
+    <h2>◆ 关键变化</h2>
+    <ul>
+        <li>巴斯夫探索收购赢创导致全球特种化学品及涂料原材料市场集中度预期提升，意味着下游建材家居企业将面临供应链格局重塑及潜在的成本结构变化。</li>
+<li>住宅需求向“住有宜居”转变导致个性化与艺术化涂料需求激增，意味着艺术漆等细分高端市场正成为涂料企业突破同质化竞争、获取高毛利的新增长引擎。</li>
+<li>存量时代工程市场需求萎缩导致材料商与施工端必须深度绑定，意味着东方雨虹与宝业建工的战略合作反映出产业链上下游强强联合已成为应对行业周期的必然选择。</li>
+<li>宏观需求挑战导致欧派家居等定制家居龙头业绩短期承压，意味着传统家居巨头必须通过内部深化改革来打破增长瓶颈，行业内部变革与洗牌正在加速。</li>
+
+    </ul>
+    <p class="impact">影响判断：对行业整体偏正面。理由：尽管传统家居龙头面临短期业绩压力，但上游原材料整合有助于提升供应链稳定性，中游产业链协同提高了交付效率，且消费端对艺术漆、绿色低碳产品的需求增长为行业提供了高附加值的新增长极，整体有利于行业向高质量和结构化升级。</p>
+</div>
+
+<!-- 风险与后续 -->
+<div class="risk-follow">
+    <div class="box risk">
+        <h3>⚠ 风险与不确定性</h3>
+        <ul><li>巴斯夫收购赢创若最终达成，可能引发全球涂料原材料价格波动及供应链垄断风险，增加下游建材企业的采购成本与不确定性。</li>
+<li>艺术漆及高端环保材料市场虽增长迅速，但若宏观经济复苏不及预期，高客单价产品的消费降级风险可能影响相关企业的业绩兑现。</li>
+<li>传统家居龙头在深化改革过程中，若战略调整未能精准匹配存量市场需求，可能导致市场份额进一步流失。</li>
+</ul>
     </div>
+    <div class="box follow">
+        <h3>👁 后续关注</h3>
+        <ul><li>跟踪巴斯夫与赢创潜在收购谈判的实质性进展，评估其对全球涂料原材料价格及国内供应链的潜在冲击。</li>
+<li>监测三棵树、Novacolor等头部品牌在艺术漆及绿色低碳领域的渠道拓展与市占率变化，研判高端细分市场的竞争格局。</li>
+<li>关注东方雨虹与宝业建工战略合作项目的落地情况及实际交付效率提升数据，验证产业链协同模式在存量市场的有效性。</li>
+<li>跟踪欧派家居深化改革与“再创业”战略的具体举措及后续业绩修复情况，评估其穿越行业周期的能力。</li>
+</ul>
+    </div>
+</div>
+
+<!-- 四大新闻板块 -->
+<div class="content">
     
-    
-    <div class="container">
+        <div class="section-divider">★</div>
+        <h2 class="section-title">今日头条 <span class="count">1条</span></h2>
         
-        <div class="section">
-            <h2 class="section-title">🔴 行业重大事件</h2>
-            <div class="items-grid">
-                
-            <div class="news-item">
-                <div class="news-header">
-                    <span class="category-tag" style="background:#A855F7">家装公司/互联网家装平台</span>
-                    <span class="badge pending">⚠ 待验证</span>
-                </div>
-                <h3 class="news-title">京东101HOME首店落地上海</h3>
-                <p class="news-summary">9月28日京东101HOME全球首店在上海静安寺开业，万平米全自营整合家具家电与全屋定制，融合多元业态，以自营供应链和场景化体验重构线下家居零售逻辑。</p>
-                <div class="news-meta">
-                    <span class="source">📰 钛媒体APP</span>
-                    <span class="date">📅 2026-09-27</span>
-                    <a href="http://m.toutiao.com/group/7690064008426848819/" target="_blank" class="source-link">🔗 查看原文</a>
-                </div>
+        <div class="news-item">
+            <div class="tags-row">
+                <span class="grade-tag" style="background:#c0392b">战略级</span>
+                <span class="status-tag" style="background:#3498db">延续</span>
+                <span class="cat-tag">行业重大事件</span>
             </div>
+            <h3 class="news-title">巴斯夫确认就潜在收购赢创开展探索性谈判</h3>
+            <p class="news-summary">2026年9月28日消息，全球化工巨头巴斯夫确认，正与德国RAG基金会及赢创工业集团就潜在收购赢创进行探索性谈判。目前谈判仍处于初步阶段，尚未达成任何具有约束力的协议。若交易达成，将重塑全球特种化学品及涂料原材料市场的竞争格局，对下游建材家居行业的供应链稳定及成本结构产生深远影响。</p>
+            <div class="insight"><strong>💡 洞察：</strong>巴斯夫与赢创的潜在合并将是全球化工行业的超级大事件。赢创在特种化学品（如涂料助剂、树脂等）领域占据重要地位，此举旨在应对全球供应链重构及绿色转型压力，通过规模效应和技术互补提升全球竞争力。</div>
+            <div class="biz-impact"><strong>🎯 业务影响：</strong>建材家居企业需密切关注原材料供应链的潜在变动，特别是依赖赢创或巴斯夫特种化学品的涂料、胶粘剂企业，应提前评估供应链风险，寻找替代供应商或建立长期战略锁价协议，以防范并购带来的价格波动或供应短缺。</div>
+            <div class="news-meta">
+                <span class="date">2026-09-28</span>
+                <span class="sources"><a href="https://www.27580.cn/news/204575.html" target="_blank">中外涂料网</a></span>
             </div>
         </div>
-    </div>
-    
-    <div class="footer">
-        <p>由 <span class="brand">「潮向」情报系统</span> 自动生成</p>
-        <p style="margin-top:0.5rem">信源覆盖：行业协会 · 官方媒体 · 权威机构 · 上市公司公告 · 头部专业媒体</p>
-        <p style="margin-top:0.3rem">⚠️ 标注"待验证"的信息仅来自单一信源，仅供内部参考</p>
-    </div>
+        
+        <div class="section-divider">♥</div>
+        <h2 class="section-title">行业脉搏 <span class="count">2条</span></h2>
+        
+        <div class="news-item">
+            <div class="tags-row">
+                <span class="grade-tag" style="background:#E8B84B">值得关注</span>
+                <span class="status-tag" style="background:#3498db">延续</span>
+                <span class="cat-tag">品牌动态</span>
+            </div>
+            <h3 class="news-title">三棵树登顶“2026中国艺术漆品牌25强榜单”</h3>
+            <p class="news-summary">2026年9月28日，行业权威媒体《涂界》发布“2026中国艺术漆品牌25强榜单”，三棵树凭借在消费升级与审美多元化背景下的市场表现登顶榜首。随着住宅需求从“住有所居”向“住有宜居”转变，个性化、艺术化与健康化成为群众住宅选择的新需求，艺术漆市场迎来快速增长期。</p>
+            <div class="insight"><strong>💡 洞察：</strong>艺术漆正从高端小众走向大众品质装修的标配，三棵树的登顶反映出国产头部品牌在高端墙面定制领域的本土化替代加速。环保、艺术质感与系统化交付成为品牌突围的核心壁垒。</div>
+            <div class="biz-impact"><strong>🎯 业务影响：</strong>家居建材企业应加大在艺术涂料及墙面定制领域的布局，提升产品的设计感与环保标准。同时，需强化“材料+施工”的标准化交付体系，以满足消费者对个性化与高品质居住环境的双重需求。</div>
+            <div class="news-meta">
+                <span class="date">2026-09-28</span>
+                <span class="sources"><a href="https://www.27580.cn/news/204582.html" target="_blank">中外涂料网</a></span>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="tags-row">
+                <span class="grade-tag" style="background:#E8B84B">值得关注</span>
+                <span class="status-tag" style="background:#3498db">延续</span>
+                <span class="cat-tag">战略调整</span>
+            </div>
+            <h3 class="news-title">东方雨虹新材料与宝业建工签署战略合作协议</h3>
+            <p class="news-summary">2026年9月28日消息，安徽东方雨虹新材料科技有限公司与安徽宝业建工集团有限公司正式签署战略合作协议。双方将在建筑防水、新材料应用及工程供应链等领域展开深度合作，通过产业链上下游的强强联合，共同提升建筑工程质量与材料交付效率，应对存量时代的工程市场需求。</p>
+            <div class="insight"><strong>💡 洞察：</strong>建材头部企业正加速从“单一材料供应商”向“建筑系统解决方案服务商”转型，通过与大型建工集团的深度绑定，锁定B端大客户订单，构建区域市场的渠道护城河。</div>
+            <div class="biz-impact"><strong>🎯 业务影响：</strong>建材企业应积极寻求与大型央国企建工集团的战略集采合作，以应对房地产存量时代B端市场的集中度提升。同时，需优化针对大型工程项目的定制化研发与供应链响应能力。</div>
+            <div class="news-meta">
+                <span class="date">2026-09-28</span>
+                <span class="sources"><a href="https://www.27580.cn/news/204452.html" target="_blank">中外涂料网</a></span>
+            </div>
+        </div>
+        
+        <div class="section-divider">⚡</div>
+        <h2 class="section-title">趋势与信号 <span class="count">1条</span></h2>
+        
+        <div class="news-item">
+            <div class="tags-row">
+                <span class="grade-tag" style="background:#E8B84B">值得关注</span>
+                <span class="status-tag" style="background:#27ae60">新增</span>
+                <span class="cat-tag">技术创新</span>
+            </div>
+            <h3 class="news-title">Novacolor获EPD与REDcert²双重认证，重塑可持续底线</h3>
+            <p class="news-summary">2026年9月28日消息，意大利进口高端艺术漆品牌Novacolor旗下两款产品获EPD International环境产品声明认证，此前该品牌还获得了REDcert²生物质平衡认证。在全球绿色低碳转型背景下，价值链透明与原料可持续追溯能力成为衡量企业核心竞争力的关键。</p>
+            <div class="insight"><strong>💡 洞察：</strong>国际高端涂料品牌正通过严苛的欧洲环保与可持续认证构建差异化壁垒。这不仅是对全球ESG趋势的响应，更是抢占国内高端设计师渠道与绿色建材市场的“通行证”。</div>
+            <div class="biz-impact"><strong>🎯 业务影响：</strong>国内涂料及建材企业需加速推进产品的碳足迹认证与环保体系升级，将“可持续”作为品牌营销的核心卖点。在高端工程项目及设计师渠道拓展中，具备国际权威环保认证的产品将获得更高的溢价能力与中标率。</div>
+            <div class="news-meta">
+                <span class="date">2026-09-28</span>
+                <span class="sources"><a href="https://www.27580.cn/news/204587.html" target="_blank">中外涂料网</a> · <a href="https://www.27580.cn/news/204577.html" target="_blank">中外涂料网</a></span>
+            </div>
+        </div>
+        
+        <div class="section-divider">⚖</div>
+        <h2 class="section-title">政策与数据 <span class="count">1条</span></h2>
+        
+        <div class="news-item">
+            <div class="tags-row">
+                <span class="grade-tag" style="background:#E8B84B">值得关注</span>
+                <span class="status-tag" style="background:#27ae60">新增</span>
+                <span class="cat-tag">市场数据</span>
+            </div>
+            <h3 class="news-title">欧派家居市值居行业第四，研报指其业绩短期承压正深化改革</h3>
+            <p class="news-summary">2026年9月28日数据显示，欧派家居总市值为177.84亿元，在家居用品行业76只股票中位列第四，市盈率为12.52，市净率为0.99。近期研报指出，欧派家居2026年半年报业绩短期承压，面临需求挑战，目前正通过深化改革和“再创业”寻求突破，静待业绩修复。</p>
+            <div class="insight"><strong>💡 洞察：</strong>头部定制家居企业在当前市场环境下普遍面临需求端的压力，欧派家居作为行业龙头亦不例外，其市值和估值水平反映出市场对其短期业绩的谨慎态度，但“再创业”战略表明其正在积极寻找新增长曲线。</div>
+            <div class="biz-impact"><strong>🎯 业务影响：</strong>企业需密切关注头部企业的战略调整方向，特别是其在渠道下沉、整家定制及降本增效方面的举措；同时，行业竞争加剧，中小企业需警惕龙头企业的降维打击，寻找差异化竞争空间。</div>
+            <div class="news-meta">
+                <span class="date">2026-09-28</span>
+                <span class="sources"><a href="https://data.eastmoney.com/stockdata/603833.html" target="_blank">东方财富网</a></span>
+            </div>
+        </div>
+        
+</div>
+
+<!-- 页脚 -->
+<div class="footer">
+    <p>数据来源：中国建筑材料流通协会、中国建筑材料联合会、新华网、财经媒体等</p>
+    <p style="margin-top:0.5rem">由 <b style="color:var(--gold)">「潮向」情报系统</b> 自动生成</p>
+</div>
+
 </body>
 </html>
