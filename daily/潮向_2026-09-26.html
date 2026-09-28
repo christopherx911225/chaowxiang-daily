@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>建材家居「潮向」日报 | 2026-09-26</title>
+    <title>潮向 | 建材家居行业日报 | 2026-09-26</title>
     <style>
         :root {
             --blue-dark: #1a2a4a;
             --blue-mid: #2c4a7c;
-            --blue-light: #4B9FE8;
             --gold: #E8B84B;
             --gold-light: #F5D98C;
             --bg: #f8f9fc;
@@ -17,214 +16,285 @@
             --text-light: #718096;
             --border: #e2e8f0;
         }
-        
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
             background: var(--bg);
             color: var(--text);
-            line-height: 1.6;
+            line-height: 1.7;
         }
-        
-        .header {
+
+        /* ── 顶部区 ── */
+        .hero {
             background: linear-gradient(135deg, var(--blue-dark) 0%, var(--blue-mid) 100%);
             color: white;
-            padding: 2rem 1.5rem;
+            padding: 3rem 1.5rem 2rem;
             text-align: center;
             position: relative;
             overflow: hidden;
         }
-        
-        .header::before {
+        .hero::before {
             content: '';
             position: absolute;
             top: -50%;
             right: -20%;
             width: 60%;
             height: 200%;
-            background: linear-gradient(45deg, transparent, rgba(232, 184, 75, 0.1), transparent);
+            background: linear-gradient(45deg, transparent, rgba(232,184,75,0.08), transparent);
             transform: rotate(30deg);
         }
-        
-        .header h1 {
-            font-size: 1.8rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
+        .hero-title {
+            font-size: 2.2rem;
+            font-weight: 300;
+            letter-spacing: 0.5rem;
+            margin-bottom: 0.3rem;
             position: relative;
         }
-        
-        .header h1 span {
+        .hero-title b {
             color: var(--gold);
+            font-weight: 700;
         }
-        
-        .header .date {
+        .hero-subtitle {
             font-size: 1rem;
-            opacity: 0.9;
+            opacity: 0.85;
+            margin-bottom: 1.2rem;
             position: relative;
         }
-        
-        .header .stats {
-            margin-top: 1rem;
+        .hero-theme {
+            font-size: 1.15rem;
+            font-weight: 500;
+            color: var(--gold-light);
+            max-width: 700px;
+            margin: 0 auto 1.5rem;
+            line-height: 1.6;
+            position: relative;
+        }
+        .hero-meta {
             display: flex;
             justify-content: center;
-            gap: 2rem;
+            align-items: center;
+            gap: 1.5rem;
+            font-size: 0.9rem;
+            opacity: 0.85;
+            position: relative;
+            flex-wrap: wrap;
+        }
+        .hero-meta .sep {
+            width: 4px; height: 4px;
+            background: var(--gold);
+            border-radius: 50%;
+        }
+        .hero-link {
+            display: inline-block;
+            margin-top: 1rem;
+            color: var(--gold);
+            text-decoration: none;
+            font-size: 0.9rem;
             position: relative;
         }
-        
-        .header .stat {
-            text-align: center;
+        .hero-link:hover { text-decoration: underline; }
+
+        /* ── 概览区 ── */
+        .overview {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
         }
-        
-        .header .stat-num {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--gold);
-        }
-        
-        .header .stat-label {
-            font-size: 0.8rem;
-            opacity: 0.8;
-        }
-        
-        .highlights {
-            background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
-            padding: 1.5rem;
-            margin: 0;
-        }
-        
-        .highlights h2 {
+        .overview h2 {
+            font-size: 1.3rem;
             color: var(--blue-dark);
-            font-size: 1.1rem;
-            margin-bottom: 0.8rem;
+            margin-bottom: 1rem;
+            padding-left: 0.8rem;
+            border-left: 4px solid var(--gold);
         }
-        
-        .highlights ul {
+        .overview p {
+            font-size: 0.95rem;
+            color: var(--text);
+            line-height: 1.9;
+            text-indent: 2em;
+        }
+
+        /* ── 关键变化 ── */
+        .key-changes {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1.5rem 1.5rem;
+        }
+        .key-changes h2 {
+            font-size: 1.3rem;
+            color: var(--blue-dark);
+            margin-bottom: 1rem;
+            padding-left: 0.8rem;
+            border-left: 4px solid var(--gold);
+        }
+        .key-changes ul {
             list-style: none;
             padding: 0;
         }
-        
-        .highlights li {
-            color: var(--blue-dark);
-            padding: 0.3rem 0;
-            padding-left: 1.2rem;
+        .key-changes li {
+            padding: 0.6rem 0 0.6rem 1.5rem;
             position: relative;
             font-size: 0.95rem;
+            line-height: 1.7;
+            border-bottom: 1px solid var(--border);
         }
-        
-        .highlights li::before {
+        .key-changes li::before {
             content: '▸';
             position: absolute;
             left: 0;
-            color: var(--blue-mid);
+            color: var(--gold);
             font-weight: bold;
         }
-        
-        .container {
-            max-width: 960px;
-            margin: 0 auto;
-            padding: 1.5rem;
-        }
-        
-        .section {
-            margin-bottom: 2rem;
-        }
-        
-        .section-title {
-            font-size: 1.3rem;
+        .key-changes .impact {
+            margin-top: 1rem;
+            font-weight: 600;
             color: var(--blue-dark);
-            border-left: 4px solid var(--gold);
-            padding-left: 0.8rem;
-            margin-bottom: 1rem;
+            font-size: 1rem;
         }
-        
-        .items-grid {
+
+        /* ── 风险与后续 ── */
+        .risk-follow {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1.5rem 1.5rem;
             display: grid;
-            gap: 1rem;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
         }
-        
-        .news-item {
+        @media (max-width: 768px) {
+            .risk-follow { grid-template-columns: 1fr; }
+        }
+        .risk-follow .box {
             background: var(--card-bg);
             border-radius: 12px;
             padding: 1.2rem;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
             border: 1px solid var(--border);
-            transition: transform 0.2s, box-shadow 0.2s;
         }
-        
-        .news-item:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+        .risk-follow .box h3 {
+            font-size: 1.05rem;
+            color: var(--blue-dark);
+            margin-bottom: 0.8rem;
         }
-        
-        .news-header {
+        .risk-follow .box ul {
+            list-style: none;
+            padding: 0;
+        }
+        .risk-follow .box li {
+            padding: 0.4rem 0 0.4rem 1.2rem;
+            position: relative;
+            font-size: 0.88rem;
+            line-height: 1.6;
+            color: var(--text);
+        }
+        .risk-follow .box li::before {
+            content: '⚠';
+            position: absolute;
+            left: 0;
+            font-size: 0.8rem;
+        }
+        .risk-follow .box.follow li::before {
+            content: '👁';
+        }
+
+        /* ── 新闻板块 ── */
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1.5rem 2rem;
+        }
+        .section-divider {
+            text-align: center;
+            font-size: 1.5rem;
+            color: var(--gold);
+            margin: 2rem 0 0.5rem;
+            letter-spacing: 0.5rem;
+        }
+        .section-title {
+            font-size: 1.3rem;
+            color: var(--blue-dark);
+            text-align: center;
+            margin-bottom: 1.2rem;
+        }
+        .section-title .count {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            font-weight: 400;
+            margin-left: 0.5rem;
+        }
+
+        .news-item {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.3rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            border: 1px solid var(--border);
+        }
+        .tags-row {
             display: flex;
-            align-items: center;
             gap: 0.5rem;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.6rem;
             flex-wrap: wrap;
         }
-        
-        .category-tag {
+        .tags-row span {
             display: inline-block;
             padding: 0.15rem 0.6rem;
             border-radius: 20px;
             color: white;
-            font-size: 0.75rem;
+            font-size: 0.72rem;
             font-weight: 500;
         }
-        
-        .badge {
-            display: inline-block;
-            padding: 0.15rem 0.5rem;
-            border-radius: 20px;
-            font-size: 0.7rem;
-            font-weight: 500;
+        .cat-tag {
+            background: var(--blue-mid) !important;
         }
-        
-        .badge.high {
-            background: #d4edda;
-            color: #155724;
-        }
-        
-        .badge.pending {
-            background: #fff3cd;
-            color: #856404;
-        }
-        
         .news-title {
-            font-size: 1.05rem;
+            font-size: 1.1rem;
             color: var(--blue-dark);
-            margin-bottom: 0.5rem;
-            line-height: 1.4;
+            margin-bottom: 0.6rem;
+            line-height: 1.5;
         }
-        
         .news-summary {
             font-size: 0.9rem;
             color: var(--text);
-            margin-bottom: 0.8rem;
+            line-height: 1.7;
+            margin-bottom: 0.6rem;
+        }
+        .insight, .biz-impact {
+            font-size: 0.88rem;
+            padding: 0.5rem 0.8rem;
+            border-radius: 6px;
+            margin-bottom: 0.4rem;
             line-height: 1.6;
         }
-        
+        .insight {
+            background: #f0f7ff;
+            border-left: 3px solid #4B9FE8;
+            color: #2c5282;
+        }
+        .biz-impact {
+            background: #fffbeb;
+            border-left: 3px solid var(--gold);
+            color: #744210;
+        }
         .news-meta {
             display: flex;
             align-items: center;
             gap: 1rem;
-            flex-wrap: wrap;
             font-size: 0.8rem;
             color: var(--text-light);
+            margin-top: 0.6rem;
+            flex-wrap: wrap;
         }
-        
-        .source-link {
-            color: var(--blue-light);
+        .news-meta a {
+            color: var(--blue-mid);
             text-decoration: none;
-            font-weight: 500;
         }
-        
-        .source-link:hover {
+        .news-meta a:hover {
             text-decoration: underline;
         }
-        
+
+        /* ── 页脚 ── */
         .footer {
             text-align: center;
             padding: 2rem 1rem;
@@ -232,191 +302,158 @@
             font-size: 0.85rem;
             border-top: 1px solid var(--border);
             margin-top: 2rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
         }
-        
-        .footer .brand {
-            color: var(--gold);
-            font-weight: 600;
-        }
-        
-        .empty-state {
-            text-align: center;
-            padding: 3rem;
-            color: var(--text-light);
-        }
-        
-        .empty-state .icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-        
-        /* 响应式 */
+
         @media (max-width: 768px) {
-            .header h1 { font-size: 1.4rem; }
-            .container { padding: 1rem; }
-            .header .stats { gap: 1rem; }
-            .news-meta { font-size: 0.75rem; }
-        }
-        
-        @media (min-width: 769px) {
-            .items-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
+            .hero-title { font-size: 1.6rem; }
+            .content, .overview, .key-changes { padding-left: 1rem; padding-right: 1rem; }
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>建材家居「<span>潮向</span>」日报</h1>
-        <div class="date">📅 2026-09-26 · 过去24-48小时行业情报精选</div>
-        <div class="stats">
-            <div class="stat">
-                <div class="stat-num">7</div>
-                <div class="stat-label">信息条目</div>
-            </div>
-            <div class="stat">
-                <div class="stat-num">0</div>
-                <div class="stat-label">高可信度</div>
-            </div>
-            <div class="stat">
-                <div class="stat-num">4</div>
-                <div class="stat-label">覆盖维度</div>
-            </div>
-        </div>
+
+<!-- 顶部区 -->
+<div class="hero">
+    <div class="hero-title">潮 <b>向</b></div>
+    <div class="hero-subtitle">建材家居行业日报</div>
+    <div class="hero-theme">国内家装消费迎金融贴息利好刺激需求释放，海外环保合规趋严倒逼建材供应链加速绿色技术迭代</div>
+    <div class="hero-meta">
+        <span>2026-09-26 星期六</span>
+        <span class="sep"></span>
+        <span>4 条事件</span>
+        <span class="sep"></span>
+        <span>本次识别 4 个状态库新增事件</span>
     </div>
-    
-    
-    <div class="highlights">
-        <h2>📌 今日亮点</h2>
-        <ul>
-            <li>湘江涂料居民族涂料榜首</li><li>家装分期贴息政策扩围</li>
-        </ul>
+    <a class="hero-link" href="https://christopherx911225.github.io/chaowxiang-daily/" target="_blank">查看历史日报 →</a>
+</div>
+
+<!-- 今日概览 -->
+<div class="overview">
+    <h2>◆ 今日概览</h2>
+    <p>今日建材家居行业呈现“内需政策托底与海外合规倒逼”的双线并行格局。国内方面，财政金融政策精准发力，将家装专项分期纳入贴息并提高额度，直接降低消费者大宗消费门槛与企业资金成本，有望在四季度有效提振家装家居市场活力。海外方面，欧洲反“漂绿”新规正式生效，叠加涂料展对PFAS替代等可持续技术的聚焦，标志着全球建材贸易的环保壁垒已从概念宣传深入到实质性技术验证阶段。在此背景下，国内头部企业正通过工业4.0柔性制造与全域营销构筑护城河，行业整体加速向“内需政策驱动消费回暖、技术创新驱动绿色合规”的高质量发展阶段迈进。</p>
+</div>
+
+<!-- 关键变化 -->
+<div class="key-changes">
+    <h2>◆ 关键变化</h2>
+    <ul>
+        <li>财政金融政策将家装分期纳入贴息并提高额度，直接降低了消费者的资金成本与决策门槛，意味着四季度家装及家具家电等大宗消费有望迎来显著的修复性反弹。</li>
+<li>欧洲反“漂绿”新规禁止模糊环保声明并要求提供可验证证据，导致出口型建材企业的合规成本与营销门槛大幅上升，意味着缺乏实质性环保技术支撑的伪绿色产品将被加速出清。</li>
+<li>欧洲严苛环保法规与PFAS替代挑战叠加，导致涂料及上游化工材料面临配方重构压力，意味着水性化、生物基及低VOC等底层可持续技术将成为企业出海的核心竞争力。</li>
+<li>消费需求向个性化与体验化升级，导致传统家居制造模式面临效率与获客瓶颈，意味着以我乐家居为代表的头部企业正通过工业4.0柔性生产与全域营销重构成本与流量优势。</li>
+
+    </ul>
+    <p class="impact">影响判断：对行业整体偏正面。理由：国内家装贴息政策精准直达消费者与企业，有效激发内需潜力；虽然海外环保新规短期增加出口合规成本，但长期看将倒逼国内建材供应链加速绿色技术升级，提升全球产业链话语权，整体利好行业高质量发展。</p>
+</div>
+
+<!-- 风险与后续 -->
+<div class="risk-follow">
+    <div class="box risk">
+        <h3>⚠ 风险与不确定性</h3>
+        <ul><li>政策落地不及预期风险：家装分期贴息政策在实际执行中可能面临金融机构审批趋严或消费者信贷意愿不足的问题，导致政策红利未能完全转化为实际消费增量。</li>
+<li>海外合规成本转嫁风险：欧洲反“漂绿”新规及PFAS替代要求将大幅增加研发与检测成本，若企业无法通过产品溢价消化成本，可能削弱其在海外市场的价格竞争力。</li>
+<li>技术替代不及预期风险：涂料等行业在推进PFAS替代及生物基材料应用时，可能面临性能下降或良率不稳的技术瓶颈，影响产品交付质量与客户认可度。</li>
+</ul>
     </div>
+    <div class="box follow">
+        <h3>👁 后续关注</h3>
+        <ul><li>跟踪家装专项分期贴息政策在各大银行及家装企业的实际落地情况，监测四季度家具家电及家装建材大宗消费数据的边际变化。</li>
+<li>监测出口型建材及涂料企业在欧洲市场的合规应对进度，关注其环保声明的认证情况及反“漂绿”新规实施后的首批市场反馈。</li>
+<li>关注涂料及上游化工行业在PFAS替代、水性及生物基材料研发方面的技术突破，跟踪相关替代配方的量产进度与性能验证数据。</li>
+<li>跟踪头部家居企业在工业4.0柔性生产线改造及全域营销矩阵建设上的资本开支与产能利用率，监测其单店坪效与获客成本的改善情况。</li>
+</ul>
+    </div>
+</div>
+
+<!-- 四大新闻板块 -->
+<div class="content">
     
-    
-    <div class="container">
+        <div class="section-divider">★</div>
+        <h2 class="section-title">今日头条 <span class="count">1条</span></h2>
         
-        <div class="section">
-            <h2 class="section-title">🔴 行业重大事件</h2>
-            <div class="items-grid">
-                
-            <div class="news-item">
-                <div class="news-header">
-                    <span class="category-tag" style="background:#E8B84B">涂料/艺术漆</span>
-                    <span class="badge pending">⚠ 待验证</span>
-                </div>
-                <h3 class="news-title">湘江涂料居民族涂料榜首</h3>
-                <p class="news-summary">《涂界》发布2026中国工业涂料品牌30强，湘江涂料连续八年蝉联民族品牌首位。其在海工涂料及民机用涂料等高端特种领域取得突破，切入航空涂料市场，加速高端涂料进口替代与供应链本土化。</p>
-                <div class="news-meta">
-                    <span class="source">📰 华声在线</span>
-                    <span class="date">📅 2026-09-26</span>
-                    <a href="http://m.toutiao.com/group/7689628149570716160/" target="_blank" class="source-link">🔗 查看原文</a>
-                </div>
+        <div class="news-item">
+            <div class="tags-row">
+                <span class="grade-tag" style="background:#c0392b">战略级</span>
+                <span class="status-tag" style="background:#27ae60">新增</span>
+                <span class="cat-tag">政策法规</span>
             </div>
-            <div class="news-item">
-                <div class="news-header">
-                    <span class="category-tag" style="background:#4B9FE8">全屋定制/定制家具</span>
-                    <span class="badge pending">⚠ 待验证</span>
-                </div>
-                <h3 class="news-title">家装分期贴息政策扩围</h3>
-                <p class="news-summary">国家优化财政金融促内需政策，新增家装专项分期贴息品类，上限提至5000元。此举直接降低居民装修、购买家具家电等大宗消费的融资成本，有望显著刺激家居市场消费活力。</p>
-                <div class="news-meta">
-                    <span class="source">📰 环球网</span>
-                    <span class="date">📅 2026-09-26</span>
-                    <a href="http://m.toutiao.com/group/7689631400282079790/" target="_blank" class="source-link">🔗 查看原文</a>
-                </div>
-            </div>
+            <h3 class="news-title">财政金融政策释放红利：家装专项分期纳入贴息，提振大宗消费</h3>
+            <p class="news-summary">我国优化实施财政金融协同促内需政策，新增信用卡、汽车、家装专项分期等贴息品类，并将贴息上限从每年3000元提高至5000元。消费者办理家装、家具家电等大宗消费分期，可享受1个百分点的财政利息减免，资金直达消费者。同时，中小微企业流动资金贷款及贴息额度也大幅上调，有效缓解企业短期资金压力，激发民间投资与居民消费活力。</p>
+            <div class="insight"><strong>💡 洞察：</strong>💡 国家通过财政贴息精准滴灌消费端与制造端，家装作为大宗消费的核心场景，直接受益于金融杠杆的撬动。这表明政策端正从“补贴产品”向“补贴消费场景与金融成本”延伸，有助于加速存量房翻新及改善型住房需求的释放。</div>
+            <div class="biz-impact"><strong>🎯 业务影响：</strong>🎯 家居建材企业应主动对接金融机构，将“财政贴息”作为终端促销的核心卖点，联合银行推出“低息家装分期”专属方案；同时，中小微经销商应积极申请流动资金贴息贷款，优化现金流，备战年底旺季。</div>
+            <div class="news-meta">
+                <span class="date">2026-09-26</span>
+                <span class="sources"><a href="http://m.toutiao.com/group/7689628586919100982/" target="_blank">光明网</a></span>
             </div>
         </div>
-        <div class="section">
-            <h2 class="section-title">📊 市场数据</h2>
-            <div class="items-grid">
-                
-            <div class="news-item">
-                <div class="news-header">
-                    <span class="category-tag" style="background:#4B9FE8">全屋定制/定制家具</span>
-                    <span class="badge pending">⚠ 待验证</span>
-                </div>
-                <h3 class="news-title">法国家具市场细分趋势</h3>
-                <p class="news-summary">2025年法国家具市场下滑1.8%至136亿欧元，但2026年初整体厨房定制率先回暖实现正增长。同时，线上专业平台成为行业新增长引擎，渠道结构正加速重塑。</p>
-                <div class="news-meta">
-                    <span class="source">📰 Wide Media</span>
-                    <span class="date">📅 2026-09-25</span>
-                    <a href="https://widemedia.fr/decoration-design/4062/marche-meuble-france-baisse-ralentit-reprise/amp/" target="_blank" class="source-link">🔗 查看原文</a>
-                </div>
+        
+        <div class="section-divider">♥</div>
+        <h2 class="section-title">行业脉搏 <span class="count">1条</span></h2>
+        
+        <div class="news-item">
+            <div class="tags-row">
+                <span class="grade-tag" style="background:#E8B84B">值得关注</span>
+                <span class="status-tag" style="background:#27ae60">新增</span>
+                <span class="cat-tag">企业动态</span>
             </div>
-            <div class="news-item">
-                <div class="news-header">
-                    <span class="category-tag" style="background:#4B9FE8">全屋定制/定制家具</span>
-                    <span class="badge pending">⚠ 待验证</span>
-                </div>
-                <h3 class="news-title">欧派家居半年报业绩短期承压</h3>
-                <p class="news-summary">东方财富数据显示，欧派家居总市值177.84亿元，位列家居用品行业第4。最新研报指出其2026半年报业绩短期承压，正通过深化改革与再创业寻求突破，静待修复。</p>
-                <div class="news-meta">
-                    <span class="source">📰 东方财富网</span>
-                    <span class="date">📅 2026-09-25</span>
-                    <a href="https://data.eastmoney.com/stockdata/603833.html" target="_blank" class="source-link">🔗 查看原文</a>
-                </div>
-            </div>
+            <h3 class="news-title">我乐家居深化智能制造与全域营销，推进工业4.0与原创设计升级</h3>
+            <p class="news-summary">我乐家居持续推进“互联网+”定制化家居设计制造集成平台建设，实行“以销定产”的柔性化生产模式，依托智能化生产线与数字化管控平台推进工业4.0升级。同时，公司坚守“设计至美，高端定制”定位，构建全周期研发体系，通过联名事件强化原创设计标签，并依托线上新媒体矩阵全域引流与线下旗舰店体验结合，构建精准获客与转化闭环。</p>
+            <div class="insight"><strong>💡 洞察：</strong>💡 定制家居行业的竞争已从前端设计营销向后端供应链与制造效率延伸。我乐家居通过数字化改造打通设计到生产的数据链路，构筑柔性制造壁垒；同时，在消费趋于理性的当下，通过高端原创设计与线上线下全域营销闭环，有效提升品牌溢价与转化率。</div>
+            <div class="biz-impact"><strong>🎯 业务影响：</strong>🎯 企业应加速推进生产端的数字化转型，优化柔性化生产线以提升交付效率；同时需明确差异化品牌定位，加大原创设计研发投入，构建全域营销闭环，利用新媒体精准获客并优化线下门店体验场景，提升单店坪效。</div>
+            <div class="news-meta">
+                <span class="date">2026-09-25</span>
+                <span class="sources"><a href="http://ddx.gubit.cn/mango/ticai/603326.html" target="_blank">查股网</a></span>
             </div>
         </div>
-        <div class="section">
-            <h2 class="section-title">💡 技术创新</h2>
-            <div class="items-grid">
-                
-            <div class="news-item">
-                <div class="news-header">
-                    <span class="category-tag" style="background:#E8B84B">涂料/艺术漆</span>
-                    <span class="badge pending">⚠ 待验证</span>
-                </div>
-                <h3 class="news-title">欧洲涂料展聚焦环保新规</h3>
-                <p class="news-summary">2026年意大利涂料展重点探讨水性技术、生物基材料及低VOC系统。展会聚焦PFAS替代、微塑料限制及REACH法规演变，反映欧洲涂料行业向可持续和高性能转型的技术与合规趋势，对出海企业具参考价值。</p>
-                <div class="news-meta">
-                    <span class="source">📰 Industry Chemistry</span>
-                    <span class="date">📅 2026-09-25</span>
-                    <a href="https://www.industrychemistry.com/paint-coatings-italy-2026-come-regolamentazione-sostenibilita-e-tecnologia-stanno-ridefinendo-le-prestazioni/" target="_blank" class="source-link">🔗 查看原文</a>
-                </div>
+        
+        <div class="section-divider">⚡</div>
+        <h2 class="section-title">趋势与信号 <span class="count">1条</span></h2>
+        
+        <div class="news-item">
+            <div class="tags-row">
+                <span class="grade-tag" style="background:#E8B84B">值得关注</span>
+                <span class="status-tag" style="background:#27ae60">新增</span>
+                <span class="cat-tag">技术创新</span>
             </div>
-            <div class="news-item">
-                <div class="news-header">
-                    <span class="category-tag" style="background:#4B9FE8">全屋定制/定制家具</span>
-                    <span class="badge pending">⚠ 待验证</span>
-                </div>
-                <h3 class="news-title">尚品宅配布局机器人友好家</h3>
-                <p class="news-summary">尚品宅配与启元机器人达成战略合作，成立合资公司尚元智启，探索人机长期共存的居家场景，布局机器人友好家及物理AI数据业务，推动家居行业商业模式改革。</p>
-                <div class="news-meta">
-                    <span class="source">📰 企查查</span>
-                    <span class="date">📅 2026-09-25</span>
-                    <a href="https://www.qcc.com/cfengxian/ca5a2de9d0b85eebdab6a0f190cee02a.html" target="_blank" class="source-link">🔗 查看原文</a>
-                </div>
-            </div>
+            <h3 class="news-title">意大利涂料展聚焦环保法规与可持续技术，PFAS替代成行业焦点</h3>
+            <p class="news-summary">2026年意大利涂料展将于10月底在米兰举行，重点探讨水性技术、生物基材料及低VOC配方。面对欧洲日益严格的环保法规（如REACH、CLP），涂料企业面临PFAS等化学物质的替代挑战。展会强调，配方调整不仅是替换单一成分，更需在不影响整体性能的前提下实现功能替代，标志着涂料行业正加速向可持续与合规化方向转型。</p>
+            <div class="insight"><strong>💡 洞察：</strong>💡 全球涂料行业正面临严苛的环保合规大考，以PFAS为代表的有害物质替代已从“可选项”变为“必答题”。这不仅是材料科学的挑战，更是供应链重塑的契机，具备底层研发能力和绿色配方储备的企业将建立新的技术壁垒。</div>
+            <div class="biz-impact"><strong>🎯 业务影响：</strong>🎯 出海企业需密切关注欧洲及全球环保法规动态，提前布局无PFAS、低VOC及生物基材料的研发与测试；同时需建立完善的合规验证体系，避免因配方不达标导致的贸易壁垒或市场准入风险。</div>
+            <div class="news-meta">
+                <span class="date">2026-09-25</span>
+                <span class="sources"><a href="https://www.industrychemistry.com/paint-coatings-italy-2026-come-regolamentazione-sostenibilita-e-tecnologia-stanno-ridefinendo-le-prestazioni/" target="_blank">Industry Chemistry</a></span>
             </div>
         </div>
-        <div class="section">
-            <h2 class="section-title">📈 消费者趋势</h2>
-            <div class="items-grid">
-                
-            <div class="news-item">
-                <div class="news-header">
-                    <span class="category-tag" style="background:#4B9FE8">全屋定制/定制家具</span>
-                    <span class="badge pending">⚠ 待验证</span>
-                </div>
-                <h3 class="news-title">全屋定制转向系统化交付</h3>
-                <p class="news-summary">全屋定制行业从规模扩张转向质量跃升，竞争焦点转向系统化交付能力，封边、五金及结构设计等工艺精度成关键。原创家具品牌在高净值人群中认可度提升，聚焦大平层等细分赛道。</p>
-                <div class="news-meta">
-                    <span class="source">📰 企查查</span>
-                    <span class="date">📅 2026-09-26</span>
-                    <a href="https://www.qcc.com/crun/f2ca4cfcb9da5bcde29ba8d899f7ea48.html" target="_blank" class="source-link">🔗 查看原文</a>
-                </div>
+        
+        <div class="section-divider">⚖</div>
+        <h2 class="section-title">政策与数据 <span class="count">1条</span></h2>
+        
+        <div class="news-item">
+            <div class="tags-row">
+                <span class="grade-tag" style="background:#c0392b">战略级</span>
+                <span class="status-tag" style="background:#27ae60">新增</span>
+                <span class="cat-tag">政策法规</span>
             </div>
+            <h3 class="news-title">欧洲反“漂绿”新规9月27日生效，建材环保声明面临严监管</h3>
+            <p class="news-summary">意大利等国落实欧盟2024/825指令的反“漂绿”新规于2026年9月27日正式生效。新规对建筑材料（如涂料、砂浆、门窗等）的环保声明提出严格要求，明确禁止使用“绿色”、“生态”等模糊词汇。企业若在商业宣传中声称产品具有环保优势，必须在同一传播媒介中提供具体、可验证的证据支撑，否则将被视为误导性商业行为并面临处罚。</p>
+            <div class="insight"><strong>💡 洞察：</strong>💡 全球市场监管正从“结果导向”向“证据导向”转变，粗放式的“绿色营销”时代终结。环保合规不再是单纯的公关话术，而是需要严密数据、认证和全链路追溯支撑的系统工程，这将加速淘汰缺乏核心环保技术的劣质产能。</div>
+            <div class="biz-impact"><strong>🎯 业务影响：</strong>🎯 建材家居出海企业及品牌需全面审查国内外营销物料，清理无实质证据的“泛环保”宣传；应建立基于第三方权威认证和具体数据（如碳足迹、VOC释放量）的环保沟通体系，将合规转化为品牌信任资产。</div>
+            <div class="news-meta">
+                <span class="date">2026-09-25</span>
+                <span class="sources"><a href="https://blog.tradimalt.com/greenwashing-in-edilizia/" target="_blank">TRADIMALT blog</a></span>
             </div>
         </div>
-    </div>
-    
-    <div class="footer">
-        <p>由 <span class="brand">「潮向」情报系统</span> 自动生成</p>
-        <p style="margin-top:0.5rem">信源覆盖：行业协会 · 官方媒体 · 权威机构 · 上市公司公告 · 头部专业媒体</p>
-        <p style="margin-top:0.3rem">⚠️ 标注"待验证"的信息仅来自单一信源，仅供内部参考</p>
-    </div>
+        
+</div>
+
+<!-- 页脚 -->
+<div class="footer">
+    <p>数据来源：中国建筑材料流通协会、中国建筑材料联合会、新华网、财经媒体等</p>
+    <p style="margin-top:0.5rem">由 <b style="color:var(--gold)">「潮向」情报系统</b> 自动生成</p>
+</div>
+
 </body>
 </html>
