@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>潮向 | 建材家居行业日报 | 2026-10-04</title>
+    <style>
+        :root {
+            --blue-dark: #1a2a4a;
+            --blue-mid: #2c4a7c;
+            --gold: #E8B84B;
+            --gold-light: #F5D98C;
+            --bg: #f8f9fc;
+            --card-bg: #ffffff;
+            --text: #2d3748;
+            --text-light: #718096;
+            --border: #e2e8f0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        /* ── 顶部区 ── */
+        .hero {
+            background: linear-gradient(135deg, var(--blue-dark) 0%, var(--blue-mid) 100%);
+            color: white;
+            padding: 3rem 1.5rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 60%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(232,184,75,0.08), transparent);
+            transform: rotate(30deg);
+        }
+        .hero-title {
+            font-size: 2.2rem;
+            font-weight: 300;
+            letter-spacing: 0.5rem;
+            margin-bottom: 0.3rem;
+            position: relative;
+        }
+        .hero-title b {
+            color: var(--gold);
+            font-weight: 700;
+        }
+        .hero-subtitle {
+            font-size: 1rem;
+            opacity: 0.85;
+            margin-bottom: 1.2rem;
+            position: relative;
+        }
+        .hero-theme {
+            font-size: 1.15rem;
+            font-weight: 500;
+            color: var(--gold-light);
+            max-width: 700px;
+            margin: 0 auto 1.5rem;
+            line-height: 1.6;
+            position: relative;
+        }
+        .hero-meta {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+            font-size: 0.9rem;
+            opacity: 0.85;
+            position: relative;
+            flex-wrap: wrap;
+        }
+        .hero-meta .sep {
+            width: 4px; height: 4px;
+            background: var(--gold);
+            border-radius: 50%;
+        }
+        .hero-link {
+            display: inline-block;
+            margin-top: 1rem;
+            color: var(--gold);
+            text-decoration: none;
+            font-size: 0.9rem;
+            position: relative;
+        }
+        .hero-link:hover { text-decoration: underline; }
+
+        /* ── 概览区 ── */
+        .overview {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+        .overview h2 {
+            font-size: 1.3rem;
+            color: var(--blue-dark);
+            margin-bottom: 1rem;
+            padding-left: 0.8rem;
+            border-left: 4px solid var(--gold);
+        }
+        .overview p {
+            font-size: 0.95rem;
+            color: var(--text);
+            line-height: 1.9;
+            text-indent: 2em;
+        }
+
+        /* ── 关键变化 ── */
+        .key-changes {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1.5rem 1.5rem;
+        }
+        .key-changes h2 {
+            font-size: 1.3rem;
+            color: var(--blue-dark);
+            margin-bottom: 1rem;
+            padding-left: 0.8rem;
+            border-left: 4px solid var(--gold);
+        }
+        .key-changes ul {
+            list-style: none;
+            padding: 0;
+        }
+        .key-changes li {
+            padding: 0.6rem 0 0.6rem 1.5rem;
+            position: relative;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            border-bottom: 1px solid var(--border);
+        }
+        .key-changes li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+            font-weight: bold;
+        }
+        .key-changes .impact {
+            margin-top: 1rem;
+            font-weight: 600;
+            color: var(--blue-dark);
+            font-size: 1rem;
+        }
+
+        /* ── 风险与后续 ── */
+        .risk-follow {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1.5rem 1.5rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+        @media (max-width: 768px) {
+            .risk-follow { grid-template-columns: 1fr; }
+        }
+        .risk-follow .box {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            border: 1px solid var(--border);
+        }
+        .risk-follow .box h3 {
+            font-size: 1.05rem;
+            color: var(--blue-dark);
+            margin-bottom: 0.8rem;
+        }
+        .risk-follow .box ul {
+            list-style: none;
+            padding: 0;
+        }
+        .risk-follow .box li {
+            padding: 0.4rem 0 0.4rem 1.2rem;
+            position: relative;
+            font-size: 0.88rem;
+            line-height: 1.6;
+            color: var(--text);
+        }
+        .risk-follow .box li::before {
+            content: '⚠';
+            position: absolute;
+            left: 0;
+            font-size: 0.8rem;
+        }
+        .risk-follow .box.follow li::before {
+            content: '👁';
+        }
+
+        /* ── 新闻板块 ── */
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1.5rem 2rem;
+        }
+        .section-divider {
+            text-align: center;
+            font-size: 1.5rem;
+            color: var(--gold);
+            margin: 2rem 0 0.5rem;
+            letter-spacing: 0.5rem;
+        }
+        .section-title {
+            font-size: 1.3rem;
+            color: var(--blue-dark);
+            text-align: center;
+            margin-bottom: 1.2rem;
+        }
+        .section-title .count {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            font-weight: 400;
+            margin-left: 0.5rem;
+        }
+
+        .news-item {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.3rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            border: 1px solid var(--border);
+        }
+        .tags-row {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 0.6rem;
+            flex-wrap: wrap;
+        }
+        .tags-row span {
+            display: inline-block;
+            padding: 0.15rem 0.6rem;
+            border-radius: 20px;
+            color: white;
+            font-size: 0.72rem;
+            font-weight: 500;
+        }
+        .cat-tag {
+            background: var(--blue-mid) !important;
+        }
+        .news-title {
+            font-size: 1.1rem;
+            color: var(--blue-dark);
+            margin-bottom: 0.6rem;
+            line-height: 1.5;
+        }
+        .news-summary {
+            font-size: 0.9rem;
+            color: var(--text);
+            line-height: 1.7;
+            margin-bottom: 0.6rem;
+        }
+        .insight, .biz-impact {
+            font-size: 0.88rem;
+            padding: 0.5rem 0.8rem;
+            border-radius: 6px;
+            margin-bottom: 0.4rem;
+            line-height: 1.6;
+        }
+        .insight {
+            background: #f0f7ff;
+            border-left: 3px solid #4B9FE8;
+            color: #2c5282;
+        }
+        .biz-impact {
+            background: #fffbeb;
+            border-left: 3px solid var(--gold);
+            color: #744210;
+        }
+        .news-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 0.8rem;
+            color: var(--text-light);
+            margin-top: 0.6rem;
+            flex-wrap: wrap;
+        }
+        .news-meta a {
+            color: var(--blue-mid);
+            text-decoration: none;
+        }
+        .news-meta a:hover {
+            text-decoration: underline;
+        }
+
+        /* ── 页脚 ── */
+        .footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            color: var(--text-light);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border);
+            margin-top: 2rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media (max-width: 768px) {
+            .hero-title { font-size: 1.6rem; }
+            .content, .overview, .key-changes { padding-left: 1rem; padding-right: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- 顶部区 -->
+<div class="hero">
+    <div class="hero-title">潮 <b>向</b></div>
+    <div class="hero-subtitle">建材家居行业日报</div>
+    <div class="hero-theme">存量房时代旧改需求释放，艺术涂料借势破百亿并向“制造服务一体化”高附加值转型</div>
+    <div class="hero-meta">
+        <span>2026-10-04 星期日</span>
+        <span class="sep"></span>
+        <span>2 条事件</span>
+        <span class="sep"></span>
+        <span>本次识别 2 个状态库新增事件</span>
+    </div>
+    <a class="hero-link" href="https://christopherx911225.github.io/chaowxiang-daily/" target="_blank">查看历史日报 →</a>
+</div>
+
+<!-- 今日概览 -->
+<div class="overview">
+    <h2>◆ 今日概览</h2>
+    <p>今日建材家居行业焦点集中于存量市场焕新与细分品类升级。随着老旧小区改造深入推进，外墙重涂与室内个性化需求共同驱动艺术涂料市场规模突破百亿大关。在此背景下，瓷砖改色漆与仿石漆凭借高性价比与解决旧改痛点的优势，正加速替代传统材料。面对存量竞争，头部企业正主动求变，通过下沉市场渠道布局、主导行业标准制定以及建立培训基地破解施工人才瓶颈，加速从单一材料供应商向“制造服务一体化”的城市更新服务商转型。这表明，行业竞争逻辑已从单纯的产品制造向“产品+标准+服务”的综合交付能力跃升，高附加值与全链路服务成为破局关键。</p>
+</div>
+
+<!-- 关键变化 -->
+<div class="key-changes">
+    <h2>◆ 关键变化</h2>
+    <ul>
+        <li>老旧小区改造释放大量外墙重涂与局改需求，导致瓷砖改色漆和防脱落仿石漆等细分品类快速崛起，意味着传统建材正被高性价比的轻量化焕新方案加速替代。</li>
+<li>年轻消费群体对空间个性化诉求提升，导致艺术涂料市场年复合增长率保持两位数并突破百亿，意味着涂料行业正从基础防护功能向情绪价值与审美体验驱动转型。</li>
+<li>存量市场竞争加剧且施工人才短缺，导致头部企业主导制定团体标准并自建培训基地，意味着行业竞争壁垒已从单一制造产能向“制造+标准+交付服务”的综合体系转移。</li>
+
+    </ul>
+    <p class="impact">影响判断：对行业整体偏正面。理由：存量房改造需求持续释放为行业提供确定性增量，艺术涂料破百亿及头部企业向“制造服务一体化”转型，标志着产业链正成功向高附加值、规范化方向升级，有助于提升行业整体盈利水平与消费者交付体验。</p>
+</div>
+
+<!-- 风险与后续 -->
+<div class="risk-follow">
+    <div class="box risk">
+        <h3>⚠ 风险与不确定性</h3>
+        <ul><li>施工交付质量难以标准化管控：艺术涂料及改色漆高度依赖人工施工，若下沉市场服务网络扩张过快而培训跟不上，易引发交付翻车及客诉风险。</li>
+<li>细分品类同质化与价格战隐患：随着仿石漆、瓷砖改色漆等旧改新宠市场扩容，若缺乏核心技术壁垒，极易陷入低端产能过剩与恶性价格竞争。</li>
+<li>房地产整体大盘疲软的波及风险：若宏观房地产及消费复苏不及预期，可能限制老旧小区改造的实际落地进度及年轻群体的个性化消费预算。</li>
+</ul>
+    </div>
+    <div class="box follow">
+        <h3>👁 后续关注</h3>
+        <ul><li>跟踪头部艺术涂料企业在下沉市场的渠道扩张速度及“制造服务一体化”门店的实际单店盈利模型。</li>
+<li>监测瓷砖改色漆与仿石漆等细分品类在各地老旧小区改造项目中的实际中标率与渗透率数据。</li>
+<li>关注行业施工人才培训基地的产出规模及《肌理壁膜施工与验收规范》等团体标准在全国范围内的落地执行情况。</li>
+<li>跟踪年轻消费群体在艺术涂料等个性化建材上的客单价变化及复购与推荐意愿。</li>
+</ul>
+    </div>
+</div>
+
+<!-- 四大新闻板块 -->
+<div class="content">
+    
+        <div class="section-divider">♥</div>
+        <h2 class="section-title">行业脉搏 <span class="count">1条</span></h2>
+        
+        <div class="news-item">
+            <div class="tags-row">
+                <span class="grade-tag" style="background:#E8B84B">值得关注</span>
+                <span class="status-tag" style="background:#27ae60">新增</span>
+                <span class="cat-tag">战略调整</span>
+            </div>
+            <h3 class="news-title">瓦科新材领跑艺术涂料赛道，以“制造服务一体化”应对存量竞争</h3>
+            <p class="news-summary">广东瓦科新材作为连续六年国内艺术涂料领先品牌，依托三大生产基地及超800家签约商家，构建了下沉市场的制造与服务网络。公司通过主编《肌理壁膜施工与验收规范》等团体标准，并设立培训基地解决施工人才短缺痛点，正从单一材料供应商向“制造服务一体化”的城市更新服务商转型。</p>
+            <div class="insight"><strong>💡 洞察：</strong>艺术涂料行业竞争已从单纯的营销概念比拼，转向核心技术、施工标准化及供应链交付能力的综合较量。掌握标准制定权与产业工人培训体系的企业，将在存量博弈中建立更深的护城河。</div>
+            <div class="biz-impact"><strong>🎯 业务影响：</strong>建材企业需重视“产品+施工+服务”的闭环交付能力建设，通过参与行业标准制定提升品牌话语权；同时优化全国产能布局以降低物流成本，赋能县域市场经销商。</div>
+            <div class="news-meta">
+                <span class="date">2026-10-03</span>
+                <span class="sources"><a href="https://mip.b2b168.com/wvs322590526.html" target="_blank">八方资源网</a></span>
+            </div>
+        </div>
+        
+        <div class="section-divider">⚡</div>
+        <h2 class="section-title">趋势与信号 <span class="count">1条</span></h2>
+        
+        <div class="news-item">
+            <div class="tags-row">
+                <span class="grade-tag" style="background:#E8B84B">值得关注</span>
+                <span class="status-tag" style="background:#27ae60">新增</span>
+                <span class="cat-tag">消费者趋势</span>
+            </div>
+            <h3 class="news-title">艺术涂料市场突破百亿，瓷砖改色与仿石漆成旧改新宠</h3>
+            <p class="news-summary">2026年国内艺术涂料市场规模突破百亿元，年复合增长率保持两位数。增长动力主要来自老旧小区改造释放的外墙重涂需求，以及年轻消费群体对室内空间个性化的诉求。瓷砖改色漆、防脱落仿石漆等细分品类因解决旧改痛点及具备高性价比，正快速替代传统材料，推动产业链向高附加值转型。</p>
+            <div class="insight"><strong>💡 洞察：</strong>存量房时代的“微改造”与年轻一代的“颜值经济”正重塑涂料消费结构。从“硬覆盖”向“软装饰”及功能性并重转变，意味着产品创新必须紧扣“低碳环保、施工便捷、效果逼真”三大核心诉求。</div>
+            <div class="biz-impact"><strong>🎯 业务影响：</strong>企业应加大对旧房翻新场景（如瓷砖改色、防脱落外墙漆）的专项研发与标准化施工培训；同时，布局水性化、低VOC产品以跨越环保准入门槛，抢占存量市场红利。</div>
+            <div class="news-meta">
+                <span class="date">2026-10-03</span>
+                <span class="sources"><a href="https://mip.b2b168.com/wvs322590526.html" target="_blank">八方资源网</a></span>
+            </div>
+        </div>
+        
+</div>
+
+<!-- 页脚 -->
+<div class="footer">
+    <p>数据来源：中国建筑材料流通协会、中国建筑材料联合会、新华网、财经媒体等</p>
+    <p style="margin-top:0.5rem">由 <b style="color:var(--gold)">「潮向」情报系统</b> 自动生成</p>
+</div>
+
+</body>
+</html>
