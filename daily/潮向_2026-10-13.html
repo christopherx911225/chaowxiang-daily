@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>潮向 | 建材家居行业日报 | 2026-10-13</title>
+    <style>
+        :root {
+            --blue-dark: #1a2a4a;
+            --blue-mid: #2c4a7c;
+            --gold: #E8B84B;
+            --gold-light: #F5D98C;
+            --bg: #f8f9fc;
+            --card-bg: #ffffff;
+            --text: #2d3748;
+            --text-light: #718096;
+            --border: #e2e8f0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        /* ── 顶部区 ── */
+        .hero {
+            background: linear-gradient(135deg, var(--blue-dark) 0%, var(--blue-mid) 100%);
+            color: white;
+            padding: 3rem 1.5rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 60%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(232,184,75,0.08), transparent);
+            transform: rotate(30deg);
+        }
+        .hero-title {
+            font-size: 2.2rem;
+            font-weight: 300;
+            letter-spacing: 0.5rem;
+            margin-bottom: 0.3rem;
+            position: relative;
+        }
+        .hero-title b {
+            color: var(--gold);
+            font-weight: 700;
+        }
+        .hero-subtitle {
+            font-size: 1rem;
+            opacity: 0.85;
+            margin-bottom: 1.2rem;
+            position: relative;
+        }
+        .hero-theme {
+            font-size: 1.15rem;
+            font-weight: 500;
+            color: var(--gold-light);
+            max-width: 700px;
+            margin: 0 auto 1.5rem;
+            line-height: 1.6;
+            position: relative;
+        }
+        .hero-meta {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+            font-size: 0.9rem;
+            opacity: 0.85;
+            position: relative;
+            flex-wrap: wrap;
+        }
+        .hero-meta .sep {
+            width: 4px; height: 4px;
+            background: var(--gold);
+            border-radius: 50%;
+        }
+        .hero-link {
+            display: inline-block;
+            margin-top: 1rem;
+            color: var(--gold);
+            text-decoration: none;
+            font-size: 0.9rem;
+            position: relative;
+        }
+        .hero-link:hover { text-decoration: underline; }
+
+        /* ── 概览区 ── */
+        .overview {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+        .overview h2 {
+            font-size: 1.3rem;
+            color: var(--blue-dark);
+            margin-bottom: 1rem;
+            padding-left: 0.8rem;
+            border-left: 4px solid var(--gold);
+        }
+        .overview p {
+            font-size: 0.95rem;
+            color: var(--text);
+            line-height: 1.9;
+            text-indent: 2em;
+        }
+
+        /* ── 关键变化 ── */
+        .key-changes {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1.5rem 1.5rem;
+        }
+        .key-changes h2 {
+            font-size: 1.3rem;
+            color: var(--blue-dark);
+            margin-bottom: 1rem;
+            padding-left: 0.8rem;
+            border-left: 4px solid var(--gold);
+        }
+        .key-changes ul {
+            list-style: none;
+            padding: 0;
+        }
+        .key-changes li {
+            padding: 0.6rem 0 0.6rem 1.5rem;
+            position: relative;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            border-bottom: 1px solid var(--border);
+        }
+        .key-changes li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+            font-weight: bold;
+        }
+        .key-changes .impact {
+            margin-top: 1rem;
+            font-weight: 600;
+            color: var(--blue-dark);
+            font-size: 1rem;
+        }
+
+        /* ── 风险与后续 ── */
+        .risk-follow {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1.5rem 1.5rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+        @media (max-width: 768px) {
+            .risk-follow { grid-template-columns: 1fr; }
+        }
+        .risk-follow .box {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            border: 1px solid var(--border);
+        }
+        .risk-follow .box h3 {
+            font-size: 1.05rem;
+            color: var(--blue-dark);
+            margin-bottom: 0.8rem;
+        }
+        .risk-follow .box ul {
+            list-style: none;
+            padding: 0;
+        }
+        .risk-follow .box li {
+            padding: 0.4rem 0 0.4rem 1.2rem;
+            position: relative;
+            font-size: 0.88rem;
+            line-height: 1.6;
+            color: var(--text);
+        }
+        .risk-follow .box li::before {
+            content: '⚠';
+            position: absolute;
+            left: 0;
+            font-size: 0.8rem;
+        }
+        .risk-follow .box.follow li::before {
+            content: '👁';
+        }
+
+        /* ── 新闻板块 ── */
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1.5rem 2rem;
+        }
+        .section-divider {
+            text-align: center;
+            font-size: 1.5rem;
+            color: var(--gold);
+            margin: 2rem 0 0.5rem;
+            letter-spacing: 0.5rem;
+        }
+        .section-title {
+            font-size: 1.3rem;
+            color: var(--blue-dark);
+            text-align: center;
+            margin-bottom: 1.2rem;
+        }
+        .section-title .count {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            font-weight: 400;
+            margin-left: 0.5rem;
+        }
+
+        .news-item {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.3rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            border: 1px solid var(--border);
+        }
+        .tags-row {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 0.6rem;
+            flex-wrap: wrap;
+        }
+        .tags-row span {
+            display: inline-block;
+            padding: 0.15rem 0.6rem;
+            border-radius: 20px;
+            color: white;
+            font-size: 0.72rem;
+            font-weight: 500;
+        }
+        .cat-tag {
+            background: var(--blue-mid) !important;
+        }
+        .news-title {
+            font-size: 1.1rem;
+            color: var(--blue-dark);
+            margin-bottom: 0.6rem;
+            line-height: 1.5;
+        }
+        .news-summary {
+            font-size: 0.9rem;
+            color: var(--text);
+            line-height: 1.7;
+            margin-bottom: 0.6rem;
+        }
+        .insight, .biz-impact {
+            font-size: 0.88rem;
+            padding: 0.5rem 0.8rem;
+            border-radius: 6px;
+            margin-bottom: 0.4rem;
+            line-height: 1.6;
+        }
+        .insight {
+            background: #f0f7ff;
+            border-left: 3px solid #4B9FE8;
+            color: #2c5282;
+        }
+        .biz-impact {
+            background: #fffbeb;
+            border-left: 3px solid var(--gold);
+            color: #744210;
+        }
+        .news-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 0.8rem;
+            color: var(--text-light);
+            margin-top: 0.6rem;
+            flex-wrap: wrap;
+        }
+        .news-meta a {
+            color: var(--blue-mid);
+            text-decoration: none;
+        }
+        .news-meta a:hover {
+            text-decoration: underline;
+        }
+
+        /* ── 页脚 ── */
+        .footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            color: var(--text-light);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border);
+            margin-top: 2rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media (max-width: 768px) {
+            .hero-title { font-size: 1.6rem; }
+            .content, .overview, .key-changes { padding-left: 1rem; padding-right: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- 顶部区 -->
+<div class="hero">
+    <div class="hero-title">潮 <b>向</b></div>
+    <div class="hero-subtitle">建材家居行业日报</div>
+    <div class="hero-theme">泛家居及上游制造合规门槛全面抬升，全屋定制深化与涂料环保出海驱动产业高质量升级</div>
+    <div class="hero-meta">
+        <span>2026-10-13 星期二</span>
+        <span class="sep"></span>
+        <span>3 条事件</span>
+        <span class="sep"></span>
+        <span>本次识别 3 个状态库新增事件</span>
+    </div>
+    <a class="hero-link" href="https://christopherx911225.github.io/chaowxiang-daily/" target="_blank">查看历史日报 →</a>
+</div>
+
+<!-- 今日概览 -->
+<div class="overview">
+    <h2>◆ 今日概览</h2>
+    <p>今日情报显示，泛家居及上游制造产业链正经历向高质量合规的深刻转型。宏观层面，工信部重拳整治汽车“速成”乱象并强化安全测试，向泛出行及智能座舱供应链释放出“安全与研发优先”的强监管信号。国际市场方面，欧亚经济联盟出台涂料安全技术法规，大幅抬升建材涂料出海门槛，加速落后产能出清。落脚于国内市场，安徽等地柜类消费加速向全屋整体定制演进，底层逻辑在于户型复杂化与收纳精细化，且消费者对板材环保与五金品质要求显著提升。整体而言，国内外监管趋严与消费端需求升级形成共振，正倒逼家居建材企业摒弃低价内卷，转向技术创新与全案服务建设。</p>
+</div>
+
+<!-- 关键变化 -->
+<div class="key-changes">
+    <h2>◆ 关键变化</h2>
+    <ul>
+        <li>汽车“速成”乱象被严监管导致研发验证周期拉长，意味着泛出行及智能座舱相关供应链的合规成本上升，但利好具备长周期研发与质量把控能力的头部供应商。</li>
+<li>欧亚经济联盟实施涂料安全技术法规导致出海门槛大幅提高，意味着缺乏环保技术壁垒的中小涂料企业将被加速出清，具备绿色认证与合规能力的头部建材企业将获得更大的海外市场溢价空间。</li>
+<li>户型多样化与收纳需求细化导致成品柜难以满足空间匹配，意味着终端消费正加速向全屋整体定制转移，驱动定制家居企业必须提升空间设计能力与供应链柔性，同时带动高环保等级板材与高品质五金的需求增长。</li>
+
+    </ul>
+    <p class="impact">影响判断：对行业整体偏正面。国内外监管标准的提升虽短期增加企业合规与研发成本，但长期看有效遏制了劣币驱逐良币的低价内卷，加速行业集中度提升；同时消费端向全屋定制和环保品质升级，为具备核心技术与服务能力的头部企业打开了新的利润增长空间。</p>
+</div>
+
+<!-- 风险与后续 -->
+<div class="risk-follow">
+    <div class="box risk">
+        <h3>⚠ 风险与不确定性</h3>
+        <ul><li>供应链合规成本转嫁风险：汽车与涂料行业新规导致的研发测试及环保认证成本上升，若无法有效向下游或终端消费者转嫁，可能短期内挤压中游制造企业的利润空间。</li>
+<li>出海政策落地与执行偏差风险：欧亚经济联盟涂料新规在不同成员国的生效时间与执行尺度存在差异，可能增加企业跨国供应链管理的复杂性与合规不确定性。</li>
+<li>全屋定制交付质量风险：终端需求向全屋整体定制快速转移，若企业后端安装交付能力与供应链柔性未同步跟上，可能导致客诉率上升，损害品牌口碑。</li>
+</ul>
+    </div>
+    <div class="box follow">
+        <h3>👁 后续关注</h3>
+        <ul><li>跟踪工信部等四部门关于汽车产品创新设计和研发测试验证管理通知的最终发布版本及实施细节，评估对汽车内饰及座舱涂料供应链的具体合规要求。</li>
+<li>监测国内头部涂料及木器漆企业针对欧亚经济联盟涂料安全技术法规的应对策略及海外认证进度，关注其出海业务的市场份额变化。</li>
+<li>关注安徽等典型区域全屋定制市场的渗透率变化及消费者客单价走势，跟踪头部定制家居品牌在环保板材升级与五金件供应链整合方面的最新动作。</li>
+<li>跟踪泛家居行业在反内卷与重合规导向下的产能出清情况，关注中小建材企业的生存状态及行业并购重组机会。</li>
+</ul>
+    </div>
+</div>
+
+<!-- 四大新闻板块 -->
+<div class="content">
+    
+        <div class="section-divider">★</div>
+        <h2 class="section-title">今日头条 <span class="count">1条</span></h2>
+        
+        <div class="news-item">
+            <div class="tags-row">
+                <span class="grade-tag" style="background:#c0392b">战略级</span>
+                <span class="status-tag" style="background:#27ae60">新增</span>
+                <span class="cat-tag">行业重大事件</span>
+            </div>
+            <h3 class="news-title">工信部等四部门拟出台新规重拳整治汽车“速成”乱象</h3>
+            <p class="news-summary">2026年10月12日，工信部等四部门联合发布《关于进一步加强汽车产品创新设计和研发测试验证有关管理工作的通知》（征求意见稿）。文件针对行业“速成车”乱象，明确禁止全隐藏式门把手等设计，限制行车时使用零重力座椅等功能，并规定组合驾驶辅助系统需开展充分实车测试，环境适应性验证周期不少于1年，可靠性验证不低于3万公里。多家车企表态支持并展开自查。</p>
+            <div class="insight"><strong>💡 洞察：</strong>政策引导汽车行业从“拼速度”向“拼安全、拼长跑实力”回归，遏制过度营销和伪创新。这将重塑汽车研发流程，延长产品上市周期，提高研发测试成本，但有利于行业长期健康发展和消费者权益保护。</div>
+            <div class="biz-impact"><strong>🎯 业务影响：</strong>汽车整车及零部件企业需全面调整研发测试流程，增加可靠性与环境适应性验证的投入；产品设计需规避新规禁止项；营销端需弱化“速成”标签，转向强调安全验证与品质背书。</div>
+            <div class="news-meta">
+                <span class="date">2026-10-12</span>
+                <span class="sources"><a href="https://www.coze.cn/share-article/201791760832690848" target="_blank">Coze</a></span>
+            </div>
+        </div>
+        
+        <div class="section-divider">⚡</div>
+        <h2 class="section-title">趋势与信号 <span class="count">1条</span></h2>
+        
+        <div class="news-item">
+            <div class="tags-row">
+                <span class="grade-tag" style="background:#E8B84B">值得关注</span>
+                <span class="status-tag" style="background:#27ae60">新增</span>
+                <span class="cat-tag">消费者趋势</span>
+            </div>
+            <h3 class="news-title">安徽柜类定制市场趋势：从成品选购转向全屋整体定制</h3>
+            <p class="news-summary">安徽地区家居消费呈现明显变化，柜类产品正从单件成品购买转向全屋整体定制。这一趋势主要受三大因素推动：户型多样化导致标准化成品柜难以匹配空间；家庭收纳需求持续上升，对衣柜分区、厨房动线等提出更细化要求；消费者环保意识增强，对板材等级及五金耐用度关注度提高。当地家具馆通过提供一站式全屋定制服务回应此趋势。</p>
+            <div class="insight"><strong>💡 洞察：</strong>全屋定制已成为区域市场的主流消费趋势，消费者不再满足于单一产品的购买，而是追求空间利用的最大化与整体风格的统一。环保与精细化收纳成为驱动定制需求升级的核心动力。</div>
+            <div class="biz-impact"><strong>🎯 业务影响：</strong>家居企业应加速向全屋定制转型，提升空间规划与3D设计能力；在产品研发上，需重点关注环保基材与高耐用性五金的配置，同时针对异形空间和细分收纳需求提供定制化解决方案。</div>
+            <div class="news-meta">
+                <span class="date">2026-10-13</span>
+                <span class="sources"><a href="https://linan.19lou.com/pinpai/chanpin-581703/" target="_blank">临安19楼</a></span>
+            </div>
+        </div>
+        
+        <div class="section-divider">⚖</div>
+        <h2 class="section-title">政策与数据 <span class="count">1条</span></h2>
+        
+        <div class="news-item">
+            <div class="tags-row">
+                <span class="grade-tag" style="background:#c0392b">战略级</span>
+                <span class="status-tag" style="background:#27ae60">新增</span>
+                <span class="cat-tag">政策法规</span>
+            </div>
+            <h3 class="news-title">欧亚经济联盟通过涂料和清漆材料安全技术法规</h3>
+            <p class="news-summary">欧亚经济联盟委员会通过《涂料和清漆材料安全技术法规》（EAEU TR 053/2026），旨在保护人类健康、财产及环境。该法规对涂料、清漆、底漆等产品设立统一的强制性标签、包装及安全数据表要求，并规定了在联盟关税领土内的流通和合格评定程序。法规将于2028年1月1日在俄等国生效，2032年在吉尔吉斯斯坦生效。</p>
+            <div class="insight"><strong>💡 洞察：</strong>欧亚经济联盟统一涂料安全标准，将提高区域内市场的准入门槛，淘汰落后产能和不合规产品，推动涂料行业向环保、安全、高质量方向转型。对于出海企业而言，需提前布局合规认证。</div>
+            <div class="biz-impact"><strong>🎯 业务影响：</strong>涉及对俄及独联体国家出口的涂料及相关建材企业，需立即启动EAEU TR 053/2026法规的研读与产品合规性自查，提前准备国家注册和统一格式证书的申请，调整产品标签与包装以符合新标，避免未来出口受阻。</div>
+            <div class="news-meta">
+                <span class="date">2026-10-12</span>
+                <span class="sources"><a href="https://www.akm.ru/eng/press/the-production-of-paint-and-varnish-materials-will-switch-to-new-rules/" target="_blank">AK&M</a></span>
+            </div>
+        </div>
+        
+</div>
+
+<!-- 页脚 -->
+<div class="footer">
+    <p>数据来源：中国建筑材料流通协会、中国建筑材料联合会、新华网、财经媒体等</p>
+    <p style="margin-top:0.5rem">由 <b style="color:var(--gold)">「潮向」情报系统</b> 自动生成</p>
+</div>
+
+</body>
+</html>
