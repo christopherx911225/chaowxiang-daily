@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>潮向 | 建材家居行业日报 | 2026-10-27</title>
+    <style>
+        :root {
+            --blue-dark: #1a2a4a;
+            --blue-mid: #2c4a7c;
+            --gold: #E8B84B;
+            --gold-light: #F5D98C;
+            --bg: #f8f9fc;
+            --card-bg: #ffffff;
+            --text: #2d3748;
+            --text-light: #718096;
+            --border: #e2e8f0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        /* ── 顶部区 ── */
+        .hero {
+            background: linear-gradient(135deg, var(--blue-dark) 0%, var(--blue-mid) 100%);
+            color: white;
+            padding: 3rem 1.5rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 60%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(232,184,75,0.08), transparent);
+            transform: rotate(30deg);
+        }
+        .hero-title {
+            font-size: 2.2rem;
+            font-weight: 300;
+            letter-spacing: 0.5rem;
+            margin-bottom: 0.3rem;
+            position: relative;
+        }
+        .hero-title b {
+            color: var(--gold);
+            font-weight: 700;
+        }
+        .hero-subtitle {
+            font-size: 1rem;
+            opacity: 0.85;
+            margin-bottom: 1.2rem;
+            position: relative;
+        }
+        .hero-theme {
+            font-size: 1.15rem;
+            font-weight: 500;
+            color: var(--gold-light);
+            max-width: 700px;
+            margin: 0 auto 1.5rem;
+            line-height: 1.6;
+            position: relative;
+        }
+        .hero-meta {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+            font-size: 0.9rem;
+            opacity: 0.85;
+            position: relative;
+            flex-wrap: wrap;
+        }
+        .hero-meta .sep {
+            width: 4px; height: 4px;
+            background: var(--gold);
+            border-radius: 50%;
+        }
+        .hero-link {
+            display: inline-block;
+            margin-top: 1rem;
+            color: var(--gold);
+            text-decoration: none;
+            font-size: 0.9rem;
+            position: relative;
+        }
+        .hero-link:hover { text-decoration: underline; }
+
+        /* ── 概览区 ── */
+        .overview {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+        .overview h2 {
+            font-size: 1.3rem;
+            color: var(--blue-dark);
+            margin-bottom: 1rem;
+            padding-left: 0.8rem;
+            border-left: 4px solid var(--gold);
+        }
+        .overview p {
+            font-size: 0.95rem;
+            color: var(--text);
+            line-height: 1.9;
+            text-indent: 2em;
+        }
+
+        /* ── 关键变化 ── */
+        .key-changes {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1.5rem 1.5rem;
+        }
+        .key-changes h2 {
+            font-size: 1.3rem;
+            color: var(--blue-dark);
+            margin-bottom: 1rem;
+            padding-left: 0.8rem;
+            border-left: 4px solid var(--gold);
+        }
+        .key-changes ul {
+            list-style: none;
+            padding: 0;
+        }
+        .key-changes li {
+            padding: 0.6rem 0 0.6rem 1.5rem;
+            position: relative;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            border-bottom: 1px solid var(--border);
+        }
+        .key-changes li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+            font-weight: bold;
+        }
+        .key-changes .impact {
+            margin-top: 1rem;
+            font-weight: 600;
+            color: var(--blue-dark);
+            font-size: 1rem;
+        }
+
+        /* ── 风险与后续 ── */
+        .risk-follow {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1.5rem 1.5rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+        @media (max-width: 768px) {
+            .risk-follow { grid-template-columns: 1fr; }
+        }
+        .risk-follow .box {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            border: 1px solid var(--border);
+        }
+        .risk-follow .box h3 {
+            font-size: 1.05rem;
+            color: var(--blue-dark);
+            margin-bottom: 0.8rem;
+        }
+        .risk-follow .box ul {
+            list-style: none;
+            padding: 0;
+        }
+        .risk-follow .box li {
+            padding: 0.4rem 0 0.4rem 1.2rem;
+            position: relative;
+            font-size: 0.88rem;
+            line-height: 1.6;
+            color: var(--text);
+        }
+        .risk-follow .box li::before {
+            content: '⚠';
+            position: absolute;
+            left: 0;
+            font-size: 0.8rem;
+        }
+        .risk-follow .box.follow li::before {
+            content: '👁';
+        }
+
+        /* ── 新闻板块 ── */
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1.5rem 2rem;
+        }
+        .section-divider {
+            text-align: center;
+            font-size: 1.5rem;
+            color: var(--gold);
+            margin: 2rem 0 0.5rem;
+            letter-spacing: 0.5rem;
+        }
+        .section-title {
+            font-size: 1.3rem;
+            color: var(--blue-dark);
+            text-align: center;
+            margin-bottom: 1.2rem;
+        }
+        .section-title .count {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            font-weight: 400;
+            margin-left: 0.5rem;
+        }
+
+        .news-item {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.3rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            border: 1px solid var(--border);
+        }
+        .tags-row {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 0.6rem;
+            flex-wrap: wrap;
+        }
+        .tags-row span {
+            display: inline-block;
+            padding: 0.15rem 0.6rem;
+            border-radius: 20px;
+            color: white;
+            font-size: 0.72rem;
+            font-weight: 500;
+        }
+        .cat-tag {
+            background: var(--blue-mid) !important;
+        }
+        .news-title {
+            font-size: 1.1rem;
+            color: var(--blue-dark);
+            margin-bottom: 0.6rem;
+            line-height: 1.5;
+        }
+        .news-summary {
+            font-size: 0.9rem;
+            color: var(--text);
+            line-height: 1.7;
+            margin-bottom: 0.6rem;
+        }
+        .insight, .biz-impact {
+            font-size: 0.88rem;
+            padding: 0.5rem 0.8rem;
+            border-radius: 6px;
+            margin-bottom: 0.4rem;
+            line-height: 1.6;
+        }
+        .insight {
+            background: #f0f7ff;
+            border-left: 3px solid #4B9FE8;
+            color: #2c5282;
+        }
+        .biz-impact {
+            background: #fffbeb;
+            border-left: 3px solid var(--gold);
+            color: #744210;
+        }
+        .news-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 0.8rem;
+            color: var(--text-light);
+            margin-top: 0.6rem;
+            flex-wrap: wrap;
+        }
+        .news-meta a {
+            color: var(--blue-mid);
+            text-decoration: none;
+        }
+        .news-meta a:hover {
+            text-decoration: underline;
+        }
+
+        /* ── 页脚 ── */
+        .footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            color: var(--text-light);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border);
+            margin-top: 2rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media (max-width: 768px) {
+            .hero-title { font-size: 1.6rem; }
+            .content, .overview, .key-changes { padding-left: 1rem; padding-right: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- 顶部区 -->
+<div class="hero">
+    <div class="hero-title">潮 <b>向</b></div>
+    <div class="hero-subtitle">建材家居行业日报</div>
+    <div class="hero-theme">存量博弈下建材家居企业加速向高附加值、AI智能化与一体化高端定制转型，同时全球环保合规门槛持续提升</div>
+    <div class="hero-meta">
+        <span>2026-10-27 星期二</span>
+        <span class="sep"></span>
+        <span>7 条事件</span>
+        <span class="sep"></span>
+        <span>本次识别 7 个状态库新增事件</span>
+    </div>
+    <a class="hero-link" href="https://christopherx911225.github.io/chaowxiang-daily/" target="_blank">查看历史日报 →</a>
+</div>
+
+<!-- 今日概览 -->
+<div class="overview">
+    <h2>◆ 今日概览</h2>
+    <p>当前建材家居行业正处于深度调整与存量博弈期，传统主业增长承压倒逼企业寻找新增长曲线。一方面，头部企业加速向高附加值与高端化转型，涂料企业通过降本增效及布局海洋重防腐等特种领域实现利润大增，建材与家居企业则紧抓“好房子”政策与消费升级，发力门墙柜一体化、建筑铝板及高定木作；另一方面，AI技术正从设计端向实体交互端全面渗透，成为破局关键。此外，全球环保法规趋严要求出海企业必须提升合规能力。整体看，行业正从规模扩张转向以技术、品质和智能化为核心的高质量发展阶段。</p>
+</div>
+
+<!-- 关键变化 -->
+<div class="key-changes">
+    <h2>◆ 关键变化</h2>
+    <ul>
+        <li>传统家居主业增长承压导致尚品宅配等企业跨界布局具身智能与AI赛道，意味着行业正试图通过前沿科技打造第二增长曲线以突破存量瓶颈。</li>
+<li>国家“好房子”政策导向与消费升级需求导致亚士、梦天等企业加码建筑铝板与门墙柜一体化高定业务，意味着建材家居产品正加速向高端化、场景化与高附加值方向演进。</li>
+<li>钛能化学净利大涨与圣工漆布局海洋重防腐表明涂料企业通过成本控制及切入高壁垒特种领域实现了盈利跨越，意味着技术创新与产品结构优化是抵御行业周期波动的核心动力。</li>
+<li>津巴布韦出台淘汰铅涂料法规导致涂料出口企业面临配方调整压力，意味着全球环保标准持续收紧要求出海企业必须加速绿色研发与合规布局以应对国际贸易技术壁垒。</li>
+
+    </ul>
+    <p class="impact">影响判断：对行业整体偏正面。尽管部分企业传统主业短期承压，但头部企业积极通过高端化转型、AI技术赋能及拓展高附加值特种领域寻求突破，行业整体正加速向高质量、智能化和绿色化方向升级，长期发展动能正在重塑。</p>
+</div>
+
+<!-- 风险与后续 -->
+<div class="risk-follow">
+    <div class="box risk">
+        <h3>⚠ 风险与不确定性</h3>
+        <ul><li>跨界风险：家居企业跨界AI与具身智能等前沿科技赛道面临技术研发周期长、投入大及商业化落地不及预期的风险。</li>
+<li>合规与出海风险：全球环保法规趋严及地缘政治因素可能增加涂料等建材产品的出口合规成本，影响海外市场拓展。</li>
+<li>需求复苏不及预期风险：若房地产市场及终端消费需求恢复缓慢，高端化与一体化战略可能面临叫好不叫座、产能消化困难的压力。</li>
+</ul>
+    </div>
+    <div class="box follow">
+        <h3>👁 后续关注</h3>
+        <ul><li>跟踪头部家居企业在AI智能设计系统与具身智能机器人领域的研发进展及实际业务转化效果。</li>
+<li>监测涂料及建材企业在高附加值产品（如海洋重防腐、高端建筑铝板）的产能释放进度与毛利率改善情况。</li>
+<li>关注津巴布韦等海外国家环保新政落地对国内涂料企业出口订单及配方调整成本的实际影响。</li>
+<li>跟踪“好房子”政策在各地的具体实施细则及落地项目，评估其对建材家居高端化产品的实际拉动效应。</li>
+</ul>
+    </div>
+</div>
+
+<!-- 四大新闻板块 -->
+<div class="content">
+    
+        <div class="section-divider">★</div>
+        <h2 class="section-title">今日头条 <span class="count">2条</span></h2>
+        
+        <div class="news-item">
+            <div class="tags-row">
+                <span class="grade-tag" style="background:#c0392b">战略级</span>
+                <span class="status-tag" style="background:#27ae60">新增</span>
+                <span class="cat-tag">市场数据</span>
+            </div>
+            <h3 class="news-title">《2026世界十大涂料企业排行榜》发布，宣伟稳居榜首</h3>
+            <p class="news-summary">10月24日，中外涂料网发布《2026年世界十大涂料企业排行榜》。榜单显示，宣伟以235.74亿美元营收领跑，PPG、阿克苏诺贝尔、立邦紧随其后，四家营收均破百亿美元。十大企业合计销售收入占全球近半壁江山。立邦净利增速达42.8%领跑，亚洲涂料净利润率居首。</p>
+            <div class="insight"><strong>💡 洞察：</strong>全球涂料行业头部效应进一步加剧，前十强企业占据近50%市场份额，马太效应显著。亚太市场尤其是中国和印度成为重要增长引擎，而企业盈利分化反映出成本控制与产品结构优化的重要性。</div>
+            <div class="biz-impact"><strong>🎯 业务影响：</strong>头部企业通过规模效应和技术创新巩固壁垒，中小涂企需寻找细分赛道（如艺术涂料、工业特种涂料）或深耕区域市场，避免在红海市场与巨头正面拼杀。</div>
+            <div class="news-meta">
+                <span class="date">2026-10-26</span>
+                <span class="sources"><a href="http://m.toutiao.com/group/7700756216284201508/" target="_blank">中外涂料网</a></span>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="tags-row">
+                <span class="grade-tag" style="background:#c0392b">战略级</span>
+                <span class="status-tag" style="background:#27ae60">新增</span>
+                <span class="cat-tag">战略调整</span>
+            </div>
+            <h3 class="news-title">木作赛道重回风口，梦天等头部企业全面加码门墙柜一体化与AI智能设计</h3>
+            <p class="news-summary">2026年木作业务热度升温，梦天、玛格、欧派、志邦等头部定制家居企业纷纷战略升级，聚焦门墙柜一体化及高定木作。其中，梦天木作近期举办AI驱动多维升级发布会，确立高端定制木作新定位，并联合浙江大学研发梦栖AI智能设计系统，实现毛坯生成、AI渲染等功能，将模糊想法快速转化为3D效果图。木作模式正从概念探索走向商业落地，成为定制家居行业寻找新价值锚点的战略共识。</p>
+            <div class="insight"><strong>💡 洞察：</strong>木作赛道重回风口并非单品需求爆发，而是存量市场下消费者对“风格统一、整体交付”的改善型需求升级所致。同时，AI设计工具正成为高端定制家居终端赋能的关键抓手，行业竞争维度从单品交易拉高至空间一体化交付能力与前端设计效率。</div>
+            <div class="biz-impact"><strong>🎯 业务影响：</strong>企业需重构设计、研发、供应链与交付体系，提升门墙柜一体化柔性制造能力；加速AI设计工具的终端普及，打通“设计-生产-交付”数据链路；终端门店需向全案馆升级，强化设计师渠道拓展，以设计驱动高客单价产品的销售转化。</div>
+            <div class="news-meta">
+                <span class="date">2026-10-26</span>
+                <span class="sources"><a href="http://m.toutiao.com/group/7700779346159501833/" target="_blank">大材研究</a></span>
+            </div>
+        </div>
+        
+        <div class="section-divider">♥</div>
+        <h2 class="section-title">行业脉搏 <span class="count">1条</span></h2>
+        
+        <div class="news-item">
+            <div class="tags-row">
+                <span class="grade-tag" style="background:#E8B84B">值得关注</span>
+                <span class="status-tag" style="background:#27ae60">新增</span>
+                <span class="cat-tag">市场数据</span>
+            </div>
+            <h3 class="news-title">钛能化学前三季度营收67.6亿元，净利大涨81.67%</h3>
+            <p class="news-summary">10月26日消息，钛能化学公布最新业绩，今年前九个月实现营业收入67.6亿元，净利润同比大幅上涨81.67%。在行业整体承压的背景下，钛能化学凭借产能释放、成本控制及高附加值产品占比提升，实现了盈利能力的显著跨越。</p>
+            <div class="insight"><strong>💡 洞察：</strong>上游钛白粉及化工原料企业盈利大幅改善，反映出原材料端集中度提升及定价权增强。这也意味着下游涂料企业可能面临新一轮的成本传导压力。</div>
+            <div class="biz-impact"><strong>🎯 业务影响：</strong>涂料企业需密切关注钛白粉等核心原材料的价格走势，通过集中采购、长协锁定或产品提价等方式对冲成本上涨风险，同时加快研发高毛利产品以消化成本压力。</div>
+            <div class="news-meta">
+                <span class="date">2026-10-26</span>
+                <span class="sources"><a href="https://www.27580.cn/?04=772208276" target="_blank">中外涂料网</a></span>
+            </div>
+        </div>
+        
+        <div class="section-divider">⚡</div>
+        <h2 class="section-title">趋势与信号 <span class="count">3条</span></h2>
+        
+        <div class="news-item">
+            <div class="tags-row">
+                <span class="grade-tag" style="background:#E8B84B">值得关注</span>
+                <span class="status-tag" style="background:#27ae60">新增</span>
+                <span class="cat-tag">战略调整</span>
+            </div>
+            <h3 class="news-title">亚士锚定“好房子”战略，以建筑铝板布局推进业务优化</h3>
+            <p class="news-summary">10月26日消息，亚士创能紧扣国家“好房子”建设导向，加速推进业务结构优化，将建筑铝板作为重要战略布局方向。通过拓展外墙装饰与保温一体化的高端材料，亚士旨在提升在高端建筑项目中的竞争力，满足市场对高品质、高颜值建筑外立面的需求。</p>
+            <div class="insight"><strong>💡 洞察：</strong>房地产存量时代与“好房子”政策导向下，单一涂料产品已难以满足开发商和消费者对建筑外立面整体解决方案的需求，材料一体化、系统化交付成为涂企转型的重要方向。</div>
+            <div class="biz-impact"><strong>🎯 业务影响：</strong>传统涂料企业应探索从“单一材料供应商”向“建筑外立面系统解决方案服务商”转型，通过跨界整合铝板、保温材料等，提升客单价与工程竞标优势。</div>
+            <div class="news-meta">
+                <span class="date">2026-10-26</span>
+                <span class="sources"><a href="https://www.27580.cn/?04=772208276" target="_blank">中外涂料网</a></span>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="tags-row">
+                <span class="grade-tag" style="background:#95a5a6">参考</span>
+                <span class="status-tag" style="background:#27ae60">新增</span>
+                <span class="cat-tag">技术创新</span>
+            </div>
+            <h3 class="news-title">圣工漆与国家海洋腐蚀防护工程技术研究中心达成战略合作</h3>
+            <p class="news-summary">10月26日消息，圣工漆与国家海洋腐蚀防护工程技术研究中心正式签署战略合作协议。双方将围绕海洋重防腐涂料的技术研发、成果转化及人才培养展开深度合作，旨在突破海洋环境下的材料防腐瓶颈，助力国家海洋工程与装备制造业的高质量发展。</p>
+            <div class="insight"><strong>💡 洞察：</strong>海洋经济与深海装备是国家战略新兴产业，对重防腐涂料的性能要求极高。产学研深度融合正成为涂企攻克“卡脖子”技术、抢占高端工业涂料市场的关键路径。</div>
+            <div class="biz-impact"><strong>🎯 业务影响：</strong>工业涂料企业应积极对接国家级科研院所，聚焦新能源、海洋工程、航空航天等高端领域的特种涂料研发，以技术壁垒构建差异化竞争优势，摆脱低端价格战。</div>
+            <div class="news-meta">
+                <span class="date">2026-10-26</span>
+                <span class="sources"><a href="https://www.27580.cn/?04=772208276" target="_blank">中外涂料网</a></span>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="tags-row">
+                <span class="grade-tag" style="background:#c0392b">战略级</span>
+                <span class="status-tag" style="background:#27ae60">新增</span>
+                <span class="cat-tag">战略调整</span>
+            </div>
+            <h3 class="news-title">尚品宅配2025年营收35.52亿，主业承压下跨界布局具身智能赛道</h3>
+            <p class="news-summary">企查查数据显示，尚品宅配2025年营业收入为35.52亿元，员工规模6355人，但2026年三季度净利润同比出现大幅下降。在传统主业面临增长压力的背景下，尚品宅配积极布局AI智能化与具身智能新赛道，与启元机器人成立合资公司尚元智启，并联合汤元科技发布面向家庭服务具身智能的WorldSimReady-Home仿真数据集。此外，其总部大楼投入使用也有望降低长期场地开支。</p>
+            <div class="insight"><strong>💡 洞察：</strong>定制家居头部企业在存量博弈中面临显著的利润压力，传统规模扩张模式失效。企业战略正从“渠道与产能驱动”转向“技术与效率驱动”，通过构建家庭仿真数据集，试图抢占未来智能家居与家庭服务机器人的数据与场景入口，寻找第二增长曲线。</div>
+            <div class="biz-impact"><strong>🎯 业务影响：</strong>企业需精细化管理运营成本，优化资产结构；在主业转型期，应合理控制前沿技术（如具身智能）的研发投入节奏，确保现金流安全，同时利用AI技术切实提升主业的人效与坪效，提前布局“机器人友好家”等前瞻性概念。</div>
+            <div class="news-meta">
+                <span class="date">2026-10-27</span>
+                <span class="sources"><a href="https://www.qcc.com/creport/ca5a2de9d0b85eebdab6a0f190cee02a.html" target="_blank">企查查</a></span>
+            </div>
+        </div>
+        
+        <div class="section-divider">⚖</div>
+        <h2 class="section-title">政策与数据 <span class="count">1条</span></h2>
+        
+        <div class="news-item">
+            <div class="tags-row">
+                <span class="grade-tag" style="background:#E8B84B">值得关注</span>
+                <span class="status-tag" style="background:#27ae60">新增</span>
+                <span class="cat-tag">政策法规</span>
+            </div>
+            <h3 class="news-title">津巴布韦要求涂料制造商2027年5月前淘汰铅涂料</h3>
+            <p class="news-summary">津巴布韦环境管理局重申，根据2026年通过的法规，涂料和涂层产品中的铅含量上限将被限制在90ppm。该规定将于2027年5月全面生效，要求制造商、进口商和分销商提前进行产品配方调整和合规准备，以保护儿童健康并符合国际环保标准。</p>
+            <div class="insight"><strong>💡 洞察：</strong>全球环保法规趋严，无铅化、低VOC已成为涂料行业的强制性门槛。非洲等新兴市场的环保标准正加速与国际接轨，绿色壁垒将重塑区域供应链。</div>
+            <div class="biz-impact"><strong>🎯 业务影响：</strong>出口非洲市场的涂料企业需立即启动产品合规性排查与配方升级，提前布局环保水性涂料，避免因不合规导致的退运或罚款风险，同时可借机推广绿色产品抢占市场。</div>
+            <div class="news-meta">
+                <span class="date">2026-10-26</span>
+                <span class="sources"><a href="https://www.hamanie.news/posts/zimbabwe-les-fabricants-de-peinture-sommes-de-supprimer-le-plomb-avant-mai-2027" target="_blank">Hamanie News</a></span>
+            </div>
+        </div>
+        
+</div>
+
+<!-- 页脚 -->
+<div class="footer">
+    <p>数据来源：中国建筑材料流通协会、中国建筑材料联合会、新华网、财经媒体等</p>
+    <p style="margin-top:0.5rem">由 <b style="color:var(--gold)">「潮向」情报系统</b> 自动生成</p>
+</div>
+
+</body>
+</html>
