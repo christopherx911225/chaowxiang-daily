@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>潮向 | 建材家居行业日报 | 2026-11-01</title>
+    <style>
+        :root {
+            --blue-dark: #1a2a4a;
+            --blue-mid: #2c4a7c;
+            --gold: #E8B84B;
+            --gold-light: #F5D98C;
+            --bg: #f8f9fc;
+            --card-bg: #ffffff;
+            --text: #2d3748;
+            --text-light: #718096;
+            --border: #e2e8f0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        /* ── 顶部区 ── */
+        .hero {
+            background: linear-gradient(135deg, var(--blue-dark) 0%, var(--blue-mid) 100%);
+            color: white;
+            padding: 3rem 1.5rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 60%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(232,184,75,0.08), transparent);
+            transform: rotate(30deg);
+        }
+        .hero-title {
+            font-size: 2.2rem;
+            font-weight: 300;
+            letter-spacing: 0.5rem;
+            margin-bottom: 0.3rem;
+            position: relative;
+        }
+        .hero-title b {
+            color: var(--gold);
+            font-weight: 700;
+        }
+        .hero-subtitle {
+            font-size: 1rem;
+            opacity: 0.85;
+            margin-bottom: 1.2rem;
+            position: relative;
+        }
+        .hero-theme {
+            font-size: 1.15rem;
+            font-weight: 500;
+            color: var(--gold-light);
+            max-width: 700px;
+            margin: 0 auto 1.5rem;
+            line-height: 1.6;
+            position: relative;
+        }
+        .hero-meta {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+            font-size: 0.9rem;
+            opacity: 0.85;
+            position: relative;
+            flex-wrap: wrap;
+        }
+        .hero-meta .sep {
+            width: 4px; height: 4px;
+            background: var(--gold);
+            border-radius: 50%;
+        }
+        .hero-link {
+            display: inline-block;
+            margin-top: 1rem;
+            color: var(--gold);
+            text-decoration: none;
+            font-size: 0.9rem;
+            position: relative;
+        }
+        .hero-link:hover { text-decoration: underline; }
+
+        /* ── 概览区 ── */
+        .overview {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+        .overview h2 {
+            font-size: 1.3rem;
+            color: var(--blue-dark);
+            margin-bottom: 1rem;
+            padding-left: 0.8rem;
+            border-left: 4px solid var(--gold);
+        }
+        .overview p {
+            font-size: 0.95rem;
+            color: var(--text);
+            line-height: 1.9;
+            text-indent: 2em;
+        }
+
+        /* ── 关键变化 ── */
+        .key-changes {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1.5rem 1.5rem;
+        }
+        .key-changes h2 {
+            font-size: 1.3rem;
+            color: var(--blue-dark);
+            margin-bottom: 1rem;
+            padding-left: 0.8rem;
+            border-left: 4px solid var(--gold);
+        }
+        .key-changes ul {
+            list-style: none;
+            padding: 0;
+        }
+        .key-changes li {
+            padding: 0.6rem 0 0.6rem 1.5rem;
+            position: relative;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            border-bottom: 1px solid var(--border);
+        }
+        .key-changes li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+            font-weight: bold;
+        }
+        .key-changes .impact {
+            margin-top: 1rem;
+            font-weight: 600;
+            color: var(--blue-dark);
+            font-size: 1rem;
+        }
+
+        /* ── 风险与后续 ── */
+        .risk-follow {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1.5rem 1.5rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+        @media (max-width: 768px) {
+            .risk-follow { grid-template-columns: 1fr; }
+        }
+        .risk-follow .box {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            border: 1px solid var(--border);
+        }
+        .risk-follow .box h3 {
+            font-size: 1.05rem;
+            color: var(--blue-dark);
+            margin-bottom: 0.8rem;
+        }
+        .risk-follow .box ul {
+            list-style: none;
+            padding: 0;
+        }
+        .risk-follow .box li {
+            padding: 0.4rem 0 0.4rem 1.2rem;
+            position: relative;
+            font-size: 0.88rem;
+            line-height: 1.6;
+            color: var(--text);
+        }
+        .risk-follow .box li::before {
+            content: '⚠';
+            position: absolute;
+            left: 0;
+            font-size: 0.8rem;
+        }
+        .risk-follow .box.follow li::before {
+            content: '👁';
+        }
+
+        /* ── 新闻板块 ── */
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1.5rem 2rem;
+        }
+        .section-divider {
+            text-align: center;
+            font-size: 1.5rem;
+            color: var(--gold);
+            margin: 2rem 0 0.5rem;
+            letter-spacing: 0.5rem;
+        }
+        .section-title {
+            font-size: 1.3rem;
+            color: var(--blue-dark);
+            text-align: center;
+            margin-bottom: 1.2rem;
+        }
+        .section-title .count {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            font-weight: 400;
+            margin-left: 0.5rem;
+        }
+
+        .news-item {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.3rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            border: 1px solid var(--border);
+        }
+        .tags-row {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 0.6rem;
+            flex-wrap: wrap;
+        }
+        .tags-row span {
+            display: inline-block;
+            padding: 0.15rem 0.6rem;
+            border-radius: 20px;
+            color: white;
+            font-size: 0.72rem;
+            font-weight: 500;
+        }
+        .cat-tag {
+            background: var(--blue-mid) !important;
+        }
+        .news-title {
+            font-size: 1.1rem;
+            color: var(--blue-dark);
+            margin-bottom: 0.6rem;
+            line-height: 1.5;
+        }
+        .news-summary {
+            font-size: 0.9rem;
+            color: var(--text);
+            line-height: 1.7;
+            margin-bottom: 0.6rem;
+        }
+        .insight, .biz-impact {
+            font-size: 0.88rem;
+            padding: 0.5rem 0.8rem;
+            border-radius: 6px;
+            margin-bottom: 0.4rem;
+            line-height: 1.6;
+        }
+        .insight {
+            background: #f0f7ff;
+            border-left: 3px solid #4B9FE8;
+            color: #2c5282;
+        }
+        .biz-impact {
+            background: #fffbeb;
+            border-left: 3px solid var(--gold);
+            color: #744210;
+        }
+        .news-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 0.8rem;
+            color: var(--text-light);
+            margin-top: 0.6rem;
+            flex-wrap: wrap;
+        }
+        .news-meta a {
+            color: var(--blue-mid);
+            text-decoration: none;
+        }
+        .news-meta a:hover {
+            text-decoration: underline;
+        }
+
+        /* ── 页脚 ── */
+        .footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            color: var(--text-light);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border);
+            margin-top: 2rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media (max-width: 768px) {
+            .hero-title { font-size: 1.6rem; }
+            .content, .overview, .key-changes { padding-left: 1rem; padding-right: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- 顶部区 -->
+<div class="hero">
+    <div class="hero-title">潮 <b>向</b></div>
+    <div class="hero-subtitle">建材家居行业日报</div>
+    <div class="hero-theme">存量时代建材家居加速向智能化与绿色化转型，产业整合与出海合规成破局关键</div>
+    <div class="hero-meta">
+        <span>2026-11-01 星期日</span>
+        <span class="sep"></span>
+        <span>8 条事件</span>
+        <span class="sep"></span>
+        <span>本次识别 7 个状态库新增事件</span>
+    </div>
+    <a class="hero-link" href="https://christopherx911225.github.io/chaowxiang-daily/" target="_blank">查看历史日报 →</a>
+</div>
+
+<!-- 今日概览 -->
+<div class="overview">
+    <h2>◆ 今日概览</h2>
+    <p>今日情报显示，建材家居行业在存量博弈中呈现出显著的结构性升级特征。传统建材与汽车后市场通过渠道重塑与存量挖掘展现出业绩修复韧性，如亚士创能与东来技术的稳健表现。同时，产业整合与技术跃迁加速，阿克苏诺贝尔与艾仕得合并催生涂料新寡头，尚品宅配跨界布局具身智能推动物理AI落地，环保艺术涂料则向系统交付演进。此外，全球市场分化明显，亚太橱柜需求持续释放，而欧盟新规则大幅抬高了相关装置的出口合规门槛。整体而言，行业正从规模扩张转向以技术创新、绿色转型和全球化合规运营为核心驱动的高质量发展新阶段。</p>
+</div>
+
+<!-- 关键变化 -->
+<div class="key-changes">
+    <h2>◆ 关键变化</h2>
+    <ul>
+        <li>阿克苏诺贝尔与艾仕得合并定名Axanzo，导致全球涂料市场集中度进一步提升，意味着行业竞争正式迈入寡头博弈与全链条综合实力比拼的新阶段。</li>
+<li>尚品宅配成立合资公司布局具身智能并发布仿真数据集，导致定制家居从单一数字化设计向物理世界AI交互延伸，意味着家居制造正加速向具身智能与无人化生产演进。</li>
+<li>欧盟EN 13814:2026标准强制要求动能艺术装置结构认证，导致相关出海企业的合规成本与技术门槛大幅攀升，意味着中国制造在进军欧洲高端市场时必须跨越更严苛的动态安全法规壁垒。</li>
+<li>上海环保艺术涂料需求向环保功能与系统交付演进，导致单纯提供色彩装饰的单一产品模式被淘汰，意味着具备全链条服务与自主研发能力的源头工厂将获取更高的市场溢价。</li>
+
+    </ul>
+    <p class="impact">影响判断：对行业整体偏正面。尽管面临欧盟新规带来的出口合规成本上升，但国内建材家居企业在存量市场中展现出强劲的业绩修复能力，且产业整合与技术创新正有效推动行业向高附加值、智能化和绿色化转型，长期基本面持续向好。</p>
+</div>
+
+<!-- 风险与后续 -->
+<div class="risk-follow">
+    <div class="box risk">
+        <h3>⚠ 风险与不确定性</h3>
+        <ul><li>欧盟EN 13814:2026新规实施可能导致部分技术储备不足的中小出口企业面临订单流失或认证成本激增的生存危机。</li>
+<li>具身智能与物理AI在家居场景的落地仍处早期，高昂的研发投入与商业化变现周期可能给企业现金流带来短期压力。</li>
+<li>全球涂料巨头合并后可能利用规模优势挤压本土中小型涂料企业的生存空间，加剧国内工业及装饰涂料市场的价格战。</li>
+</ul>
+    </div>
+    <div class="box follow">
+        <h3>👁 后续关注</h3>
+        <ul><li>跟踪阿克苏诺贝尔与艾仕得合并后的全球业务整合进度及新品牌Axanzo在华市场的渠道布局与定价策略。</li>
+<li>监测尚品宅配具身智能合资公司的技术落地进展，特别是机器人友好家场景的实际交付效率与商业化反馈。</li>
+<li>关注欧盟EN 13814:2026标准正式实施后，国内动能艺术装置及户外大型设施出口企业的认证通过率及市场份额变化。</li>
+<li>跟踪亚士创能等建材企业在渠道重塑后的下沉市场表现，以及环保艺术涂料头部品牌在系统交付模式下的客单价提升情况。</li>
+</ul>
+    </div>
+</div>
+
+<!-- 四大新闻板块 -->
+<div class="content">
+    
+        <div class="section-divider">★</div>
+        <h2 class="section-title">今日头条 <span class="count">2条</span></h2>
+        
+        <div class="news-item">
+            <div class="tags-row">
+                <span class="grade-tag" style="background:#c0392b">战略级</span>
+                <span class="status-tag" style="background:#27ae60">新增</span>
+                <span class="cat-tag">行业重大事件</span>
+            </div>
+            <h3 class="news-title">阿克苏诺贝尔与艾仕得合并后新公司定名Axanzo</h3>
+            <p class="news-summary">10月15日阿克苏诺贝尔与艾仕得宣布，在拟议合并完成后，合并后的公司名称将为Axanzo。此举标志着全球涂料行业两大巨头即将完成战略重组，新品牌的诞生将重塑全球工业及装饰涂料市场的竞争格局，形成新的行业寡头。</p>
+            <div class="insight"><strong>💡 洞察：</strong>全球涂料行业集中度进一步提升，巨头通过合并应对成本压力与市场竞争。新名称Axanzo意在摆脱单一历史包袱，以全新形象面向全球市场，预示着合并后的实体将在研发、供应链及渠道上实现深度整合。</div>
+            <div class="biz-impact"><strong>🎯 业务影响：</strong>国内涂料企业面临更强大的国际巨头竞争，需加速出海布局或深耕细分高端市场；同时，巨头合并带来的供应链重组可能为本土头部企业提供替代性大客户拓展的窗口期。</div>
+            <div class="news-meta">
+                <span class="date">2026-10-31</span>
+                <span class="sources"><a href="https://www.27580.cn/?04=772208276" target="_blank">中外涂料网</a></span>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="tags-row">
+                <span class="grade-tag" style="background:#c0392b">战略级</span>
+                <span class="status-tag" style="background:#27ae60">新增</span>
+                <span class="cat-tag">技术创新</span>
+            </div>
+            <h3 class="news-title">尚品宅配成立合资公司布局具身智能，加速AI设计工厂与物理AI落地</h3>
+            <p class="news-summary">定制家居头部企业尚品宅配近期与启元机器人成立合资公司“尚元智启”，正式布局具身智能赛道，并联合发布WorldSimReady-Home仿真数据集。公司此前已打造AI设计工厂，推动商业模式改革。目前其机器人友好家及物理AI数据业务正处于场景落地与技术研究阶段。此外，公司2025年营收达35.52亿元，新总部大楼投入使用有望降低长期运营成本。</p>
+            <div class="insight"><strong>💡 洞察：</strong>家居行业的竞争正从“渠道与产能”向“AI与具身智能”升维。尚品宅配通过合资与仿真数据集的发布，试图打通“AI设计-物理制造-智能机器人安装/服务”的全链路，这标志着定制家居的数字化正从软件端向物理世界的具身智能延伸，有望重塑未来家居交付模式。</div>
+            <div class="biz-impact"><strong>🎯 业务影响：</strong>企业需密切关注具身智能在家居制造与安装场景的落地进度，提前储备AI与机器人协同的技术人才；同时，可借鉴其“AI设计工厂”模式，利用数字化工具优化前端设计与后端生产的衔接，提升整体交付效率与降本增效。</div>
+            <div class="news-meta">
+                <span class="date">2026-10-31</span>
+                <span class="sources"><a href="https://www.qcc.com/creport/ca5a2de9d0b85eebdab6a0f190cee02a.html" target="_blank">企查查</a></span>
+            </div>
+        </div>
+        
+        <div class="section-divider">♥</div>
+        <h2 class="section-title">行业脉搏 <span class="count">3条</span></h2>
+        
+        <div class="news-item">
+            <div class="tags-row">
+                <span class="grade-tag" style="background:#E8B84B">值得关注</span>
+                <span class="status-tag" style="background:#27ae60">新增</span>
+                <span class="cat-tag">品牌动态</span>
+            </div>
+            <h3 class="news-title">松井股份Q3单季营收创新高，前三季度乘用车业务破2亿</h3>
+            <p class="news-summary">松井股份发布业绩数据，2026年第三季度单季营收创下历史新高，其中前三季度乘用车业务营收突破2亿元。这表明公司在新能源汽车及乘用车涂料领域的布局进入收获期，核心业务增长强劲，展现出在高端工业涂料市场的竞争力。</p>
+            <div class="insight"><strong>💡 洞察：</strong>乘用车涂料特别是新能源汽车相关涂料正成为涂企增长的新引擎。随着国内新能源汽车产业链的强势崛起，上游核心材料供应商迎来国产替代与份额扩张的双重红利。</div>
+            <div class="biz-impact"><strong>🎯 业务影响：</strong>涂企应加大对新能源汽车产业链（如电池防火涂料、轻量化材料涂料）的研发投入；传统建筑涂料企业可考虑通过并购或合作切入乘用车及3C消费电子等高端工业涂料赛道。</div>
+            <div class="news-meta">
+                <span class="date">2026-10-31</span>
+                <span class="sources"><a href="https://www.27580.cn/important/207565.html" target="_blank">中外涂料网</a></span>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="tags-row">
+                <span class="grade-tag" style="background:#E8B84B">值得关注</span>
+                <span class="status-tag" style="background:#27ae60">新增</span>
+                <span class="cat-tag">品牌动态</span>
+            </div>
+            <h3 class="news-title">亚士创能Q3营收同比增11.91%，修复信号与重塑路径显现</h3>
+            <p class="news-summary">亚士创能公布2026年第三季度业绩，营业收入同比增长11.91%。在行业整体承压的背景下，亚士创能展现出明显的业绩修复信号，其渠道重塑与战略调整路径开始显现成效，为建材行业存量时代的破局提供了参考样本。</p>
+            <div class="insight"><strong>💡 洞察：</strong>建材行业在经历深度调整后，具备供应链韧性、渠道下沉及多品类协同能力的企业正率先走出低谷。头部企业的业绩修复预示着行业洗牌进入尾声，市场份额加速向优质头部集中。</div>
+            <div class="biz-impact"><strong>🎯 业务影响：</strong>企业需审视自身渠道结构，从依赖单一工程大B端向“工程+零售+旧改”多元渠道转型；同时优化供应链效率，提升抗风险能力，以迎接存量市场时代的竞争。</div>
+            <div class="news-meta">
+                <span class="date">2026-10-31</span>
+                <span class="sources"><a href="https://www.27580.cn/news/207563.html" target="_blank">中外涂料网</a></span>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="tags-row">
+                <span class="grade-tag" style="background:#E8B84B">值得关注</span>
+                <span class="status-tag" style="background:#27ae60">新增</span>
+                <span class="cat-tag">市场数据</span>
+            </div>
+            <h3 class="news-title">东来技术前三季度营收4.88亿元，净赚6890万</h3>
+            <p class="news-summary">东来技术发布2026年前三季度业绩，实现营业总收入4.88亿元，净利润6890万元。作为汽车售后修补漆领域的知名企业，其稳健的业绩表现反映了汽车后市场涂料需求的韧性，以及存量维修市场对专业涂料产品的持续需求。</p>
+            <div class="insight"><strong>💡 洞察：</strong>汽车保有量的增加及车龄老化推动了汽车售后修补漆市场的稳定增长。在乘用车新车涂料竞争激烈的同时，存量市场的售后维修涂料展现出较好的盈利能力和抗周期属性。</div>
+            <div class="biz-impact"><strong>🎯 业务影响：</strong>涂料企业可关注汽车后市场及工业设备维护等存量修补市场的机会，开发快干、环保、易施工的高性能修补涂料产品，拓展独立售后维修连锁渠道。</div>
+            <div class="news-meta">
+                <span class="date">2026-10-31</span>
+                <span class="sources"><a href="https://www.27580.cn/important/207569.html" target="_blank">中外涂料网</a></span>
+            </div>
+        </div>
+        
+        <div class="section-divider">⚡</div>
+        <h2 class="section-title">趋势与信号 <span class="count">1条</span></h2>
+        
+        <div class="news-item">
+            <div class="tags-row">
+                <span class="grade-tag" style="background:#E8B84B">值得关注</span>
+                <span class="status-tag" style="background:#27ae60">新增</span>
+                <span class="cat-tag">消费者趋势</span>
+            </div>
+            <h3 class="news-title">上海环保艺术涂料市场趋势：向环保功能与系统交付演进</h3>
+            <p class="news-summary">2026年上海及长三角地区环保艺术涂料市场稳步增长，水性、低VOC、无机矿物基等产品需求增速高于平均水平。行业正从单纯色彩装饰向“环保功能+空间美学+系统交付”方向演进，具备自主研发与全链条服务的源头工厂更受青睐。</p>
+            <div class="insight"><strong>💡 洞察：</strong>消费升级驱动下，消费者对墙面材料的需求已从基础遮盖升级为健康环保与个性化美学的结合。具备自主研发、稳定产能及全流程交付能力的源头工厂将在渠道变革中占据主导权。</div>
+            <div class="biz-impact"><strong>🎯 业务影响：</strong>艺术涂料企业需强化环保认证体系，提升色彩定制与肌理研发能力；经销商应转型为“产品+设计+施工”的综合服务商，通过深挖设计师及高端家装渠道获取溢价空间。</div>
+            <div class="news-meta">
+                <span class="date">2026-10-31</span>
+                <span class="sources"><a href="https://www.coatingol.com/shangxun/Article-PW0tC6-1535349.html" target="_blank">涂料在线</a></span>
+            </div>
+        </div>
+        
+        <div class="section-divider">⚖</div>
+        <h2 class="section-title">政策与数据 <span class="count">2条</span></h2>
+        
+        <div class="news-item">
+            <div class="tags-row">
+                <span class="grade-tag" style="background:#c0392b">战略级</span>
+                <span class="status-tag" style="background:#3498db">延续</span>
+                <span class="cat-tag">政策法规</span>
+            </div>
+            <h3 class="news-title">欧盟EN 13814:2026标准强制执行动能艺术装置结构认证</h3>
+            <p class="news-summary">2026年5月1日起，欧盟修订标准EN 13814:2026全面生效，强制要求动能艺术装置在耦合动态风载和地震载荷条件下进行结构认证。该标准首次将此类动态雕塑纳入正式的统一安全法规，要求必须获得欧盟公告机构颁发的证书方可进行CE认证和市场准入，直接影响中国出口制造商、欧盟采购方及检测机构。</p>
+            <div class="insight"><strong>💡 洞察：</strong>欧盟对动态艺术装置及户外设施的安全监管正趋于严苛和精细化，多物理场耦合环境载荷测试成为新的技术壁垒。这标志着中国相关出口企业面临更高的合规成本和技术门槛，行业洗牌将加速，具备高端结构仿真与测试认证能力的企业将获得竞争优势。</div>
+            <div class="biz-impact"><strong>🎯 业务影响：</strong>出口欧盟的动能艺术、游乐设备及户外钢结构企业需立即排查现有产品与欧盟公告机构的认证进度，确保测试覆盖“风载+地震”耦合场景；同时需调整投标技术附件，增加合规成本预算，并提前布局多物理场耦合分析能力以应对标准升级。</div>
+            <div class="news-meta">
+                <span class="date">2026-10-31</span>
+                <span class="sources"><a href="https://www.ebclinks.com/news/Hospitality_Furnishing/Kinetic_Art/EN_13814_2026_Enforces_Kinetic_Art_Certification_in_EU.html" target="_blank">EBC Links</a></span>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="tags-row">
+                <span class="grade-tag" style="background:#E8B84B">值得关注</span>
+                <span class="status-tag" style="background:#27ae60">新增</span>
+                <span class="cat-tag">市场数据</span>
+            </div>
+            <h3 class="news-title">全球厨房橱柜市场报告：预计2026-2035年CAGR达6.2%，亚太成核心增长区</h3>
+            <p class="news-summary">Market Growth Reports发布最新研究，预计全球厨房橱柜市场规模将从2026年的185.2亿美元增长至2035年的208.8亿美元，年复合增长率达6.2%。报告指出，亚太地区凭借大规模住宅建设和城市化成为主要需求中心。市场趋势显示，消费者对极简美学、模块化收纳及可持续材料的需求持续上升，数字规划工具与精密制造正推动行业定制化与生产一致性升级。</p>
+            <div class="insight"><strong>💡 洞察：</strong>橱柜市场正从单一的功能性收纳向“美学+智能+环保”的综合解决方案演进。亚太市场的崛起意味着该区域将成为全球产能与消费的双重引擎，数字化设计工具的普及将大幅降低定制门槛，重塑行业竞争壁垒。</div>
+            <div class="biz-impact"><strong>🎯 业务影响：</strong>企业应加速引入数字化设计软件与模块化生产线，提升定制效率；在产品研发上，需重点布局环保材料与极简风格产品，并针对亚太市场（尤其是中国及东南亚）的住宅特点推出高空间利用率的收纳方案。</div>
+            <div class="news-meta">
+                <span class="date">2026-10-31</span>
+                <span class="sources"><a href="https://www.marketgrowthreports.com/jp/market-reports/kitchen-cabinets-market-106053" target="_blank">Market Growth Reports</a></span>
+            </div>
+        </div>
+        
+</div>
+
+<!-- 页脚 -->
+<div class="footer">
+    <p>数据来源：中国建筑材料流通协会、中国建筑材料联合会、新华网、财经媒体等</p>
+    <p style="margin-top:0.5rem">由 <b style="color:var(--gold)">「潮向」情报系统</b> 自动生成</p>
+</div>
+
+</body>
+</html>
