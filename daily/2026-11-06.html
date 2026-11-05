@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name="theme-color" content="#4a2415">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>潮向 | 建材家居行业日报 | 2026-11-06</title>
+    <style>
+        :root{--ink:#2b1d14;--ink-soft:#5a4636;--muted:#8a7461;--paper:#f7f1e6;--paper-2:#efe5d3;--card:#fffaf2;--terra:#a8492a;--amber:#c27a2c;--bronze:#9c7a4a;--gold:#c9a063;--line:#e3d5bd;
+        --serif:'Songti SC','STSong','Noto Serif SC','Noto Serif CJK SC','Source Han Serif SC','Source Han Serif CN',SimSun,serif;
+        --sans:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Noto Sans CJK SC','Microsoft YaHei',sans-serif;}
+        *{margin:0;padding:0;box-sizing:border-box}
+        html{background:var(--paper)}
+        body{font-family:var(--sans);color:var(--ink);line-height:1.85;background:var(--paper);
+          background-image:radial-gradient(rgba(120,80,40,.05) 1px,transparent 1px),radial-gradient(rgba(120,80,40,.035) 1px,transparent 1px),linear-gradient(180deg,#f9f4ea,#f3eadb);
+          background-size:3px 3px,7px 7px,100% 100%;background-position:0 0,2px 3px,0 0;-webkit-font-smoothing:antialiased}
+        a{color:var(--terra)}
+        .hero{position:relative;overflow:hidden;text-align:center;color:#f8ecd9;padding:4.2rem 1.5rem 3rem;
+          background:radial-gradient(120% 90% at 50% 0%,#7a3a20 0%,#4a2415 55%,#2e170d 100%)}
+        .hero::before{content:'';position:absolute;inset:0;background-image:repeating-linear-gradient(115deg,rgba(255,220,170,.035) 0 1px,transparent 1px 6px);pointer-events:none}
+        .hero::after{content:'';position:absolute;left:50%;bottom:1.2rem;transform:translateX(-50%);width:min(680px,86%);height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+        .hero-title{font-family:var(--serif);font-size:2.9rem;font-weight:600;letter-spacing:1.1rem;padding-left:1.1rem;position:relative;color:#f6e7cf}
+        .hero-title b{color:var(--gold);font-weight:700}
+        .hero-subtitle{position:relative;font-size:.82rem;letter-spacing:.5rem;padding-left:.5rem;color:#d9bf98;margin:.4rem 0 1.6rem}
+        .hero-subtitle::before,.hero-subtitle::after{content:'—';margin:0 .8rem;color:var(--gold);opacity:.7}
+        .hero-theme{position:relative;font-family:var(--serif);font-size:1.22rem;line-height:1.75;max-width:680px;margin:0 auto 1.6rem;color:#fbefdc}
+        .hero-meta{position:relative;display:flex;justify-content:center;align-items:center;gap:1.1rem;flex-wrap:wrap;font-size:.85rem;color:#e2c9a4;letter-spacing:.05rem}
+        .hero-meta .sep{width:5px;height:5px;transform:rotate(45deg);background:var(--gold)}
+        .hero-link{position:relative;display:inline-block;margin-top:1.3rem;padding:.35rem 1.1rem;border:1px solid rgba(201,160,99,.6);border-radius:999px;color:var(--gold);text-decoration:none;font-size:.82rem;letter-spacing:.1rem}
+        .hero-link:hover{background:rgba(201,160,99,.12)}
+        .overview,.key-changes,.content,.risk-follow{max-width:820px;margin:0 auto;padding-left:1.75rem;padding-right:1.75rem}
+        .overview{padding-top:3rem;padding-bottom:1.5rem}
+        .overview h2,.key-changes h2{font-family:var(--serif);font-size:1.35rem;font-weight:600;color:var(--ink);letter-spacing:.2rem;margin-bottom:1.1rem;display:flex;align-items:center;gap:.8rem}
+        .overview h2::after,.key-changes h2::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,var(--bronze),transparent)}
+        .overview p{font-family:var(--serif);font-size:1.02rem;line-height:2.05;color:var(--ink-soft);text-indent:2em}
+        .overview p::first-letter{color:var(--terra);font-size:1.5em;font-weight:700}
+        .key-changes{padding-bottom:2rem}
+        .key-changes ul{list-style:none;counter-reset:k}
+        .key-changes li{counter-increment:k;position:relative;padding:1rem 0 1rem 3.2rem;border-bottom:1px dashed var(--line);font-size:.96rem;color:var(--ink-soft)}
+        .key-changes li::before{content:counter(k,decimal-leading-zero);position:absolute;left:0;top:.85rem;font-family:var(--serif);font-size:1.5rem;font-weight:700;color:var(--amber);font-style:italic}
+        .key-changes .impact{margin-top:1.3rem;padding:1rem 1.2rem;background:linear-gradient(90deg,rgba(168,73,42,.08),rgba(168,73,42,0));border-left:3px solid var(--terra);font-family:var(--serif);font-weight:600;color:var(--ink);font-size:1rem}
+        .risk-follow{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;padding-bottom:1rem}
+        .risk-follow .box{background:var(--card);border:1px solid var(--line);border-radius:4px;padding:1.4rem 1.4rem 1.1rem;position:relative;box-shadow:0 1px 0 #fff inset,0 10px 30px -18px rgba(90,50,20,.35)}
+        .risk-follow .box::before{content:'';position:absolute;top:0;left:1.4rem;right:1.4rem;height:2px;background:var(--terra)}
+        .risk-follow .box.follow::before{background:var(--bronze)}
+        .risk-follow .box h3{font-family:var(--serif);font-size:1.05rem;font-weight:600;letter-spacing:.12rem;margin-bottom:.7rem;color:var(--ink)}
+        .risk-follow .box ul{list-style:none}
+        .risk-follow .box li{position:relative;padding:.45rem 0 .45rem 1.1rem;font-size:.88rem;line-height:1.75;color:var(--ink-soft)}
+        .risk-follow .box li::before{content:'';position:absolute;left:0;top:1.05rem;width:5px;height:5px;transform:rotate(45deg);background:var(--terra)}
+        .risk-follow .box.follow li::before{background:var(--bronze)}
+        .content{padding-bottom:2.5rem}
+        .section-divider{display:flex;align-items:center;justify-content:center;gap:1rem;margin:3.2rem 0 .3rem;color:var(--amber);font-size:1rem}
+        .section-divider::before,.section-divider::after{content:'';width:90px;height:1px;background:linear-gradient(90deg,transparent,var(--bronze))}
+        .section-divider::after{transform:scaleX(-1)}
+        .section-title{font-family:var(--serif);text-align:center;font-size:1.55rem;font-weight:600;letter-spacing:.35rem;color:var(--ink);margin-bottom:1.6rem}
+        .section-title .count{font-family:var(--sans);font-size:.75rem;letter-spacing:.05rem;font-weight:400;color:var(--muted);margin-left:.4rem;padding:.1rem .55rem;border:1px solid var(--line);border-radius:999px;vertical-align:middle}
+        .news-item{position:relative;background:var(--card);border:1px solid var(--line);border-radius:4px;padding:1.6rem 1.7rem 1.3rem;margin-bottom:1.2rem;box-shadow:0 1px 0 #fff inset,0 14px 34px -22px rgba(90,50,20,.45);transition:transform .2s,box-shadow .2s}
+        .news-item:hover{transform:translateY(-2px);box-shadow:0 18px 40px -22px rgba(90,50,20,.55)}
+        .tags-row{display:flex;gap:.45rem;flex-wrap:wrap;margin-bottom:.8rem}
+        .tags-row span{display:inline-block;padding:.12rem .65rem;border-radius:2px;color:#fff;font-size:.7rem;letter-spacing:.08rem;font-weight:500}
+        .tags-row .cat-tag{background:transparent!important;color:var(--bronze);border:1px solid var(--gold)}
+        .news-title{font-family:var(--serif);font-size:1.2rem;font-weight:700;line-height:1.55;color:var(--ink);margin-bottom:.7rem}
+        .news-summary{font-size:.93rem;line-height:1.9;color:var(--ink-soft);margin-bottom:.9rem}
+        .insight,.biz-impact{font-size:.87rem;line-height:1.8;padding:.65rem .95rem;margin-bottom:.5rem;border-radius:2px}
+        .insight{background:#f6ead8;border-left:2px solid var(--amber);color:#5e3d1c}
+        .biz-impact{background:#f3e0d6;border-left:2px solid var(--terra);color:#6a2d18}
+        .insight strong,.biz-impact strong{font-family:var(--serif)}
+        .news-meta{display:flex;gap:1rem;flex-wrap:wrap;align-items:center;margin-top:.9rem;padding-top:.75rem;border-top:1px dashed var(--line);font-size:.78rem;color:var(--muted);letter-spacing:.03rem}
+        .news-meta a{color:var(--terra);text-decoration:none;border-bottom:1px solid rgba(168,73,42,.3)}
+        .news-meta a:hover{border-bottom-color:var(--terra)}
+        .footer{max-width:820px;margin:1rem auto 0;padding:2.4rem 1.5rem 3rem;text-align:center;font-size:.8rem;color:var(--muted);border-top:1px solid var(--line);letter-spacing:.05rem}
+        .footer b{font-family:var(--serif);color:var(--terra)!important}
+        @media (max-width:768px){
+          .hero{padding:3.2rem 1.2rem 2.6rem}.hero-title{font-size:2.2rem;letter-spacing:.7rem;padding-left:.7rem}
+          .hero-theme{font-size:1.05rem}.hero-meta{gap:.7rem;font-size:.78rem}
+          .overview,.key-changes,.content,.risk-follow{padding-left:1.1rem;padding-right:1.1rem}
+          .risk-follow{grid-template-columns:1fr}.news-item{padding:1.25rem 1.15rem 1rem}
+          .section-title{font-size:1.3rem;letter-spacing:.2rem}.section-divider::before,.section-divider::after{width:50px}
+          .key-changes li{padding-left:2.6rem}.overview p{font-size:.98rem}}
+    </style>
+</head>
+<body>
+
+<div class="hero">
+    <div class="hero-title">潮 <b>向</b></div>
+    <div class="hero-subtitle">建材家居行业日报</div>
+    <div class="hero-theme">「好房子」政企通道打开存量焕新，定制全线承压转向局改，长沙门墙柜与家博会同启旺季</div>
+    <div class="hero-meta">
+        <span>2026-11-06 星期五</span>
+        <span class="sep"></span>
+        <span>8 条事件</span>
+        <span class="sep"></span>
+        <span>本次识别 8 个状态库新增事件</span>
+    </div>
+    <a class="hero-link" href="https://christopherx911225.github.io/chaowxiang-daily/" target="_blank">查看历史日报 →</a>
+</div>
+
+<div class="overview">
+    <h2>◆ 今日概览</h2>
+    <p>今日建材家居呈现“政策通道打开、定制赛道承压、本地交付升温”的三线共振。政策与标准端，住建部科技与产业化发展中心与三棵树签约共建「好房子」技术体系与产业推广，叠加《2026涂料市场年度展望》所指存量房翻新占比超60%、GB 30981.1—2025已成建筑涂料硬门槛，健康材料与旧改交付被推到准入前台。企业端，九大定制家居上市公司前三季度无一营收正增长、扣非持续盈利仅剩欧派/索菲亚/我乐，价格战打到毛利率，局改与出海成稀缺增量；涂料侧阿克苏诺贝尔进博会首秀生物基墙漆与城市更新水性方案，三棵树「马上住」4.0以1+N打通涂料、艺术漆到全屋焕新。同时，长沙丽尔曼顿超级工厂启动会与华夏家博会同日开幕，门墙柜一体与本地家装旺季窗口同步打开，湖南渠道交付能力成为可感知的竞争变量。</p>
+</div>
+
+<div class="key-changes">
+    <h2>◆ 关键变化</h2>
+    <ul>
+        <li>住建部科技中心与头部涂企共建「好房子」技术与推广通道，导致存量旧改从企业单点服务升格为政企协同的标准与样板竞赛，意味着墙面焕新与健康材料将更多按可验收的技术体系而非单纯品牌声量入场。</li>
+<li>九大定制上市公司无一营收正增长且扣非仅三家盈利，导致终端价格战已侵蚀毛利、精装大宗腰斩，意味着成品定制与轻高定必须靠装企局改协同、门墙柜交付与现金安全穿越周期，而非靠扩店换规模。</li>
+<li>长沙本地门墙柜工厂叙事与家博会旺季同日启动，导致区域竞争焦点从展厅话术转向“工厂出处+合同明细+节点验收”，意味着湖南市场伙伴比拼的是可验证的供应链与局部焕新承接能力。</li>
+    </ul>
+    <p class="impact">影响判断：对行业整体偏中性偏正。政策与标准抬高专业门槛，有利于具备健康材料证据链与局部焕新交付的品牌；定制全线承压则提示装企配套须守毛利与现金，不宜跟风无边界整装大战。</p>
+</div>
+
+<div class="risk-follow">
+    <div class="box risk">
+        <h3>⚠ 风险与不确定性</h3>
+        <ul><li>政企样板外溢节奏不确定：住建部科技中心合作更多是技术与推广通道，短期未必直接转化为地方招采订单，需防过度解读为“政策订单”而盲目扩编。</li>
+<li>定制价格战与合同负债双杀风险：龙头关店收缩、腰部毛利率逼近底部，若经销商催全款与低价引流叠加，渠道履约与现金流风险将继续向终端传导。</li>
+</ul>
+    </div>
+    <div class="box follow">
+        <h3>👁 后续关注</h3>
+        <ul><li>跟踪三棵树「好房子」样板房与「马上住」4.0在湖南/广西的门店落地SKU、验收标准与社区店密度。</li>
+<li>监测九大定制四季度合同负债与整装/局改渠道收入占比，判断出清是否见底。</li>
+<li>关注11月10日涂料新材料创新大会及11月11—13日CHINACOAT上低SVOC、翻新方案与功能墙面案例。</li>
+<li>跟踪长沙家博会期间金煌、创艺等生态伙伴的客流转化与艺术墙面/定制同案报价反馈。</li>
+</ul>
+    </div>
+</div>
+
+<div class="content">
+
+        <div class="section-divider">★</div>
+        <h2 class="section-title">今日头条 <span class="count">2条</span></h2>
+        <div class="news-item">
+            <div class="tags-row">
+                <span class="grade-tag" style="background:#a8492a">战略级</span>
+                <span class="status-tag" style="background:#6b7d4f">新增</span>
+                <span class="cat-tag">战略合作</span>
+            </div>
+            <h3 class="news-title">三棵树牵手住建部科技中心，战略卡位「好房子」旧改通道</h3>
+            <p class="news-summary">11月2日，住房城乡建设部科技与产业化发展中心与三棵树在三棵树好房子科技体验中心签署战略合作，主题为「科创共建 好房同筑」。双方将在「好房子」技术体系研究、产业推广模式探索、国家级创新平台共建、科技成果转化等方面合作；产业落地侧明确依托「马上住」家居品牌及「1+N」模式，探索可复制的好家居产业发展模式，并推进北京「好房子」样板房建设。签约场景本身为近2万㎡旧工业厂房原地焕新样板，获认证为「最大的涂料展厅」。</p>
+            <div class="insight"><strong>💡 洞察：</strong>存量旧改采购逻辑正从开发商集采价权，转向政府主导更新场景下的技术门槛与准入资质；谁能把健康材料做成可验证样板与可复制服务标准，谁更接近下一程入场券。</div>
+            <div class="biz-impact"><strong>🎯 业务影响：</strong>蓝天豚不必追逐政企大单叙事，但应把艺术墙面与焕新家四条线做成可报价、可验收的健康材料解决方案，对齐装企与设计师渠道的「好房子」选材清单语言。</div>
+            <div class="news-meta">
+                <span class="date">2026-11-02</span>
+                <span class="sources"><a href="https://www.27580.cn/important/207823.html" target="_blank">中外涂料网</a></span>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="tags-row">
+                <span class="grade-tag" style="background:#a8492a">战略级</span>
+                <span class="status-tag" style="background:#6b7d4f">新增</span>
+                <span class="cat-tag">企业财报</span>
+            </div>
+            <h3 class="news-title">九大定制家居三季报：无一营收正增长，扣非持续盈利仅剩3家</h3>
+            <p class="news-summary">11月3日，门业视界盘点显示：九大定制家居上市公司三季报全部披露，前三季度合计营收约233亿元、归母净利润合计约1.9亿元，净利率不到1%；营收跌幅介于约16.15%—34.71%，无一正增长。扣非口径持续盈利仅剩欧派、索菲亚、我乐。欧派Q3单季营收同比约-32.64%、归母净利约-80.16%，门店较2025年末净减约630家；大宗精装约-50.68%，而「其他渠道」约+12.71%。志邦、金牌海外仍录两位数增长，我乐以约46.21%毛利率守住不参战定价。</p>
+            <div class="insight"><strong>💡 洞察：</strong>熄火的是国内定制零售与精装大宗，不是整个家居；考题已从「谁跑得快」换成「谁守毛利、守现金、在传统零售外找到局改与出海入口」。</div>
+            <div class="biz-impact"><strong>🎯 业务影响：</strong>蓝天豚成品定制应稳住金煌湖南地市供货与服务闭环，橱衣柜向门墙柜、色材工艺延伸，与涂料艺术墙面同案协同；严控账期与低价内卷，把轻高定做成可交付差异而非扩店竞赛。</div>
+            <div class="news-meta">
+                <span class="date">2026-11-03</span>
+                <span class="sources"><a href="https://cnzhengmu.com/news/9-da-ding-zhi-jia-ju-qi-ye-san-ji-du-mei-you-yi-jia-zeng-zhang-zhi-sheng-3-jia-z" target="_blank">整木网·门业视界</a></span>
+            </div>
+        </div>
+
+        <div class="section-divider">♥</div>
+        <h2 class="section-title">行业脉搏 <span class="count">3条</span></h2>
+        <div class="news-item">
+            <div class="tags-row">
+                <span class="grade-tag" style="background:#c27a2c">值得关注</span>
+                <span class="status-tag" style="background:#6b7d4f">新增</span>
+                <span class="cat-tag">产品服务</span>
+            </div>
+            <h3 class="news-title">三棵树「马上住」4.0发布：1+N打通涂料艺术漆到全屋焕新</h3>
+            <p class="news-summary">11月5日消息，伴随与住建部科技中心签约，「马上住」4.0全屋焕新一站式服务对外强化传播：以「1+N」打通涂料、艺术漆、小森板等品类，整合设计、选材、标准化施工与售后；并完成AI智能设计、标准化师傅交付、施工质控与门店数字化等全链路升级。品牌称自2016年推出以来形成「产品+服务」体系，标准条件下主打「8小时净味住新家」；服务网络覆盖全国300余城，社区门店突破6000家，向千城万店目标推进。</p>
+            <div class="insight"><strong>💡 洞察：</strong>头部涂企把存量焕新从「刷一面墙」升级为可复制的社区店服务操作系统，艺术漆被嵌入全屋焕新菜单，材料商护城河进一步向施工标准与门店密度迁移。</div>
+            <div class="biz-impact"><strong>🎯 业务影响：</strong>蓝天豚焕新家应坚持墙面/厨房/厨卫轻改（含瓷砖改色）/收纳四条线边界，补齐基面—成型—罩面验收SOP，在长沙社区模型与南宁设计师渠道做「可通关」小而美交付，不追万店规模战。</div>
+            <div class="news-meta">
+                <span class="date">2026-11-05</span>
+                <span class="sources"><a href="https://www.27580.cn/news/207874.html" target="_blank">中外涂料网</a></span>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="tags-row">
+                <span class="grade-tag" style="background:#c27a2c">值得关注</span>
+                <span class="status-tag" style="background:#6b7d4f">新增</span>
+                <span class="cat-tag">产品发布</span>
+            </div>
+            <h3 class="news-title">阿克苏诺贝尔首次亮相进博会，生物基墙漆与城市更新水性方案首发</h3>
+            <p class="news-summary">11月5日，中外涂料网报道阿克苏诺贝尔首次亮相中国国际进口博览会，聚焦城市更新与产业升级，发布三款全球首发与一款中国首发方案。装饰漆侧包括多乐士净源植本漆（称生物基含量高达96%，搭载BioPlus高纯生物基科技）、专业防火盾饰面型防火涂料，以及以「转锈」替代传统除锈的专业御盾高性能水性固锈底漆；工业侧展出国际油漆RELEST WINDUltra水性风电面漆，并展示可再生能源固化涂装白板的商业化落地。</p>
+            <div class="insight"><strong>💡 洞察：</strong>跨国涂企把进博会议题对准城市更新与「好房子」，健康原料溯源、防火与少扰动翻新成为可展示的差异化；低VOC与生物基正从合规底线走向营销前台。</div>
+            <div class="biz-impact"><strong>🎯 业务影响：</strong>蓝天豚可用「健康材料」框架对照生物基/低排放叙事，优先评估哪些指标能量化、可施工、可对装企报价；短期仍以艺术墙面与局部焕新交付为主，避免概念战。</div>
+            <div class="news-meta">
+                <span class="date">2026-11-05</span>
+                <span class="sources"><a href="https://www.27580.cn/news/207885.html" target="_blank">中外涂料网</a></span>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="tags-row">
+                <span class="grade-tag" style="background:#c27a2c">值得关注</span>
+                <span class="status-tag" style="background:#6b7d4f">新增</span>
+                <span class="cat-tag">本地动态</span>
+            </div>
+            <h3 class="news-title">长沙丽尔曼顿超级工厂启动会今日举行，门墙柜一体押注自有工厂交付</h3>
+            <p class="news-summary">11月5日，红网报道长沙丽尔曼顿将于11月6日举行超级工厂启动会，适逢双11家装旺季，焦点放在源头制造与整装交付。企业称湖南浏阳定制工业园规划用地约10万㎡、2025年9月开建；2026年升级为丽尔曼顿大家居后，自主生产覆盖衣柜、橱柜、护墙、木门、卫浴、铝材及水漆系统七大品类，强调衣柜/木门/护墙同案统筹材质色彩与收口，并由自有施工团队与工程管家跟进节点验收，工程整体保修2年、隐蔽工程保修10年。</p>
+            <div class="insight"><strong>💡 洞察：</strong>长沙本地装企/定制品牌正用「工厂可见+门墙柜一体+透明合同」回应消费者对出处与增项的焦虑；区域竞争从流量广告转向供应链可验证性。</div>
+            <div class="biz-impact"><strong>🎯 业务影响：</strong>对蓝天豚及伙伴金煌、创艺而言，应用同案色材与门墙柜配套语言强化人居美学定制差异，把涂料艺术墙面嵌入装企菜单；观察对手工厂叙事，但不盲目重资产扩产。</div>
+            <div class="news-meta">
+                <span class="date">2026-11-06</span>
+                <span class="sources"><a href="https://jj.rednet.cn/content/646055/97/16445894.html" target="_blank">红网家居</a></span>
+            </div>
+        </div>
+
+        <div class="section-divider">⚡</div>
+        <h2 class="section-title">趋势与信号 <span class="count">2条</span></h2>
+        <div class="news-item">
+            <div class="tags-row">
+                <span class="grade-tag" style="background:#c27a2c">值得关注</span>
+                <span class="status-tag" style="background:#6b7d4f">新增</span>
+                <span class="cat-tag">渠道模式</span>
+            </div>
+            <h3 class="news-title">卡百利明星经销商与设计师欧洲研学收官，艺术漆绑定国际美学话语</h3>
+            <p class="news-summary">11月2日，中外涂料网报道「觅色·欧洲——2026卡百利明星经销商&amp;设计师欧洲研学之旅」收官。十天八夜行程覆盖瑞士与意大利，团队走进米兰理工大学交流色彩与材质逻辑，色彩专家强调纹理与色彩关联、个性化定制与在地表达；并探访卡百利意大利总部工厂与生产线，开展色彩工艺课程。品牌称自2014年进入中国后深耕绿色环保赛道，多款产品获法国A+、美国绿色卫士金级、芬兰M1等认证，并构建梵高、国潮、马卡龙、莫兰迪等色彩体系。</p>
+            <div class="insight"><strong>💡 洞察：</strong>艺术涂料头部正把经销商与设计师一起「送出海」做美学共识，渠道赋能从施工通关延伸到国际色彩话语权；设计师带单能力成为艺术墙面溢价关键。</div>
+            <div class="biz-impact"><strong>🎯 业务影响：</strong>蓝天豚可复制南宁、长沙设计师合作时，用东方极简与木作涂装一体化案例替代空泛游学；把色板、肌理样板与健康材料检测做成设计师易选工具包。</div>
+            <div class="news-meta">
+                <span class="date">2026-11-02</span>
+                <span class="sources"><a href="https://www.27580.cn/news/207605.html" target="_blank">中外涂料网</a></span>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="tags-row">
+                <span class="grade-tag" style="background:#a39482">参考</span>
+                <span class="status-tag" style="background:#6b7d4f">新增</span>
+                <span class="cat-tag">展会会议</span>
+            </div>
+            <h3 class="news-title">长沙华夏家博会今日至8日开幕，本地家装建材旺季窗口启动</h3>
+            <p class="news-summary">11月6日，2026长沙华夏家博会于红星国际会展中心拉开帷幕，展期至11月8日。活动定位为覆盖家装设计、施工管理与建材家居的一站式采购平台，展出类别包括瓷砖卫浴、地板门窗、墙面材料等综合建材；官方渠道提供线上免费索票。时点叠加双11家装促销与本地定制工厂开放日，构成长沙存量与新房改善客群集中比价、看样、签约的短窗口。</p>
+            <div class="insight"><strong>💡 洞察：</strong>区域家博会仍是装企与材料商低成本触达意向客的节点；真正转化取决于现场方案清晰度、合同透明度与能否把艺术墙面/定制做成可感知样板。</div>
+            <div class="biz-impact"><strong>🎯 业务影响：</strong>建议情报侧关注伙伴门店是否借势家博会做艺术墙面与橱衣柜同案体验；蓝天豚自身不必重投入参展，而应强化经销商「你拍我剪」内容与到店转化脚本。</div>
+            <div class="news-meta">
+                <span class="date">2026-11-06</span>
+                <span class="sources"><a href="http://www.csjbh.com/" target="_blank">长沙家博会官网</a></span>
+            </div>
+        </div>
+
+        <div class="section-divider">⚖</div>
+        <h2 class="section-title">政策与数据 <span class="count">1条</span></h2>
+        <div class="news-item">
+            <div class="tags-row">
+                <span class="grade-tag" style="background:#c27a2c">值得关注</span>
+                <span class="status-tag" style="background:#6b7d4f">新增</span>
+                <span class="cat-tag">行业标准</span>
+            </div>
+            <h3 class="news-title">2026涂料市场展望：存量翻新占比超60%，GB 30981.1成硬门槛</h3>
+            <p class="news-summary">11月2日，慧正资讯刊发《2026涂料市场年度展望》称：城镇化率突破68%后增量开发让位于存量经营；中国存量房翻新需求占比已超过60%，二次装修市场规模约达2.4万亿元（2024年），一线城市翻新占比更超50%；墙面翻新周期由过去约10—15年缩短至约7—9年，一二线进一步至约5—7年。2026年6月1日起GB 30981.1—2025《涂料中有害物质限量 第1部分：建筑涂料》正式实施并代替原GB 18582—2020；水性、粉末、高固体分、无溶剂、UV成主流低VOC路线，无机涂料年增速据协会会议披露超20%。</p>
+            <div class="insight"><strong>💡 洞察：</strong>翻新分散、基层复杂与入住环保要求，迫使竞争从单品价格转向「底到面配套+合规检测+施工支持」；标准升级正在清出无法证明有害物限量的供给。</div>
+            <div class="biz-impact"><strong>🎯 业务影响：</strong>蓝天豚应核对产品执行标准与检测报告是否对齐GB 30981.1—2025，把健康材料证据链写进装企报价附件；焕新场景优先打磨耐擦洗、防霉、遮盖等可感知实用性能。</div>
+            <div class="news-meta">
+                <span class="date">2026-11-02</span>
+                <span class="sources"><a href="https://www.hzeyun.com/detail/2622029" target="_blank">慧正资讯</a></span>
+            </div>
+        </div>
+
+</div>
+
+<div class="footer">
+    <p>数据来源：中国建筑材料流通协会、中国建筑材料联合会、新华网、财经媒体等</p>
+    <p style="margin-top:0.5rem">由 <b style="color:var(--gold)">「潮向」情报系统</b> 自动生成</p>
+</div>
+
+</body>
+</html>
