@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name="theme-color" content="#4a2415">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>潮向 | 建材家居行业日报 | 2026-11-26</title>
+    <style>
+        :root{--ink:#2b1d14;--ink-soft:#5a4636;--muted:#8a7461;--paper:#f7f1e6;--paper-2:#efe5d3;--card:#fffaf2;--terra:#a8492a;--amber:#c27a2c;--bronze:#9c7a4a;--gold:#c9a063;--line:#e3d5bd;
+        --serif:'Songti SC','STSong','Noto Serif SC','Noto Serif CJK SC','Source Han Serif SC','Source Han Serif CN',SimSun,serif;
+        --sans:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Noto Sans CJK SC','Microsoft YaHei',sans-serif;}
+        *{margin:0;padding:0;box-sizing:border-box}
+        html{background:var(--paper)}
+        body{font-family:var(--sans);color:var(--ink);line-height:1.85;background:var(--paper);
+          background-image:radial-gradient(rgba(120,80,40,.05) 1px,transparent 1px),radial-gradient(rgba(120,80,40,.035) 1px,transparent 1px),linear-gradient(180deg,#f9f4ea,#f3eadb);
+          background-size:3px 3px,7px 7px,100% 100%;background-position:0 0,2px 3px,0 0;-webkit-font-smoothing:antialiased}
+        a{color:var(--terra)}
+        .hero{position:relative;overflow:hidden;text-align:center;color:#f8ecd9;padding:4.2rem 1.5rem 3rem;
+          background:radial-gradient(120% 90% at 50% 0%,#7a3a20 0%,#4a2415 55%,#2e170d 100%)}
+        .hero::before{content:'';position:absolute;inset:0;background-image:repeating-linear-gradient(115deg,rgba(255,220,170,.035) 0 1px,transparent 1px 6px);pointer-events:none}
+        .hero::after{content:'';position:absolute;left:50%;bottom:1.2rem;transform:translateX(-50%);width:min(680px,86%);height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+        .hero-title{font-family:var(--serif);font-size:2.9rem;font-weight:600;letter-spacing:1.1rem;padding-left:1.1rem;position:relative;color:#f6e7cf}
+        .hero-title b{color:var(--gold);font-weight:700}
+        .hero-subtitle{position:relative;font-size:.82rem;letter-spacing:.5rem;padding-left:.5rem;color:#d9bf98;margin:.4rem 0 1.6rem}
+        .hero-subtitle::before,.hero-subtitle::after{content:'—';margin:0 .8rem;color:var(--gold);opacity:.7}
+        .hero-theme{position:relative;font-family:var(--serif);font-size:1.22rem;line-height:1.75;max-width:680px;margin:0 auto 1.6rem;color:#fbefdc}
+        .hero-meta{position:relative;display:flex;justify-content:center;align-items:center;gap:1.1rem;flex-wrap:wrap;font-size:.85rem;color:#e2c9a4;letter-spacing:.05rem}
+        .hero-meta .sep{width:5px;height:5px;transform:rotate(45deg);background:var(--gold)}
+        .hero-link{position:relative;display:inline-block;margin-top:1.3rem;padding:.35rem 1.1rem;border:1px solid rgba(201,160,99,.6);border-radius:999px;color:var(--gold);text-decoration:none;font-size:.82rem;letter-spacing:.1rem}
+        .hero-link:hover{background:rgba(201,160,99,.12)}
+        .overview,.key-changes,.content,.risk-follow{max-width:820px;margin:0 auto;padding-left:1.75rem;padding-right:1.75rem}
+        .overview{padding-top:3rem;padding-bottom:1.5rem}
+        .overview h2,.key-changes h2{font-family:var(--serif);font-size:1.35rem;font-weight:600;color:var(--ink);letter-spacing:.2rem;margin-bottom:1.1rem;display:flex;align-items:center;gap:.8rem}
+        .overview h2::after,.key-changes h2::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,var(--bronze),transparent)}
+        .overview p{font-family:var(--serif);font-size:1.02rem;line-height:2.05;color:var(--ink-soft);text-indent:2em}
+        .overview p::first-letter{color:var(--terra);font-size:1.5em;font-weight:700}
+        .key-changes{padding-bottom:2rem}
+        .key-changes ul{list-style:none;counter-reset:k}
+        .key-changes li{counter-increment:k;position:relative;padding:1rem 0 1rem 3.2rem;border-bottom:1px dashed var(--line);font-size:.96rem;color:var(--ink-soft)}
+        .key-changes li::before{content:counter(k,decimal-leading-zero);position:absolute;left:0;top:.85rem;font-family:var(--serif);font-size:1.5rem;font-weight:700;color:var(--amber);font-style:italic}
+        .key-changes .impact{margin-top:1.3rem;padding:1rem 1.2rem;background:linear-gradient(90deg,rgba(168,73,42,.08),rgba(168,73,42,0));border-left:3px solid var(--terra);font-family:var(--serif);font-weight:600;color:var(--ink);font-size:1rem}
+        .risk-follow{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;padding-bottom:1rem}
+        .risk-follow .box{background:var(--card);border:1px solid var(--line);border-radius:4px;padding:1.4rem 1.4rem 1.1rem;position:relative;box-shadow:0 1px 0 #fff inset,0 10px 30px -18px rgba(90,50,20,.35)}
+        .risk-follow .box::before{content:'';position:absolute;top:0;left:1.4rem;right:1.4rem;height:2px;background:var(--terra)}
+        .risk-follow .box.follow::before{background:var(--bronze)}
+        .risk-follow .box h3{font-family:var(--serif);font-size:1.05rem;font-weight:600;letter-spacing:.12rem;margin-bottom:.7rem;color:var(--ink)}
+        .risk-follow .box ul{list-style:none}
+        .risk-follow .box li{position:relative;padding:.45rem 0 .45rem 1.1rem;font-size:.88rem;line-height:1.75;color:var(--ink-soft)}
+        .risk-follow .box li::before{content:'';position:absolute;left:0;top:1.05rem;width:5px;height:5px;transform:rotate(45deg);background:var(--terra)}
+        .risk-follow .box.follow li::before{background:var(--bronze)}
+        .content{padding-bottom:2.5rem}
+        .section-divider{display:flex;align-items:center;justify-content:center;gap:1rem;margin:3.2rem 0 .3rem;color:var(--amber);font-size:1rem}
+        .section-divider::before,.section-divider::after{content:'';width:90px;height:1px;background:linear-gradient(90deg,transparent,var(--bronze))}
+        .section-divider::after{transform:scaleX(-1)}
+        .section-title{font-family:var(--serif);text-align:center;font-size:1.55rem;font-weight:600;letter-spacing:.35rem;color:var(--ink);margin-bottom:1.6rem}
+        .section-title .count{font-family:var(--sans);font-size:.75rem;letter-spacing:.05rem;font-weight:400;color:var(--muted);margin-left:.4rem;padding:.1rem .55rem;border:1px solid var(--line);border-radius:999px;vertical-align:middle}
+        .news-item{position:relative;background:var(--card);border:1px solid var(--line);border-radius:4px;padding:1.6rem 1.7rem 1.3rem;margin-bottom:1.2rem;box-shadow:0 1px 0 #fff inset,0 14px 34px -22px rgba(90,50,20,.45);transition:transform .2s,box-shadow .2s}
+        .news-item:hover{transform:translateY(-2px);box-shadow:0 18px 40px -22px rgba(90,50,20,.55)}
+        .tags-row{display:flex;gap:.45rem;flex-wrap:wrap;margin-bottom:.8rem}
+        .tags-row span{display:inline-block;padding:.12rem .65rem;border-radius:2px;color:#fff;font-size:.7rem;letter-spacing:.08rem;font-weight:500}
+        .tags-row .cat-tag{background:transparent!important;color:var(--bronze);border:1px solid var(--gold)}
+        .news-title{font-family:var(--serif);font-size:1.2rem;font-weight:700;line-height:1.55;color:var(--ink);margin-bottom:.7rem}
+        .news-summary{font-size:.93rem;line-height:1.9;color:var(--ink-soft);margin-bottom:.9rem}
+        .insight,.biz-impact{font-size:.87rem;line-height:1.8;padding:.65rem .95rem;margin-bottom:.5rem;border-radius:2px}
+        .insight{background:#f6ead8;border-left:2px solid var(--amber);color:#5e3d1c}
+        .biz-impact{background:#f3e0d6;border-left:2px solid var(--terra);color:#6a2d18}
+        .insight strong,.biz-impact strong{font-family:var(--serif)}
+        .news-meta{display:flex;gap:1rem;flex-wrap:wrap;align-items:center;margin-top:.9rem;padding-top:.75rem;border-top:1px dashed var(--line);font-size:.78rem;color:var(--muted);letter-spacing:.03rem}
+        .news-meta a{color:var(--terra);text-decoration:none;border-bottom:1px solid rgba(168,73,42,.3)}
+        .news-meta a:hover{border-bottom-color:var(--terra)}
+        .footer{max-width:820px;margin:1rem auto 0;padding:2.4rem 1.5rem 3rem;text-align:center;font-size:.8rem;color:var(--muted);border-top:1px solid var(--line);letter-spacing:.05rem}
+        .footer b{font-family:var(--serif);color:var(--terra)!important}
+        @media (max-width:768px){
+          .hero{padding:3.2rem 1.2rem 2.6rem}.hero-title{font-size:2.2rem;letter-spacing:.7rem;padding-left:.7rem}
+          .hero-theme{font-size:1.05rem}.hero-meta{gap:.7rem;font-size:.78rem}
+          .overview,.key-changes,.content,.risk-follow{padding-left:1.1rem;padding-right:1.1rem}
+          .risk-follow{grid-template-columns:1fr}.news-item{padding:1.25rem 1.15rem 1rem}
+          .section-title{font-size:1.3rem;letter-spacing:.2rem}.section-divider::before,.section-divider::after{width:50px}
+          .key-changes li{padding-left:2.6rem}.overview p{font-size:.98rem}}
+    </style>
+</head>
+<body>
+
+<!-- 顶部区 -->
+<div class="hero">
+    <div class="hero-title">潮 <b>向</b></div>
+    <div class="hero-subtitle">建材家居行业日报</div>
+    <div class="hero-theme">全国建材家居市场饱和度继续抬升，协会把旧房焕新和局装微改写成主赛道，长沙装企则把定制全案收成一条交付责任链。</div>
+    <div class="hero-meta">
+        <span>2026-11-26 星期四</span>
+        <span class="sep"></span>
+        <span>6 条事件</span>
+        <span class="sep"></span>
+        <span>本次识别 4 个状态库新增事件</span>
+    </div>
+    <a class="hero-link" href="https://christopherx911225.github.io/chaowxiang-daily/" target="_blank">查看历史日报 →</a>
+</div>
+
+<!-- 今日概览 -->
+<div class="overview">
+    <h2>◆ 今日概览</h2>
+    <p>政策与标准端，中国建筑材料流通协会在长沙年会期间发布的2026年BHEI数据近日被完整转述：全国规模以上建材家居市场面积约17615万平方米、同比下降3.02%，70城饱和度平均数同比上涨7.78%，协会将城市更新、旧房焕新和局装微改写成核心增长赛道。企业端，长沙点石家装推出定制全案「六大一体化」，把设计、木作、施工和售后收成一条责任链；三棵树则在神舟二十四号发射当日发布航天联名透汽型聚合物水泥防水涂料，称可兼顾透汽与抗水压。同时，贝壳萌象在南宁全球饰面大会上提出，60%以上家装需求来自存量房翻新；嘉宝莉艺术涂料也把雅晶石与天鹅绒质感做到成都婚姻登记处的公共空间。</p>
+</div>
+
+<!-- 关键变化 -->
+<div class="key-changes">
+    <h2>◆ 关键变化</h2>
+    <ul>
+        <li>协会用BHEI确认卖场供给仍然饱和，导致增长叙事从扩店转向旧房焕新和局装微改，意味着墙面刷新、厨卫轻改和收纳升级比新开卖场更接近真实需求。</li>
+<li>长沙装企把定制全案写成一体化交付，导致门墙柜、色材和施工被收进同一责任界面，意味着配套厂如果说不清收口、色板和售后边界，将更难进入装企选材名单。</li>
+<li>头部涂料企业用防水性能和艺术涂料场景抢占可感知空间，导致健康材料与施工可靠性被拿到厨卫和公共项目里验证，意味着艺术墙面和厨卫轻改都要把可核验指标写进交界面，而不是只讲概念。</li>
+
+    </ul>
+    <p class="impact">影响判断：对行业整体偏中性。饱和度上升会继续压制卖场扩店和自然客流，但把需求推到局部焕新；装企和平台用一体化和透明度争夺信任，中小品牌若不能把材料和交付说清楚，只能继续卷价格。</p>
+</div>
+
+<!-- 风险与后续 -->
+<div class="risk-follow">
+    <div class="box risk">
+        <h3>⚠ 风险与不确定性</h3>
+        <ul><li>BHEI未公布长沙、南宁等重点城市的分项数值：不能把全国平均数直接写成湖南或广西的开店或进场结论。</li>
+<li>点石「六大一体化」和三棵树航天联名均为企业发布口径：设计师规模、基地面积与防水性能数据尚待独立核验，不宜直接对标或转述为已验证标准。</li>
+</ul>
+    </div>
+    <div class="box follow">
+        <h3>👁 后续关注</h3>
+        <ul><li>跟踪11月25日紫荆花与Sirca惠阳签约后是否出现产品、工厂服务与环保的正式口径。</li>
+<li>关注12月4日至8日广州设计周「超级艺涂」专区，观察艺术涂料与设计师渠道的现场表达。</li>
+<li>监测12月4日至6日南宁华夏家博会的涂料、橱柜与装企同场动向，以及终端优惠是否挤压中端材料定价。</li>
+<li>跟踪湖南省住宅室内装修安全管理通知在长沙、株洲的登记落地，以及厨卫轻改进场时的防水前置要求。</li>
+</ul>
+    </div>
+</div>
+
+<!-- 四大新闻板块 -->
+<div class="content">
+
+        <div class="section-divider">★</div>
+        <h2 class="section-title">今日头条 <span class="count">2条</span></h2>
+        <div class="news-item">
+            <div class="tags-row">
+                <span class="grade-tag" style="background:#c27a2c">值得关注</span>
+                <span class="status-tag" style="background:#6b7d4f">新增</span>
+                <span class="cat-tag">企业战略</span>
+            </div>
+            <h3 class="news-title">长沙点石家装发布定制全案「六大一体化」，把设计到售后收成一条责任链</h3>
+            <p class="news-summary">11月24日，红网报道，点石家装推出定制全案「六大一体化」，以入住体验为起点，把一体化设计、产品、施工、协同、预算和售后串成完整链路。企业介绍称，设计端统筹硬装、木作、软装和机电，并拥有自建木作定制智造基地和自有家具软装mall；施工端强调自管产业工人、工程不转包，并由工程交付管家单点对接。文中同时给出设计师规模、用户数量等数据，均为企业自述。</p>
+            <div class="insight"><strong>💡 洞察：</strong>这是长沙本地装企在存量竞争中抢「确定性」的表达。核心不是又一个套餐名，而是把木作定制和施工责任收进同一界面，减少图纸与落地、报价与增项的断裂。</div>
+            <div class="biz-impact"><strong>🎯 业务影响：</strong>蓝天豚配套金煌、创艺时，更应把色材、收口和墙面工艺写进交界面，而不是跟进无边界整装。点石公布的基地与用户数字是企业口径，不宜直接拿来对标。</div>
+            <div class="news-meta">
+                <span class="date">2026-11-24</span>
+                <span class="sources"><a href="https://jj.rednet.cn/content/646055/68/16503712.html" target="_blank">红网</a></span>
+            </div>
+        </div>
+
+        <div class="news-item">
+            <div class="tags-row">
+                <span class="grade-tag" style="background:#c27a2c">值得关注</span>
+                <span class="status-tag" style="background:#8a6a4a">延续</span>
+                <span class="cat-tag">行业会议</span>
+            </div>
+            <h3 class="news-title">贝壳萌象在南宁饰面大会提出，60%以上家装需求来自存量房翻新</h3>
+            <p class="news-summary">11月24日，中国质量新闻网报道，11月23日贝壳萌象家居总经理郑深圳在南宁全球饰面大会表示，2025年家装市场预估约2.2万亿元，当前60%以上需求来自存量房翻新，消费者更看重服务与透明。他介绍，贝壳已在50个城市上线装修资金存管、累计覆盖4万多户，并以智慧工地系统「贝刻」做过程可视化；萌象为贝壳自营定制品牌，嵌在整装体系中。</p>
+            <div class="insight"><strong>💡 洞察：</strong>这是对已结束的南宁饰面大会的补充口径。存量翻新占六成是企业负责人的判断，不是官方普查，但与近期旧改、局改讨论方向一致。平台强调的是信任和过程可见，而不只是产品花色。</div>
+            <div class="biz-impact"><strong>🎯 业务影响：</strong>蓝天豚的墙面焕新、厨卫轻改和收纳升级，正对应存量小单，但明确不做无边界整装。对金煌等装企配套，可把材料验收和过程说明写清楚，不必追赶整装平台的资金存管和全案打包。</div>
+            <div class="news-meta">
+                <span class="date">2026-11-23</span>
+                <span class="sources"><a href="https://www.cqn.com.cn/jiajujiancai/content/2026-11/24/content_9182370.htm" target="_blank">中国质量新闻网</a></span>
+            </div>
+        </div>
+
+        <div class="section-divider">♥</div>
+        <h2 class="section-title">行业脉搏 <span class="count">2条</span></h2>
+        <div class="news-item">
+            <div class="tags-row">
+                <span class="grade-tag" style="background:#c27a2c">值得关注</span>
+                <span class="status-tag" style="background:#6b7d4f">新增</span>
+                <span class="cat-tag">产品发布</span>
+            </div>
+            <h3 class="news-title">三棵树发布航天联名透汽型聚合物水泥防水涂料，称可兼顾透汽与抗水压</h3>
+            <p class="news-summary">11月25日，中外涂料网转述三棵树消息，公司在神舟二十四号发射当日推出航天联名新品——透汽型聚合物水泥防水涂料。企业称，产品为双组分，由改性丙烯酸乳液与含纳米多孔材料的无机粉料配成，水蒸气透过率不低于50克/（平方米·24小时），可抵抗0.3兆帕水压；主要适用于外墙外保温，也可用于厕浴间、厨房、阳台及地暖等室内用水区域。相关性能数据为发布会口径。</p>
+            <div class="insight"><strong>💡 洞察：</strong>防水长期卡在「封死则积潮、透气则易渗」的矛盾上，三棵树把航天联名和可量化指标一起抛出，意在抢厨卫与外墙保温的话语权。联名本身不能代替现场验收。</div>
+            <div class="biz-impact"><strong>🎯 业务影响：</strong>涂装装厨卫轻改应把防水和基层条件作为进场前置，不碰未处理好的渗漏墙面。蓝天豚不做防水主业，也不把「航天」当作自身卖点，只把可核验的透汽与抗水压指标作为选材对照。</div>
+            <div class="news-meta">
+                <span class="date">2026-11-25</span>
+                <span class="sources"><a href="https://www.27580.cn/news/209312.html" target="_blank">中外涂料网</a></span>
+            </div>
+        </div>
+
+        <div class="news-item">
+            <div class="tags-row">
+                <span class="grade-tag" style="background:#c27a2c">值得关注</span>
+                <span class="status-tag" style="background:#6b7d4f">新增</span>
+                <span class="cat-tag">项目案例</span>
+            </div>
+            <h3 class="news-title">嘉宝莉艺术涂料落地成都婚姻登记处，以雅晶石与天鹅绒质感做空间背景</h3>
+            <p class="news-summary">11月23日，中外涂料网刊发嘉宝莉供稿称，继深圳罗湖民政局之后，其艺术涂料再次用于成都桂溪生态公园婚姻登记处。主背景采用红色星芒雅晶石，以砂质肌理和金色点缀形成仪式感；四周墙面使用粉色维拉特天鹅绒，强调柔和层次。稿件把艺术涂料写成空间氛围的一部分，而非单纯的墙面覆盖，并同步发起设计征集，活动开奖时间为11月27日。</p>
+            <div class="insight"><strong>💡 洞察：</strong>艺术涂料正在从家装样板间走向可被拍照传播的公共场景，比拼的是色彩、肌理和空间完成度。这是品牌内容案例，不能直接读成订单规模或渠道突破。</div>
+            <div class="biz-impact"><strong>🎯 业务影响：</strong>蓝天豚艺术墙面可关注公共空间和设计师场景里「墙面如何被看见」，但要用可核验的健康材料与施工标准说话，不宜模仿无法证明的浪漫化承诺。湖南与南宁仍应先做装企和设计师点对点案例。</div>
+            <div class="news-meta">
+                <span class="date">2026-11-23</span>
+                <span class="sources"><a href="https://www.27580.cn/news/209004.html" target="_blank">中外涂料网</a></span>
+            </div>
+        </div>
+
+        <div class="section-divider">⚡</div>
+        <h2 class="section-title">趋势与信号 <span class="count">1条</span></h2>
+        <div class="news-item">
+            <div class="tags-row">
+                <span class="grade-tag" style="background:#a39482">参考</span>
+                <span class="status-tag" style="background:#6b7d4f">新增</span>
+                <span class="cat-tag">展会活动</span>
+            </div>
+            <h3 class="news-title">美惠匠心杯仿石涂料施工总决赛定于11月27日至28日在武汉举行，并与乡建博览会同馆</h3>
+            <p class="news-summary">11月26日，2026第二届美惠匠心杯全国仿石涂料施工大赛总决赛进入报到日。中外涂料网11月14日报道，决赛将于11月27日至28日在武汉文化博览中心B馆举行，由涂料工业协会等主办，与鲲鹏汇·第二届乡建产业博览会同馆，展出规模据称达1.5万平方米。决赛选手有机会获得协会颁发的仿石涂料技术能手证书，并可角逐用户口碑奖；活动面向乡墅外墙与建房业主对接。</p>
+            <div class="insight"><strong>💡 洞察：</strong>外墙仿石漆的竞争正在从材料报价转向可认证的工匠能力和乡墅现场交付。赛会与乡建展同馆，说明渠道仍在向县乡自建房集中，材料和施工被放在同一现场比较。</div>
+            <div class="biz-impact"><strong>🎯 业务影响：</strong>外墙是蓝天豚后续增量，但早期不单开账号，也不宜为单场赛事铺人铺费用。可把工匠认证和施工标准化作为对照，先把内墙艺术墙面的交付一致性做扎实再谈外墙。</div>
+            <div class="news-meta">
+                <span class="date">2026-11-26</span>
+                <span class="sources"><a href="https://www.27580.cn/news/208565.html" target="_blank">中外涂料网</a></span>
+            </div>
+        </div>
+
+        <div class="section-divider">⚖</div>
+        <h2 class="section-title">政策与数据 <span class="count">1条</span></h2>
+        <div class="news-item">
+            <div class="tags-row">
+                <span class="grade-tag" style="background:#a8492a">战略级</span>
+                <span class="status-tag" style="background:#8a6a4a">延续</span>
+                <span class="cat-tag">行业数据</span>
+            </div>
+            <h3 class="news-title">2026年BHEI数据公布：全国规模以上建材家居市场面积约17615万平方米，饱和度继续抬升</h3>
+            <p class="news-summary">11月25日，中外涂料网转述中国建筑材料流通协会在长沙年会期间发布的2026年BHEI数据。全国规模以上建材家居市场面积约17615万平方米，同比下降3.02%；70城饱和度平均数同比上涨7.78%，中位数上涨4.86%，50城上升、20城下降，前三为西宁、武汉、丹东。协会将旧房焕新和局装微改写成核心增长赛道。11月22日日报已记录该年会，当时未列数字。</p>
+            <div class="insight"><strong>💡 洞察：</strong>卖场面积在收缩，但饱和度仍在上升，说明减的是面积、留下来的竞争没有变松。协会把增量希望放到局装微改，等于承认新房整装已不再是流通端的主叙事。</div>
+            <div class="biz-impact"><strong>🎯 业务影响：</strong>蓝天豚在湖南以装企和设计师为主，不必把饱和指数读成必须进场或开店的信号；更应把墙面焕新、厨卫轻改和收纳升级的交付说清楚。公开报道未列出长沙、南宁分项数值，不能用全国平均数指导两地决策。</div>
+            <div class="news-meta">
+                <span class="date">2026-11-25</span>
+                <span class="sources"><a href="https://www.27580.cn/news/209238.html" target="_blank">中外涂料网</a></span>
+            </div>
+        </div>
+
+</div>
+
+<!-- 页脚 -->
+<div class="footer">
+    <p>数据来源：中国建筑材料流通协会、中国建筑材料联合会、新华网、财经媒体等</p>
+    <p style="margin-top:0.5rem">由 <b style="color:var(--gold)">「潮向」情报系统</b> 自动生成</p>
+</div>
+
+</body>
+</html>
