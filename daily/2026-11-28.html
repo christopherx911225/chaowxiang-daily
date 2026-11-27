@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name="theme-color" content="#4a2415">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>潮向 | 建材家居行业日报 | 2026-11-28</title>
+    <style>
+        :root{--ink:#2b1d14;--ink-soft:#5a4636;--muted:#8a7461;--paper:#f7f1e6;--paper-2:#efe5d3;--card:#fffaf2;--terra:#a8492a;--amber:#c27a2c;--bronze:#9c7a4a;--gold:#c9a063;--line:#e3d5bd;
+        --serif:'Songti SC','STSong','Noto Serif SC','Noto Serif CJK SC','Source Han Serif SC','Source Han Serif CN',SimSun,serif;
+        --sans:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Noto Sans CJK SC','Microsoft YaHei',sans-serif;}
+        *{margin:0;padding:0;box-sizing:border-box}
+        html{background:var(--paper)}
+        body{font-family:var(--sans);color:var(--ink);line-height:1.85;background:var(--paper);
+          background-image:radial-gradient(rgba(120,80,40,.05) 1px,transparent 1px),radial-gradient(rgba(120,80,40,.035) 1px,transparent 1px),linear-gradient(180deg,#f9f4ea,#f3eadb);
+          background-size:3px 3px,7px 7px,100% 100%;background-position:0 0,2px 3px,0 0;-webkit-font-smoothing:antialiased}
+        a{color:var(--terra)}
+        .hero{position:relative;overflow:hidden;text-align:center;color:#f8ecd9;padding:4.2rem 1.5rem 3rem;
+          background:radial-gradient(120% 90% at 50% 0%,#7a3a20 0%,#4a2415 55%,#2e170d 100%)}
+        .hero::before{content:'';position:absolute;inset:0;background-image:repeating-linear-gradient(115deg,rgba(255,220,170,.035) 0 1px,transparent 1px 6px);pointer-events:none}
+        .hero::after{content:'';position:absolute;left:50%;bottom:1.2rem;transform:translateX(-50%);width:min(680px,86%);height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+        .hero-title{font-family:var(--serif);font-size:2.9rem;font-weight:600;letter-spacing:1.1rem;padding-left:1.1rem;position:relative;color:#f6e7cf}
+        .hero-title b{color:var(--gold);font-weight:700}
+        .hero-subtitle{position:relative;font-size:.82rem;letter-spacing:.5rem;padding-left:.5rem;color:#d9bf98;margin:.4rem 0 1.6rem}
+        .hero-subtitle::before,.hero-subtitle::after{content:'—';margin:0 .8rem;color:var(--gold);opacity:.7}
+        .hero-theme{position:relative;font-family:var(--serif);font-size:1.22rem;line-height:1.75;max-width:680px;margin:0 auto 1.6rem;color:#fbefdc}
+        .hero-meta{position:relative;display:flex;justify-content:center;align-items:center;gap:1.1rem;flex-wrap:wrap;font-size:.85rem;color:#e2c9a4;letter-spacing:.05rem}
+        .hero-meta .sep{width:5px;height:5px;transform:rotate(45deg);background:var(--gold)}
+        .hero-link{position:relative;display:inline-block;margin-top:1.3rem;padding:.35rem 1.1rem;border:1px solid rgba(201,160,99,.6);border-radius:999px;color:var(--gold);text-decoration:none;font-size:.82rem;letter-spacing:.1rem}
+        .hero-link:hover{background:rgba(201,160,99,.12)}
+        .overview,.key-changes,.content,.risk-follow{max-width:820px;margin:0 auto;padding-left:1.75rem;padding-right:1.75rem}
+        .overview{padding-top:3rem;padding-bottom:1.5rem}
+        .overview h2,.key-changes h2{font-family:var(--serif);font-size:1.35rem;font-weight:600;color:var(--ink);letter-spacing:.2rem;margin-bottom:1.1rem;display:flex;align-items:center;gap:.8rem}
+        .overview h2::after,.key-changes h2::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,var(--bronze),transparent)}
+        .overview p{font-family:var(--serif);font-size:1.02rem;line-height:2.05;color:var(--ink-soft);text-indent:2em}
+        .overview p::first-letter{color:var(--terra);font-size:1.5em;font-weight:700}
+        .key-changes{padding-bottom:2rem}
+        .key-changes ul{list-style:none;counter-reset:k}
+        .key-changes li{counter-increment:k;position:relative;padding:1rem 0 1rem 3.2rem;border-bottom:1px dashed var(--line);font-size:.96rem;color:var(--ink-soft)}
+        .key-changes li::before{content:counter(k,decimal-leading-zero);position:absolute;left:0;top:.85rem;font-family:var(--serif);font-size:1.5rem;font-weight:700;color:var(--amber);font-style:italic}
+        .key-changes .impact{margin-top:1.3rem;padding:1rem 1.2rem;background:linear-gradient(90deg,rgba(168,73,42,.08),rgba(168,73,42,0));border-left:3px solid var(--terra);font-family:var(--serif);font-weight:600;color:var(--ink);font-size:1rem}
+        .risk-follow{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;padding-bottom:1rem}
+        .risk-follow .box{background:var(--card);border:1px solid var(--line);border-radius:4px;padding:1.4rem 1.4rem 1.1rem;position:relative;box-shadow:0 1px 0 #fff inset,0 10px 30px -18px rgba(90,50,20,.35)}
+        .risk-follow .box::before{content:'';position:absolute;top:0;left:1.4rem;right:1.4rem;height:2px;background:var(--terra)}
+        .risk-follow .box.follow::before{background:var(--bronze)}
+        .risk-follow .box h3{font-family:var(--serif);font-size:1.05rem;font-weight:600;letter-spacing:.12rem;margin-bottom:.7rem;color:var(--ink)}
+        .risk-follow .box ul{list-style:none}
+        .risk-follow .box li{position:relative;padding:.45rem 0 .45rem 1.1rem;font-size:.88rem;line-height:1.75;color:var(--ink-soft)}
+        .risk-follow .box li::before{content:'';position:absolute;left:0;top:1.05rem;width:5px;height:5px;transform:rotate(45deg);background:var(--terra)}
+        .risk-follow .box.follow li::before{background:var(--bronze)}
+        .content{padding-bottom:2.5rem}
+        .section-divider{display:flex;align-items:center;justify-content:center;gap:1rem;margin:3.2rem 0 .3rem;color:var(--amber);font-size:1rem}
+        .section-divider::before,.section-divider::after{content:'';width:90px;height:1px;background:linear-gradient(90deg,transparent,var(--bronze))}
+        .section-divider::after{transform:scaleX(-1)}
+        .section-title{font-family:var(--serif);text-align:center;font-size:1.55rem;font-weight:600;letter-spacing:.35rem;color:var(--ink);margin-bottom:1.6rem}
+        .section-title .count{font-family:var(--sans);font-size:.75rem;letter-spacing:.05rem;font-weight:400;color:var(--muted);margin-left:.4rem;padding:.1rem .55rem;border:1px solid var(--line);border-radius:999px;vertical-align:middle}
+        .news-item{position:relative;background:var(--card);border:1px solid var(--line);border-radius:4px;padding:1.6rem 1.7rem 1.3rem;margin-bottom:1.2rem;box-shadow:0 1px 0 #fff inset,0 14px 34px -22px rgba(90,50,20,.45);transition:transform .2s,box-shadow .2s}
+        .news-item:hover{transform:translateY(-2px);box-shadow:0 18px 40px -22px rgba(90,50,20,.55)}
+        .tags-row{display:flex;gap:.45rem;flex-wrap:wrap;margin-bottom:.8rem}
+        .tags-row span{display:inline-block;padding:.12rem .65rem;border-radius:2px;color:#fff;font-size:.7rem;letter-spacing:.08rem;font-weight:500}
+        .tags-row .cat-tag{background:transparent!important;color:var(--bronze);border:1px solid var(--gold)}
+        .news-title{font-family:var(--serif);font-size:1.2rem;font-weight:700;line-height:1.55;color:var(--ink);margin-bottom:.7rem}
+        .news-summary{font-size:.93rem;line-height:1.9;color:var(--ink-soft);margin-bottom:.9rem}
+        .insight,.biz-impact{font-size:.87rem;line-height:1.8;padding:.65rem .95rem;margin-bottom:.5rem;border-radius:2px}
+        .insight{background:#f6ead8;border-left:2px solid var(--amber);color:#5e3d1c}
+        .biz-impact{background:#f3e0d6;border-left:2px solid var(--terra);color:#6a2d18}
+        .insight strong,.biz-impact strong{font-family:var(--serif)}
+        .news-meta{display:flex;gap:1rem;flex-wrap:wrap;align-items:center;margin-top:.9rem;padding-top:.75rem;border-top:1px dashed var(--line);font-size:.78rem;color:var(--muted);letter-spacing:.03rem}
+        .news-meta a{color:var(--terra);text-decoration:none;border-bottom:1px solid rgba(168,73,42,.3)}
+        .news-meta a:hover{border-bottom-color:var(--terra)}
+        .footer{max-width:820px;margin:1rem auto 0;padding:2.4rem 1.5rem 3rem;text-align:center;font-size:.8rem;color:var(--muted);border-top:1px solid var(--line);letter-spacing:.05rem}
+        .footer b{font-family:var(--serif);color:var(--terra)!important}
+        @media (max-width:768px){
+          .hero{padding:3.2rem 1.2rem 2.6rem}.hero-title{font-size:2.2rem;letter-spacing:.7rem;padding-left:.7rem}
+          .hero-theme{font-size:1.05rem}.hero-meta{gap:.7rem;font-size:.78rem}
+          .overview,.key-changes,.content,.risk-follow{padding-left:1.1rem;padding-right:1.1rem}
+          .risk-follow{grid-template-columns:1fr}.news-item{padding:1.25rem 1.15rem 1rem}
+          .section-title{font-size:1.3rem;letter-spacing:.2rem}.section-divider::before,.section-divider::after{width:50px}
+          .key-changes li{padding-left:2.6rem}.overview p{font-size:.98rem}}
+    </style>
+</head>
+<body>
+
+<!-- 顶部区 -->
+<div class="hero">
+    <div class="hero-title">潮 <b>向</b></div>
+    <div class="hero-subtitle">建材家居行业日报</div>
+    <div class="hero-theme">三棵树把马上住4.0写成可复制的社区焕新方案，长沙装企把旧房体检推进小区，高定涂装与轻高定在设计周前同时被提起。</div>
+    <div class="hero-meta">
+        <span>2026-11-28 星期六</span>
+        <span class="sep"></span>
+        <span>7 条事件</span>
+        <span class="sep"></span>
+        <span>本次识别 5 个状态库新增事件</span>
+    </div>
+    <a class="hero-link" href="https://christopherx911225.github.io/chaowxiang-daily/" target="_blank">查看历史日报 →</a>
+</div>
+
+<!-- 今日概览 -->
+<div class="overview">
+    <h2>◆ 今日概览</h2>
+    <p>政策与标准端，湖南住宅室内装修安全管理通知将于12月1日施行，长沙承家新装在精英路社区把「先体检、后开工」做成现场服务；广西则继续以原拆原建推进危旧房更新，已有5个城市、11个项目在探索。企业端，三棵树借新华网专访系统披露「马上住4.0」：社区焕新店截至10月已超6000家，简刷型工期压至3天，并叠加AI基检与设计工具；大宝国际旗下洛贝纳宣布将在12月4日至8日的广州设计周首秀高定木作涂装。同时，行业评论指出定制家居第一梯队排位未变但营收持续承压，我乐因走通轻高定而相对耐寒；武汉美惠匠心杯总决赛也在两日赛程中，把仿石涂料的基层与施工标准推到台前。</p>
+</div>
+
+<!-- 关键变化 -->
+<div class="key-changes">
+    <h2>◆ 关键变化</h2>
+    <ul>
+        <li>头部涂料企业把社区店、工期压缩和AI基检打成一套焕新方案，导致墙面翻新的决策门槛下降，意味着局部焕新正在从「会做的师傅生意」转向「可复制的服务产品」。</li>
+<li>湖南新规临近施行、长沙装企把体检和局改标准带进社区，导致旧改先勘测、再施工的要求被公开化，意味着材料商若不能配合结构红线、防水与改色等现场动作，将更难进入装企交付链。</li>
+<li>高定木作涂装与轻高定被同时当作差异化出路，导致「见木不见漆」和设计溢价成为可讨论的竞争变量，意味着涂料与成品定制的交界处，比单纯比拼墙面花色更值得投入。</li>
+
+    </ul>
+    <p class="impact">影响判断：对行业整体偏中性偏正面。政策收紧抬高旧改合规门槛，但社区焕新、局改体检和高定涂装都在给出可验证的需求出口；真正的考验仍是交付稳定与利润，而不是活动声量。</p>
+</div>
+
+<!-- 风险与后续 -->
+<div class="risk-follow">
+    <div class="box risk">
+        <h3>⚠ 风险与不确定性</h3>
+        <ul><li>马上住4.0中的签单率提升20%为内测数据，社区店扩至6000余家是企业披露；高速开店可能带来师傅、基层处理和口碑跟不上的风险，不宜把3天工期写成行业已普遍可达的标准。</li>
+<li>广西原拆原建以产权人自筹、按筹款进度分批建设为主，周期长、与局部焕新不是同一类需求；不能把危旧房重建进度直接解读为墙面或厨卫轻改即将放量。</li>
+</ul>
+    </div>
+    <div class="box follow">
+        <h3>👁 后续关注</h3>
+        <ul><li>跟踪12月1日湖南装修安全新规落地后，长沙装企在告知性申报、拆改红线上的实际执行。</li>
+<li>监测12月4日至8日广州设计周高定涂装与设计师渠道的现场反馈，包括洛贝纳首秀及卡百利等品牌动作。</li>
+<li>关注美惠匠心杯总决赛名次、证书与工匠资源库如何转化为乡墅外墙订单。</li>
+<li>跟踪金煌「月末双补」于11月29日收官后的实际转化，以及定制龙头在轻高定与出海路径上是否继续分化。</li>
+</ul>
+    </div>
+</div>
+
+<!-- 四大新闻板块 -->
+    <div class="content">
+
+        <div class="section-divider">★</div>
+        <h2 class="section-title">今日头条 <span class="count">2条</span></h2>
+        <div class="news-item">
+            <div class="tags-row">
+                <span class="grade-tag" style="background:#a8492a">战略级</span>
+                <span class="status-tag" style="background:#6b7d4f">新增</span>
+                <span class="cat-tag">局部焕新</span>
+            </div>
+            <h3 class="news-title">湖南装修新规12月施行，承家新装进社区为老房做「48项体检」</h3>
+            <p class="news-summary">11月27日，红网报道，公益维修活动在长沙举行。承家新装在精英路社区携带「48项老房体检诊断书」做公益勘测，并设改色漆体验区和橱柜台面补胶。创始人周易称，企业已连续十年为逾2000套老房体检，坚持「先体检、后开工」与五步勘测，形成全房、局改两套交付标准。湖南住建厅相关通知将于12月1日起施行，全省住宅装修实行告知性申报登记，变动承重结构等被划为禁止红线。</p>
+            <div class="insight"><strong>💡 洞察：</strong>湖南新规临近落地，长沙装企把「先检测再施工」做成社区动作。旧改竞争的门槛，正在从报价和风格，转向结构、水电、防水能否被系统识别和妥善处置，这一点需要正视。</div>
+            <div class="biz-impact"><strong>🎯 业务影响：</strong>这对蓝天豚的焕新家四条线高度同向，尤其是墙面焕新和瓷砖改色。可把健康材料与改色体验做成装企体检包的可选项，但须守住非整装边界，不介入拆改承重和水电重排。</div>
+            <div class="news-meta">
+                <span class="date">2026-11-27</span>
+                <span class="sources"><a href="https://jj.rednet.cn/content/646055/61/16515848.html" target="_blank">红网</a></span>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="tags-row">
+                <span class="grade-tag" style="background:#a8492a">战略级</span>
+                <span class="status-tag" style="background:#8a6a4a">延续</span>
+                <span class="cat-tag">存量焕新</span>
+            </div>
+            <h3 class="news-title">三棵树「马上住4.0」见诸新华网：社区店超6000家，简刷工期压至3天</h3>
+            <p class="news-summary">11月27日，新华网刊发对三棵树副总裁洪圣源的专访，系统介绍「马上住4.0」。该战略覆盖全屋翻新、局部改造及适老化装修。简刷型焕新工期由5天压缩至3天，全铲型由12天减至9天；AI基检可在30秒内识别墙面问题，内测中AI设计工具使签单率提升20%。截至2026年10月，社区焕新店由上年底的2000余家增至超6000家，今年增长160%。</p>
+            <div class="insight"><strong>💡 洞察：</strong>「马上住」并非新词，但4.0把工期、AI基检和社区店规模写成一套可复制的产品。涂料企业正在用服务标准化，抢占墙面焕新的入口，而不只是再推一款新漆。</div>
+            <div class="biz-impact"><strong>🎯 业务影响：</strong>蓝天豚不必追门店数量，但应看清「即刷即住」只适用于有依据的墙面场景。可关注其3天简刷与AI基检如何影响长沙、南宁消费者预期，并据此设定自己的交付口径与工期承诺。</div>
+            <div class="news-meta">
+                <span class="date">2026-11-27</span>
+                <span class="sources"><a href="https://www.news.cn/finance/20261127/6f28ba92e6cd4f798e692f9833445bac/c.html" target="_blank">新华网</a></span>
+            </div>
+        </div>
+
+        <div class="section-divider">♥</div>
+        <h2 class="section-title">行业脉搏 <span class="count">2条</span></h2>
+        <div class="news-item">
+            <div class="tags-row">
+                <span class="grade-tag" style="background:#c27a2c">值得关注</span>
+                <span class="status-tag" style="background:#6b7d4f">新增</span>
+                <span class="cat-tag">产品发布</span>
+            </div>
+            <h3 class="news-title">洛贝纳将在广州设计周首秀，从艺术涂料延伸至高定木作涂装</h3>
+            <p class="news-summary">11月27日，中外涂料网报道，大宝国际旗下L’Opera洛贝纳将于12月4日至8日在广州设计周保利馆6D19展位首秀。该品牌2018年以进口艺术涂料身份进入中国，2020年延伸至木作涂装，2026年完成定位升级，转向意式高端木器漆与艺术饰面。现有新中式、意式半透、轻奢肤感、科技木四大体系，主张「见木不见漆」，强调漆面须在打样与量产中稳定落地。</p>
+            <div class="insight"><strong>💡 洞察：</strong>艺术涂料墙面赛道同质化后，部分品牌把美学能力迁到木作表面。高定项目的差距，正从柜型本身，转向触感、光泽和色差能否稳定可控。好看但无法量产，很快会失去意义。</div>
+            <div class="biz-impact"><strong>🎯 业务影响：</strong>这与蓝天豚「人居美学定制」和木作涂装一体化方向同频。涂料与定制若能在色板和工艺上对齐，会比单边推广艺术墙面更接近设计师和高定工厂的真实痛点。</div>
+            <div class="news-meta">
+                <span class="date">2026-11-27</span>
+                <span class="sources"><a href="https://www.27580.cn/important/209521.html" target="_blank">中外涂料网</a></span>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="tags-row">
+                <span class="grade-tag" style="background:#c27a2c">值得关注</span>
+                <span class="status-tag" style="background:#6b7d4f">新增</span>
+                <span class="cat-tag">企业财报</span>
+            </div>
+            <h3 class="news-title">行业专栏：九家定制上市公司排位裂变，我乐因走通轻高定而相对耐寒</h3>
+            <p class="news-summary">11月26日，周忠在新浪财经撰文，梳理九家定制上市公司排位变化。欧派、索菲亚仍居第一梯队，但营收持续下滑，欧派营收已在前年跌破200亿元，索菲亚营收于去年跌破100亿元。尚品宅配被金牌超越、降至第五，营收从2021年的73.10亿元降至2025年35.52亿元，累计约缩51.4%。作者认为，我乐因走通轻高定路线而相对耐寒，志邦、金牌则还需观察出海布局。</p>
+            <div class="insight"><strong>💡 洞察：</strong>排位变化的含义不只是谁掉队，而是「地产+流量」红利消退后，设计溢价和出海能力开始改写耐力。轻高定由此被写成一条可穿越周期的路线，但口号并不能自动带来利润。</div>
+            <div class="biz-impact"><strong>🎯 业务影响：</strong>蓝天豚定制定位正是轻高定与门墙柜配套，不宜用头部营收下滑否定这条路，但须把设计与交付做成可验证的溢价，而不是只借用口号；金煌渠道仍是2027年验证的基本盘。</div>
+            <div class="news-meta">
+                <span class="date">2026-11-26</span>
+                <span class="sources"><a href="https://finance.sina.com.cn/roll/2026-11-26/doc-inkaaawz8987705.shtml" target="_blank">新浪财经</a></span>
+            </div>
+        </div>
+
+        <div class="section-divider">⚡</div>
+        <h2 class="section-title">趋势与信号 <span class="count">2条</span></h2>
+        <div class="news-item">
+            <div class="tags-row">
+                <span class="grade-tag" style="background:#c27a2c">值得关注</span>
+                <span class="status-tag" style="background:#8a6a4a">延续</span>
+                <span class="cat-tag">行业标准</span>
+            </div>
+            <h3 class="news-title">美惠匠心杯仿石涂料总决赛在武汉启幕，38名工匠比拼全流程施工</h3>
+            <p class="news-summary">11月27日，2026第二届美惠匠心杯全国仿石涂料施工大赛总决赛在武汉启幕，赛程两天，并与乡建产业博览会同场。来自全国十个赛区的38名工匠参赛，考核覆盖基层处理、仿石纹理层次、成品保护与文明施工。康惠冬表示，乡墅业主对外墙品质要求提高，赛事旨在把工地经验提炼为可复制工艺。选手有机会获得涂料工业协会仿石涂料技术能手证书，并可签约美惠石感漆优质油工资源库。</p>
+            <div class="insight"><strong>💡 洞察：</strong>外墙仿石的竞争，已经从材料调色转向现场基层与纹理能否稳定交付。赛事把工匠认证和派单库绑在一起，说明施工人才正在被做成可调度的产品，材料再好也要经得起现场检验。</div>
+            <div class="biz-impact"><strong>🎯 业务影响：</strong>外墙是蓝天豚后续增量，眼下不必单开账号，但可把「基层处理+可复制工艺」记入准备清单。湖南、广西若跟进乡墅样板，关键不在活动声量，而在验收标准和施工班组是否接得住。</div>
+            <div class="news-meta">
+                <span class="date">2026-11-27</span>
+                <span class="sources"><a href="https://www.27580.cn/important/209561.html" target="_blank">中外涂料网</a></span>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="tags-row">
+                <span class="grade-tag" style="background:#a39482">参考</span>
+                <span class="status-tag" style="background:#6b7d4f">新增</span>
+                <span class="cat-tag">战略合作</span>
+            </div>
+            <h3 class="news-title">意大利ICRO管理层到访立邦，复盘水性高定木器涂装合作</h3>
+            <p class="news-summary">11月27日，中外涂料网报道，值ICRO成立75周年，集团总裁Andrea Moltrasio等管理层到访立邦中国总部，与立邦家具漆事业部复盘今年达成的水性涂装合作。双方认为家具与涂料市场均进入收缩期，客户更谨慎，评价标准转向技术方案能否落到具体产线。座谈以水性涂装为主线，并讨论将工业漆的水性经验向民用木材表面迁移。</p>
+            <div class="insight"><strong>💡 洞察：</strong>国际木器漆品牌与本土渠道的组合，仍在高定家具漆里寻找稳定性。收缩市场里，打样准确和产线适配，比一场发布会更被客户看重。没有产线验证，合作就还只是姿态。</div>
+            <div class="biz-impact"><strong>🎯 业务影响：</strong>可与洛贝纳首秀对照来看：木作涂装正在成为涂料商进入定制工厂的接口。蓝天豚若推进门墙柜色材工艺，需先解决小批量打样的色差和触感可控，而不是先上品牌故事。</div>
+            <div class="news-meta">
+                <span class="date">2026-11-27</span>
+                <span class="sources"><a href="https://www.27580.cn/news/209489.html" target="_blank">中外涂料网</a></span>
+            </div>
+        </div>
+
+        <div class="section-divider">⚖</div>
+        <h2 class="section-title">政策与数据 <span class="count">1条</span></h2>
+        <div class="news-item">
+            <div class="tags-row">
+                <span class="grade-tag" style="background:#c27a2c">值得关注</span>
+                <span class="status-tag" style="background:#6b7d4f">新增</span>
+                <span class="cat-tag">政策法规</span>
+            </div>
+            <h3 class="news-title">广西探索「原拆原建」更新老旧住宅，已有5市11个项目在推进</h3>
+            <p class="news-summary">11月24日，央广网转述中国建设新闻网报道，广西住建厅介绍，对产权复杂、不愿异地搬迁的楼栋，推动原址拆除后重建，并联动搬家补贴、公租房优先安置等措施。全区5个城市、11个项目在探索「原拆原建」。北海西藏新村首栋启动的8号楼已主体封顶，其余按筹款进度分批开工。今年以来，广西改造城镇老旧小区3.89万套、城市危旧房2万套，另有4.76万户城中村居住条件得到改善。</p>
+            <div class="insight"><strong>💡 洞察：</strong>原拆原建补的是危旧房「变成新房」的缺口，与局部焕新不是同一类需求。重建完成之后，厨卫功能补齐和装修选材，才会形成新的订单窗口。两者不宜放在同一本账里计算。</div>
+            <div class="biz-impact"><strong>🎯 业务影响：</strong>南宁是蓝天豚第二优先市场，此类项目更接近新房配套而非焕新家四条线。宜观察交房和精装选材节奏，避免把重建周期误判为局改放量；非整装边界仍应守住。</div>
+            <div class="news-meta">
+                <span class="date">2026-11-24</span>
+                <span class="sources"><a href="https://house.cnr.cn/kcb/20261124/t20261124_527881322.shtml" target="_blank">央广网</a></span>
+            </div>
+        </div>
+
+</div>
+
+<!-- 页脚 -->
+<div class="footer">
+    <p>数据来源：中国建筑材料流通协会、中国建筑材料联合会、新华网、财经媒体等</p>
+    <p style="margin-top:0.5rem">由 <b style="color:var(--gold)">「潮向」情报系统</b> 自动生成</p>
+</div>
+
+</body>
+</html>
